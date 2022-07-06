@@ -5,9 +5,33 @@
     android:layout_height="match_parent"
     tools:context=".ui.views.MainFragment">
 
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Main Fragment" />
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch Wallet"
+            android:fontFamily="@font/manrope_extrabold"
+            android:textSize="24sp"
+            android:textColor="@color/textPrimaryColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: just leave a button to your various screens on this fragment"
+            android:fontFamily="@font/manrope_regular"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimaryColor"/>
+
+        <Button
+            android:id="@+id/go_to_landing_page_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Landing Page"
+            android:backgroundTint="@color/themePrimaryColor"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </FrameLayout>
