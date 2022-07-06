@@ -1,4 +1,4 @@
-package com.example.lunchwallet.ui.main
+package com.example.lunchwallet.foodbeneficiary.ui.main
 
 import androidx.lifecycle.ViewModel
 
