@@ -4,20 +4,18 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".foodbeneficiary.ui.main.signup.SignUpFragment"
-        android:id="@+id/scrollView"
+        android:id="@+id/fragment_signup"
         android:background="@color/white"
-        android:scrollbarStyle="insideInset"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="50dp"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="16dp"
-           android:paddingTop="20dp"
+           android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:id="@+id/signFragment"
             tools:context=".fragment.SignUpFragment">
 
@@ -57,7 +55,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/last_name_tv"
+                android:id="@+id/full_name_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_regular"
@@ -67,7 +65,7 @@
                 android:layout_marginTop="16dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/last_name_container"
+                android:id="@+id/fullName_container"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,8 +73,8 @@
                 android:layout_marginTop="10dp"
                 app:helperTextTextColor="#a30306">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_Last_Name_Consumer_sign_up"
+                <EditText
+                    android:id="@+id/signUp_fullName_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="@string/enter_your_full_name"
@@ -101,11 +99,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:helperTextTextColor="#a30306"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 app:hintEnabled="false">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_Email_Consumer_sign_up"
+                <EditText
+                    android:id="@+id/signUp_email_text_view"
                     android:layout_width="match_parent"
                     android:hint="@string/enter_your_decagon_email"
                     android:layout_height="50dp"
@@ -135,7 +133,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
-                    android:id="@+id/stack_autoTextView"
+                    android:id="@+id/signUp_stack_auto_view"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:fontFamily="@font/manrope_regular"
@@ -166,7 +164,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
-                    android:id="@+id/location_autoTextView"
+                    android:id="@+id/signUp_location_auto_view"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:fontFamily="@font/manrope_regular"
@@ -197,8 +195,8 @@
                 app:passwordToggleEnabled="true"
                 app:counterMaxLength="16">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_Password_Consumer_sign_up"
+                <EditText
+                    android:id="@+id/signUp_password_text_view"
                     android:layout_width="match_parent"
                     android:hint="@string/password"
                     android:layout_height="50dp"
@@ -208,7 +206,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/confirm_password_tv"
+                android:id="@+id/confirmPassword_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -218,7 +216,7 @@
                 android:textSize="14sp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/confrim_password_container"
+                android:id="@+id/confirmPassword_container"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -228,8 +226,8 @@
                 app:passwordToggleEnabled="true"
                 app:counterMaxLength="16">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/confirmPassword_Consumer_sign_up"
+                <EditText
+                    android:id="@+id/signUp_confirmPassword_text_view"
                     android:layout_width="match_parent"
                     android:hint="@string/password"
                     android:layout_height="50dp"
@@ -239,11 +237,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUpBtn"
+                android:layout_marginTop="35dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:hint="@string/sign_up"
-                android:textColorHint="@color/white"
-                android:backgroundTint="@color/theme_color"/>
+                android:backgroundTint="@color/grey"
+                android:enabled="false"
+                android:fontFamily="@font/manrope_medium"
+                android:paddingVertical="9dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

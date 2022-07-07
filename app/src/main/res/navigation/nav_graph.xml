@@ -3,11 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/signUpFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_checkMailFragment"
+            app:destination="@id/checkMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.CheckMailFragment"
+        android:label="fragment_check_mail"
+        tools:layout="@layout/fragment_check_mail" >
+        <action
+            android:id="@+id/action_checkMailFragment_to_confirmMailFragment"
+            app:destination="@id/confirmMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ConfirmMailFragment"
+        android:label="fragment_confrim_mail_frgament"
+        tools:layout="@layout/fragment_confrim_mail_frgament" />
 </navigation>
