@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   pull_request:
-    branches: [ "lunch-wallet_dev" ]
+    branches: [ lunch-wallet_dev ]
 
 jobs:
   build:
