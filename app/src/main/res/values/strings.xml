@@ -13,4 +13,31 @@
     <string name="location">Location</string>
     <string name="stack">Stack</string>
     <string name="sign_up">Sign Up</string>
+    <string name="enter_valid_name_str">Please enter first name &amp; last name</string>
+    <string name="enter_valid_email_str">Please enter your decagon email</string>
+    <string name="select_stack">Please select a stack</string>
+    <string name="select_location">Please select a location</string>
+    <string name="enter_valid_password_str">Password must be at least 8 characters with 1 special character, a digit, 1 uppercase, and 1 lowercase</string>
+    <string name="enter_valid_confirm_password_str">Password does not match.</string>
+    <string name="did_not_receive_the_email_check_your_spam_filter_or">Did not receieve the email? Check your spam folder, or</string>
+    <string name="try_another_email">resend instructions</string>
+    <string name="open_mail_app">Open email app</string>
+    <string name="check_mail">Check your email</string>
+    <string name="we_have_sent_a_password_recover_instruction_to_your_account">We have sent you a link to your email for email confirmation</string>
+    <string name="confirm_email_msg">Confirm email</string>
+    <string name="please_confirm_your_email">Please confirm your email</string>
+    <string-array name="stack">
+        <item>iOS</item>
+        <item>Android</item>
+        <item>Golang</item>
+        <item>Python</item>
+        <item>Node</item>
+        <item>.NET</item>
+        <item>Java</item>
+    </string-array>
+    <string-array name="location">
+        <item>Farah Park</item>
+        <item>UNO</item>
+        <item>Edo Tech Park</item>
+    </string-array>
 </resources>
