@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LunchWallet</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
 </resources>
