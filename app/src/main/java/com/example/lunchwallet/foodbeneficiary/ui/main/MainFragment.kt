@@ -28,11 +28,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.mainFragmentViewLandingPageButton.setOnClickListener {
-            Navigation
-                .findNavController(view)
-                .navigate(R.id.action_mainFragment_to_landingPageFragment)
-        }
     }
 
     override fun onDestroy() {
