@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodbeneficiary.ui.login_and_registration.LoginFragment">
+
+    <ImageView
+        android:id="@+id/loginFragment_imageView1_foodBeneficiaryTv"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launch_wallet_logo" />
+
+    <TextView
+        android:id="@+id/loginFragment_textView2_foodBeneficiaryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="68dp"
+        android:layout_toEndOf="@+id/loginFragment_imageView1_foodBeneficiaryTv"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/lunch_wallet"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/loginFragment_textView3_foodBeneficiaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_imageView1_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/hey_nwelcome_back"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/loginFragment_textView4_foodBeneficiaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_textView3_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginFragment_emailText1_foodBeneficiaryTv"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_textView4_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginFragment_emailText2_foodBeneficiaryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="@string/enter_your_decagon_email"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginFragment_textView5_foodBeneficiaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_emailText1_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginFragment_passwordText1_foodBeneficiaryTv"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_textView5_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:padding="1dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginFragment_passwordText2_foodBeneficiaryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="@string/password"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:passwordToggleEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginFragment_textView6_foodBeneficiaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginFragment_passwordText1_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/forgot_password"
+        android:textColor="#E53935"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/loginFragment_button_foodBeneficiaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/loginFragment_textView6_foodBeneficiaryTv"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E53935"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/loginFragment_textView7_foodBeneficiaryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/loginFragment_button_foodBeneficiaryTv"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginFragment_textView7_foodBeneficiaryTv"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/loginFragment_textView7_foodBeneficiaryTv"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/sign_up"
+        android:textColor="#E53935"
+        android:textFontWeight="700"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
+
+
+
+
