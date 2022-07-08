@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.ui.landingpage.adapter
+package com.example.lunchwallet.onboarding.ui.landingpage.adapter
 
 import android.view.LayoutInflater
 import android.view.View

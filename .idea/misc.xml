@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14583333333333334" />
-        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launch_wallet_splash_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-v28/slides_layout.xml" value="0.4661458333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_onboarding_screen.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.4661458333333333" />
+        <entry key="app/src/main/res/layout/slides_layout.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -13,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.14" />
+      </ProjectState>
+    </option>
   </component>
 </project>

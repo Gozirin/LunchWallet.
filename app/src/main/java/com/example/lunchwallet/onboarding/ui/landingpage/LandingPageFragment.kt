@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.ui.landingpage
+package com.example.lunchwallet.onboarding.ui.landingpage
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lunchwallet.databinding.FragmentLandingPageBinding
-import com.example.lunchwallet.foodbeneficiary.ui.landingpage.adapter.LandingPageMealsPagerAdapter
+import com.example.lunchwallet.onboarding.ui.landingpage.adapter.LandingPageMealsPagerAdapter
 
 class LandingPageFragment : Fragment() {
     private lateinit var binding: FragmentLandingPageBinding
@@ -18,7 +18,7 @@ class LandingPageFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLandingPageBinding.inflate(layoutInflater)
 
         landingPageMealsRecyclerView = binding.landingPageMealsRecyclerView
