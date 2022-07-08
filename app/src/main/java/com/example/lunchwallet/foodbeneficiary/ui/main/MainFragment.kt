@@ -6,15 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.Navigation
+import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.MainFragmentBinding
-
 
 class MainFragment : Fragment() {
 
     private var _binding: MainFragmentBinding? = null
     private val binding get() = _binding!!
     private val mainViewModel: MainViewModel by viewModels()
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,8 +27,13 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-    }
 
+        binding.mainFragmentViewLandingPageButton.setOnClickListener {
+            Navigation
+                .findNavController(view)
+                .navigate(R.id.action_mainFragment_to_landingPageFragment)
+        }
+    }
 
     override fun onDestroy() {
         super.onDestroy()
