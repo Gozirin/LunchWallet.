@@ -16,8 +16,10 @@ class OnboardingScreenFragment : Fragment() {
 
     private lateinit var onBoardingAdapter: SliderAdapter
     var onBoardingViewPager: ViewPager? = null
-    var nextButton: Button? = null
-    var skipButton: Button? = null
+    private var onBoardingData: MutableList<OnBoardingData> = ArrayList()
+    private lateinit var nextButton: Button
+    private lateinit var skipButton: Button
+    private lateinit var viewPager: ViewPager
     var position = 0
 
     override fun onCreateView(
@@ -33,8 +35,9 @@ class OnboardingScreenFragment : Fragment() {
 
         nextButton = view.findViewById(R.id.next_button)
         skipButton = view.findViewById(R.id.skip_button)
+        viewPager = view.findViewById(R.id.viewPager)
 
-        val onBoardingData: MutableList<OnBoardingData> = ArrayList()
+
         onBoardingData.add(
             OnBoardingData(
                 "Choose Food",
@@ -63,25 +66,58 @@ class OnboardingScreenFragment : Fragment() {
 
         position = onBoardingViewPager!!.currentItem
 
-        skipButton?.setOnClickListener {
+        changeTextOnButtonClick()
+        changeTextOnViewPagerSwipe()
+
+    }
+    private fun changeTextOnButtonClick(){
+        skipButton.setOnClickListener {
             if (position == onBoardingAdapter.count - 3) {
                 onBoardingViewPager!!.currentItem = onBoardingData.size - 1
-                nextButton!!.text = "Explore"
-                skipButton!!.text = ""
+                nextButton.text = "Explore"
+                skipButton.text = ""
             }
         }
 
-        nextButton?.setOnClickListener {
+        nextButton.setOnClickListener {
             if (position < onBoardingAdapter.count - 1) {
                 position++
                 onBoardingViewPager!!.currentItem = position
             }
 
             if (position == onBoardingAdapter.count - 1) {
-                nextButton!!.text = "Explore"
-                skipButton!!.text = ""
+                nextButton.text = "Explore"
+                skipButton.text = ""
             }
         }
+    }
+
+
+    private fun changeTextOnViewPagerSwipe(){
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+
+            }
+
+            override fun onPageSelected(position: Int) {
+                if(position < onBoardingAdapter.count - 1){
+                    nextButton.text = "Next"
+                    skipButton.text = "Skip"
+                }else {
+                    nextButton.text = "Explore"
+                    skipButton.text = ""
+                }
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+
+            }
+
+        })
     }
 
         private fun setOnboardingViewPagerAdapter(onBoardingData: List<OnBoardingData>){
