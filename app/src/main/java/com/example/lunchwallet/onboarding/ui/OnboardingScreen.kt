@@ -16,7 +16,7 @@ import com.example.lunchwallet.onboarding.model.OnBoardingData
 class onboardingScreen : AppCompatActivity() {
     private val viewModel: MainViewModel by viewModels()
 
-    var onBoardingAdapter: SliderAdapter ? = null
+    private lateinit var onBoardingAdapter: SliderAdapter
     var onBoardingViewPager: ViewPager? = null
     var nextButton: Button? = null
     var skipButton: Button? = null
@@ -31,6 +31,8 @@ class onboardingScreen : AppCompatActivity() {
         }
         setContentView(R.layout.activity_onboarding_screen)
 
+
+
         nextButton = findViewById(R.id.next_button)
         skipButton = findViewById(R.id.skip_button)
 
@@ -39,12 +41,14 @@ class onboardingScreen : AppCompatActivity() {
         onBoardingData.add(OnBoardingData("Scan QR Code", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam dolore quam?", R.drawable.onboarding_screen_two))
         onBoardingData.add(OnBoardingData("Enjoy Your Meal", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam dolore quam?", R.drawable.onboarding_screen_three))
 
+        onBoardingAdapter = SliderAdapter(this, onBoardingData)
         setOnboardingViewPagerAdapter(onBoardingData)
+
 
         position = onBoardingViewPager!!.currentItem
 
         skipButton?.setOnClickListener {
-            if (position == onBoardingData.size - 3){
+            if (position == onBoardingAdapter.count - 3){
                 onBoardingViewPager!!.currentItem = onBoardingData.size - 1
                 nextButton!!.text = "Explore"
                 skipButton!!.text = ""
@@ -52,18 +56,26 @@ class onboardingScreen : AppCompatActivity() {
         }
 
         nextButton?.setOnClickListener {
-            if(position < onBoardingData.size){
+            if(position < onBoardingAdapter.count - 1){
                 position++
                 onBoardingViewPager!!.currentItem = position
             }
 
-            if (position == onBoardingData.size - 1){
+            if (position == onBoardingAdapter.count - 1){
                 nextButton!!.text = "Explore"
                 skipButton!!.text = ""
             }
         }
 
-
+//        if (onBoardingViewPager!!.currentItem == 0){
+//            nextButton!!.text = "Next"
+//            skipButton!!.text = "Skip"
+//        }
+//
+//        if (onBoardingViewPager!!.currentItem == 1){
+//            nextButton!!.text = "Next"
+//            skipButton!!.text = "Skip"
+//        }
 
     }
 
