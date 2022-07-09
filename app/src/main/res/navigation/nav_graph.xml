@@ -4,12 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/selectTypeFragment">
+    app:startDestination="@id/onboardingScreenFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/onboardingScreenFragment"
+        android:name="com.example.lunchwallet.onboarding.ui.onboarding.OnboardingScreenFragment"
+        android:label="fragment_onboarding_screen"
+        tools:layout="@layout/fragment_onboarding_screen" />
+    <fragment
+        android:id="@+id/landingPageFragment"
+        android:name="com.example.lunchwallet.onboarding.ui.landingpage.LandingPageFragment"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.SignUpFragment"

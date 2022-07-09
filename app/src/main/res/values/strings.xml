@@ -44,4 +44,8 @@
         <item>UNO</item>
         <item>Edo Tech Park</item>
     </string-array>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

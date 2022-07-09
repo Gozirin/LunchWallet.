@@ -7,6 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  Organizer's Color Palette <Start>  -->
+    <color name="themePrimaryColor">#FD5900</color>
+    <color name="textPrimaryColor">#21334F</color>
+    <color name="landingPageBannerBackDropBackgroundColor">#6B000000</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <!--  Organizer's Color Palette <End>  -->
+
+    <!-- Ekene's Color Begins-->
+    <color name="bg_color_onboarding">#1AFFDE00</color>
+    <color name="button_skip">#00FFFFFF</color>
+    <!-- Ekene's Color Ends   -->
     <color name="text_color">#203350</color>
     <color name="theme_color">#FD5900</color>
     <color name="grey">#ADBACD</color>
