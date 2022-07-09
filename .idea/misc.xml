@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.212" />
+        <entry key="app/src/main/res/drawable/border2.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable/ic_angle_left.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.212" />
         <entry key="app/src/main/res/drawable/ic_cuisine.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_frame_40.xml" value="0.2285" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.184" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/fragment_check_mail.xml" value="0.2796875" />
         <entry key="app/src/main/res/layout/fragment_confrim_mail_frgament.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/fragment_select_type.xml" value="0.2796875" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.19519927536231885" />
         <entry key="app/src/main/res/layout/location_list.xml" value="0.2796875" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.2953125" />

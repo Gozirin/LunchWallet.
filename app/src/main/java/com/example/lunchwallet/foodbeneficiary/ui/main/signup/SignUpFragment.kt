@@ -29,7 +29,7 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentSignUpBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -43,6 +43,11 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     override fun onResume() {
         super.onResume()
         binding.fullNameTv.clearFocus()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     private fun stackDropDown() {
@@ -116,9 +121,5 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
                 findNavController().navigate(R.id.checkMailFragment)
             }
         }
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

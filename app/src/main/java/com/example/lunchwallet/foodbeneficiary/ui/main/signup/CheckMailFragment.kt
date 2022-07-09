@@ -9,7 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentCheckMailBinding
 
-
 class CheckMailFragment : Fragment() {
 
     private var _binding: FragmentCheckMailBinding? = null
@@ -19,7 +18,7 @@ class CheckMailFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentCheckMailBinding.inflate(inflater, container, false)
         return binding.root
     }

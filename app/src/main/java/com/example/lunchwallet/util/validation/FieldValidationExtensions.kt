@@ -1,6 +1,8 @@
 package com.example.lunchwallet.util.validation
 
 import android.content.Context
+import android.view.View
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.LifecycleOwner
@@ -62,6 +64,27 @@ fun MaterialButton.observeFieldsValidationToEnableButton(
             backgroundTintList = if (!it.values.contains(false))
                 ContextCompat.getColorStateList(context, R.color.theme_color) else
                 ContextCompat.getColorStateList(context, R.color.grey)
+        }
+    }
+}
+
+
+fun TextView.observeClicks(
+    arr: ArrayList<View?>
+) {
+    val color2 = ContextCompat.getColor(context, R.color.text_color)
+   val color1 = ContextCompat.getColor(context, R.color.theme_color)
+
+    this.setOnClickListener {
+        val current = it
+        arr.forEach {
+            it?.apply {
+                if (this == current) {
+                    background = ContextCompat.getDrawable(context, R.drawable.border).also {   setTextColor(color1) }
+                } else {
+                    background = ContextCompat.getDrawable(context, R.drawable.border2)
+                }
+            }
         }
     }
 }

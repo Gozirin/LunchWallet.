@@ -26,6 +26,10 @@
     <string name="we_have_sent_a_password_recover_instruction_to_your_account">We have sent you a link to your email for email confirmation</string>
     <string name="confirm_email_msg">Confirm email</string>
     <string name="please_confirm_your_email">Please confirm your email</string>
+    <string name="select_type">Select type</string>
+    <string name="food_beneficiary">Food Beneficiary</string>
+    <string name="kitchen_staff">Kitchen Staff</string>
+    <string name="admin">Admin</string>
     <string-array name="stack">
         <item>iOS</item>
         <item>Android</item>
