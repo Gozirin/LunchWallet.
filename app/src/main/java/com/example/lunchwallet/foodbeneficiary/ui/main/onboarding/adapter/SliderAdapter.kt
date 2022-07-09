@@ -1,4 +1,4 @@
-package com.example.lunchwallet.onboarding.adapter
+package com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
 import com.example.lunchwallet.R
-import com.example.lunchwallet.onboarding.model.OnBoardingData
+import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.model.OnBoardingData
 
 class SliderAdapter(private val context: Context, private val onBoardingDataList: List<OnBoardingData>): PagerAdapter() {
     override fun getCount(): Int {

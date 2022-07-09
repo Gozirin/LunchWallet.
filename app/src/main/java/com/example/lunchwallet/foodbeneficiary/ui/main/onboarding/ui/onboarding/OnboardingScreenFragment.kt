@@ -1,4 +1,4 @@
-package com.example.lunchwallet.onboarding.ui.onboarding
+package com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.viewpager.widget.ViewPager
 import com.example.lunchwallet.R
-import com.example.lunchwallet.onboarding.adapter.SliderAdapter
-import com.example.lunchwallet.onboarding.model.OnBoardingData
+import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.adapter.SliderAdapter
+import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.model.OnBoardingData
 
 
 class OnboardingScreenFragment : Fragment() {
