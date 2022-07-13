@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E5E5E5"
+    tools:context=".onboarding.ui.landingpage.notifications.ui.NotificationsScreenFragment">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:layout_marginTop="15sp"
+                android:src="@drawable/ic_cuisine_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="16sp"
+                android:text="Lunch Wallet"
+                android:textColor="@color/textPrimaryColor"
+                android:textFontWeight="900"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_menu_24" />
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:background="#08000000"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Back"
+            android:textColor="#21334F" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Today"
+        android:textColor="@color/textPrimaryColor"
+        android:textFontWeight="400"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <View
+        android:id="@+id/my_first_view"
+        android:layout_width="374dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 4, 2022"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="6sp"
+        app:layout_constraintStart_toStartOf="@+id/my_first_view"
+        app:layout_constraintTop_toTopOf="@id/my_first_view" />
+
+    <TextView
+        android:id="@+id/rice_and_stew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rice_and_stew"
+        android:layout_marginTop="4sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimaryColor"
+        app:layout_constraintStart_toStartOf="@+id/date_picker"
+        app:layout_constraintTop_toBottomOf="@id/date_picker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:15 pm"
+        android:layout_marginTop="4sp"
+        app:layout_constraintStart_toStartOf="@+id/rice_and_stew"
+        app:layout_constraintTop_toBottomOf="@id/rice_and_stew" />
+
+    <View
+        android:id="@+id/my_second_view"
+        android:layout_width="374dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_first_view"/>
+
+    <View
+        android:id="@+id/my_third_view"
+        android:layout_width="374dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_second_view"/>
+
+    <TextView
+        android:id="@+id/date_picke_2r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 4, 2022"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="6sp"
+        app:layout_constraintStart_toStartOf="@+id/my_second_view"
+        app:layout_constraintTop_toTopOf="@id/my_second_view" />
+
+    <TextView
+        android:id="@+id/mary_rose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mary Rose Updated time table"
+        android:layout_marginTop="4sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimaryColor"
+        app:layout_constraintStart_toStartOf="@+id/date_picke_2r"
+        app:layout_constraintTop_toBottomOf="@id/date_picke_2r" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:15 pm"
+        android:layout_marginTop="4sp"
+        app:layout_constraintStart_toStartOf="@+id/mary_rose"
+        app:layout_constraintTop_toBottomOf="@id/mary_rose" />
+
+    <TextView
+        android:id="@+id/date_picke_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 4, 2022"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="6sp"
+        app:layout_constraintStart_toStartOf="@+id/my_third_view"
+        app:layout_constraintTop_toTopOf="@id/my_third_view" />
+
+    <TextView
+        android:id="@+id/recieved_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have recieved your meal"
+        android:layout_marginTop="4sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimaryColor"
+        app:layout_constraintStart_toStartOf="@+id/date_picke_3"
+        app:layout_constraintTop_toBottomOf="@id/date_picke_3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:15 pm"
+        android:layout_marginTop="4sp"
+        app:layout_constraintStart_toStartOf="@+id/recieved_meal"
+        app:layout_constraintTop_toBottomOf="@id/recieved_meal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/my_first_view"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintLeft_toRightOf="@id/rice_and_stew"
+        app:layout_constraintRight_toRightOf="@id/my_first_view"
+        app:layout_constraintTop_toTopOf="@+id/my_first_view"
+        app:layout_constraintVertical_bias="0.384">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Serving is Ongoing"
+            android:textFontWeight="400"
+            android:textColor="@color/textNotification" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Yesterday"
+        android:textColor="@color/textPrimaryColor"
+        android:textFontWeight="400"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/my_third_view"
+        app:layout_constraintLeft_toLeftOf="@id/textView"/>
+
+    <View
+        android:id="@+id/my_fourth_view"
+        android:layout_width="374dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yesterday"/>
+
+    <TextView
+        android:id="@+id/date_picke_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 4, 2022"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="6sp"
+        app:layout_constraintStart_toStartOf="@+id/my_fourth_view"
+        app:layout_constraintTop_toTopOf="@id/my_fourth_view" />
+
+    <TextView
+        android:id="@+id/meal_collected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Collected"
+        android:layout_marginTop="4sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimaryColor"
+        app:layout_constraintStart_toStartOf="@+id/date_picke_4"
+        app:layout_constraintTop_toBottomOf="@id/date_picke_4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:15 pm"
+        android:layout_marginTop="4sp"
+        app:layout_constraintStart_toStartOf="@+id/meal_collected"
+        app:layout_constraintTop_toBottomOf="@id/meal_collected" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/my_fourth_view"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintLeft_toRightOf="@id/meal_collected"
+        app:layout_constraintRight_toRightOf="@id/my_fourth_view"
+        app:layout_constraintTop_toTopOf="@+id/my_fourth_view"
+        app:layout_constraintVertical_bias="0.384">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Recieved"
+            android:textFontWeight="400"
+            android:textColor="@color/textNotification" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
