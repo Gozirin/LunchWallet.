@@ -1,4 +1,4 @@
-package com.example.lunchwallet.onboarding.ui.landingpage.notifications.ui
+package com.example.lunchwallet.onboarding.ui.notifications.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

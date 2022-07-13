@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_landing_page" />
     <fragment
         android:id="@+id/notificationsScreenFragment"
-        android:name="com.example.lunchwallet.onboarding.ui.landingpage.notifications.ui.NotificationsScreenFragment"
+        android:name="com.example.lunchwallet.onboarding.ui.notifications.ui.NotificationsScreenFragment"
         android:label="fragment_notifications_screen"
         tools:layout="@layout/fragment_notifications_screen" />
 </navigation>

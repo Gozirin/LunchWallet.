@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#E5E5E5"
-    tools:context=".onboarding.ui.landingpage.notifications.ui.NotificationsScreenFragment">
+    tools:context=".onboarding.ui.notifications.ui.NotificationsScreenFragment">
 
     <Toolbar
         android:id="@+id/notification_toolbar"
@@ -164,6 +164,7 @@
                 android:textColor="@color/textNotification"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:textAllCaps="false"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -353,6 +354,7 @@
                 android:background="@drawable/shape2"
                 android:textColor="@color/textNotification"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:textAllCaps="false"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
