@@ -8,13 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.lunchwallet.databinding.MainFragmentBinding
 
-
 class MainFragment : Fragment() {
 
     private var _binding: MainFragmentBinding? = null
     private val binding get() = _binding!!
     private val mainViewModel: MainViewModel by viewModels()
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,7 +26,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
-
 
     override fun onDestroy() {
         super.onDestroy()

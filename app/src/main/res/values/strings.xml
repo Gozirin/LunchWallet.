@@ -13,23 +13,27 @@
     <string name="enter_your_decagon_email">Enter your Decagon email</string>
     <string name="reset_password">Reset Password</string>
     <string name="enter_the_email_associated_with_your_account_and_nwe_ll_send_an_email_with_instruction_to_reset_your_npassword">Enter the email associated with your account and\nwe \'ll send an email with instruction to reset your\npassword</string>
-<!-- Reset password-->
+    <!-- Reset password-->
     <string name="Email">Email</string>
     <string name="enter_your_mail">Enter your mail</string>
-   <string name="ResetPassword">Reset Password</string>
+    <string name="ResetPassword">Reset Password</string>
     <string name="check_mail">Check Mail</string>
     <string name="we_have_sent_a_password_recover_n_instruction_to_your_account">We have sent a password recover\n instruction to your account</string>
     <string name="open_email_app">Open email app</string>
-    <string name="did_not_receive_the_email_check_your_n_spam_filter_or">Did not receive the email? check your \n spam filter or,</string>
+    <string name="did_not_receive_the_email_check_your_n_spam_filter_or">Did not receive the email? check your \n spam filter, or</string>
     <string name="resend_instruction">resend instruction</string>
     <string name="create_new_password">Create New Password</string>
     <string name="new_password">New Password</string>
     <string name="confirm_password">Confirm Password</string>
-<!--  Create new password-->
+    <!--  Create new password-->
     <style name="new_password">New Password</style>
     <string name="Confirm_password">Confirm Password</string>
     <string name="Reset_password">Reset Password</string>
-    <string name="Password">password</string>
+    <string name="Password">Password</string>
+    <string name="your_password_has_been_n_changed_successfully">Your password has been\n changed successfully</string>
+    <string name="password_successfully_reset">Password successfully reset</string>
+    <string name="both_password_must_match">! Both password must match</string>
+    <string name="must_be_at_least_8_characters">! Must be at least 8 characters</string>
 
 
 </resources>

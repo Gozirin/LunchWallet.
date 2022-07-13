@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E0E0"
+    tools:context=".foodbeneficiary.ui.login_and_registration.SuccessModalFragment">
+
+
+    <TextView
+        android:id="@+id/successModalFragment_passwordSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/password_successfully_reset"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/successModalFragment_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/successModalFragment_passwordSuccess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/your_password_has_been_n_changed_successfully"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp" />
+
+</RelativeLayout>
