@@ -4,4 +4,10 @@
     <string name="btn_skip">Skip</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="APP_NAME">Lunch Wallet</string>
+    <string name="openDrawerContentDesc">open</string>
+    <string name="closeDrawerContentDesc">close</string>
+    <string name="food_beneficiary_menu_item_label_meal_time_table">Meal Time-table</string>
+    <string name="food_beneficiary_menu_item_label_notification">Notification</string>
+    <string name="food_beneficiary_menu_item_label_logout">Logout</string>
 </resources>
