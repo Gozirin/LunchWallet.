@@ -6,14 +6,17 @@
         <entry key="app/src/main/res/drawable-xxxhdpi/btn_bg_shape_filled.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/btn_bg_shape.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1465" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/shape2.xml" value="0.2065" />
         <entry key="app/src/main/res/drawable/shape2.xml" value="0.2065" />
         <entry key="app/src/main/res/layout-v28/slides_layout.xml" value="0.4661458333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2331288343558282" />
         <entry key="app/src/main/res/layout/activity_onboarding_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.2389937106918239" />
+        <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_side_bar_menu.xml" value="0.21052631578947367" />
