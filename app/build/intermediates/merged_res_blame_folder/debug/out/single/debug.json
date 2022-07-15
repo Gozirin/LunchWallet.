@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/menu_navigation_drawer_menu.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/menu/navigation_drawer_menu.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_5.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_5.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_slides_layout.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/slides_layout.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_hamburger.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_hamburger.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_fragment_landing_page.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_landing_page.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_extralight.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_extralight.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_1.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_1.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_landing_page_meal_pager_item_image.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/landing_page_meal_pager_item_image.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_logout_confirmation.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/logout_confirmation.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_semibold.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_semibold.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_fragment_food_beneficiary_dashboard.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_menu_meal_plate.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_menu_meal_plate.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launch_wallet_splash_screen.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launch_wallet_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launch_wallet_logo.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launch_wallet_logo.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_light.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_light.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-v24_onboarding_screen_one.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-v24/onboarding_screen_one.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_6.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_6.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_main_fragment.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_regular.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_regular.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_menu_notification.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_menu_notification.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_launch_wallet_logo.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launch_wallet_logo.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_3.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_3.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-v24_onboarding_screen_two.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-v24/onboarding_screen_two.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_sidebar_menu.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/sidebar_menu.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_landing_page_meal_pager_item.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/landing_page_meal_pager_item.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_7.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_7.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_menu_sign_out.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_menu_sign_out.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_toolbar.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/toolbar.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_landing_page_banner.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/landing_page_banner.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_fragment_onboarding_screen.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_onboarding_screen.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_navigation_drawer_menu_header.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/navigation_drawer_menu_header.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_4.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_4.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_close.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_close.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-v24_onboarding_screen_three.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-v24/onboarding_screen_three.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_launch_wallet_splash_screen.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launch_wallet_splash_screen.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_landing_page_dish_2.jpg.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/landing_page_dish_2.jpg"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_extrabold.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_extrabold.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_menu_notification.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_notification.png"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_bold.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_bold.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_medium.ttf.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_medium.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_btn_bg_shape_outline.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/btn_bg_shape_outline.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_btn_bg_shape_filled.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/btn_bg_shape_filled.xml"
+    }
+]

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color_onboarding">#1AFFDE00</color>
+    <color name="black">#FF000000</color>
+    <color name="button_skip">#00FFFFFF</color>
+    <color name="landingPageBannerBackDropBackgroundColor">#6B000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textPrimaryColor">#21334F</color>
+    <color name="themePrimaryColor">#FD5900</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="APP_NAME">Lunch Wallet</string>
+    <string name="app_name">LunchWallet</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
+    <string name="closeDrawerContentDesc">close</string>
+    <string name="food_beneficiary_menu_item_label_logout">Logout</string>
+    <string name="food_beneficiary_menu_item_label_meal_time_table">Meal Time-table</string>
+    <string name="food_beneficiary_menu_item_label_notification">Notification</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="openDrawerContentDesc">open</string>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launch_wallet_splash_screen</item>
+        <item name="postSplashScreenTheme">@style/Theme.LunchWallet</item>
+    </style>
+    <style name="Theme.LunchWallet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">@color/white</item>
+        
+    </style>
+    <style name="Theme.LunchWallet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.LunchWallet.ToolBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="navigation_view_item_text">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
+    </style>
+</resources>
