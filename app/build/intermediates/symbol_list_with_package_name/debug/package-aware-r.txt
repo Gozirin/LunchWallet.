@@ -1828,6 +1828,7 @@ color test_color
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color textColorWhite
+color textNotification
 color textPrimaryColor
 color themePrimaryColor
 color tooltip_background_dark
@@ -2531,8 +2532,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_back
+drawable ic_baseline_menu_24
 drawable ic_clock_black_24dp
 drawable ic_close
+drawable ic_cuisine_logo
 drawable ic_hamburger
 drawable ic_keyboard_black_24dp
 drawable ic_launch_wallet_logo
@@ -2603,6 +2607,8 @@ drawable notify_panel_notification_icon_bg
 drawable onboarding_screen_one
 drawable onboarding_screen_three
 drawable onboarding_screen_two
+drawable shape
+drawable shape2
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2758,6 +2764,10 @@ id currentState
 id custom
 id customPanel
 id cut
+id date_picker
+id date_picker_2
+id date_picker_3
+id date_picker_4
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2939,7 +2949,11 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_desc
+id my_first_view
+id my_fourth_view
 id my_image
+id my_second_view
+id my_third_view
 id my_title
 id nav_controller_view_tag
 id nav_graph
@@ -2961,9 +2975,12 @@ id noState
 id none
 id normal
 id north
+id notification_back_view
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notification_toolbar
+id notificationsScreenFragment
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -2995,6 +3012,10 @@ id rectangles
 id relativeLayout2
 id relative_layout
 id reverseSawtooth
+id rice_and_stew
+id rice_and_stew_2
+id rice_and_stew_3
+id rice_and_stew_4
 id right
 id rightToLeft
 id right_icon
@@ -3093,6 +3114,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3143,6 +3165,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yesterday
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -3257,6 +3280,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_food_beneficiary_dashboard
 layout fragment_landing_page
+layout fragment_notifications_screen
 layout fragment_onboarding_screen
 layout landing_page_meal_pager_item
 layout logout_confirmation
@@ -3355,6 +3379,7 @@ mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string APP_NAME
+string Rice_and_stew
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

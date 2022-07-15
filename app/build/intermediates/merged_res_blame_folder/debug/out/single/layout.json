@@ -20,6 +20,10 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_onboarding_screen.xml"
     },
     {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notifications_screen.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_notifications_screen.xml"
+    },
+    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/landing_page_meal_pager_item.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/landing_page_meal_pager_item.xml"
     },

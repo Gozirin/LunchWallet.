@@ -25,4 +25,9 @@
         android:name="com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment"
         android:label="fragment_food_beneficiary_dashboard"
         tools:layout="@layout/fragment_food_beneficiary_dashboard" />
+    <fragment
+        android:id="@+id/notificationsScreenFragment"
+        android:name="com.example.lunchwallet.onboarding.ui.notifications.ui.NotificationsScreenFragment"
+        android:label="fragment_notifications_screen"
+        tools:layout="@layout/fragment_notifications_screen" />
 </navigation>

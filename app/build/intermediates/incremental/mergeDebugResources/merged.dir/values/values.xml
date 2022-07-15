@@ -829,6 +829,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="test_color">#000</color>
     <color name="textColorWhite">#FFFFFF</color>
+    <color name="textNotification">#14A800</color>
     <color name="textPrimaryColor">#21334F</color>
     <color name="themePrimaryColor">#FD5900</color>
     <color name="tooltip_background_dark">#e6616161</color>
@@ -1610,6 +1611,7 @@
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
     <string name="APP_NAME">Lunch Wallet</string>
+    <string name="Rice_and_stew">Rice &amp; Stew</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
