@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.ui.main.signup
+package com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.checkmail
 
 import android.os.Bundle
 import android.view.LayoutInflater

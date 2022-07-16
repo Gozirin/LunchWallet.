@@ -1,16 +1,15 @@
 package com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.onboarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.lunchwallet.R
 import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.adapter.SliderAdapter
 import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.model.OnBoardingData
-
 
 class OnboardingScreenFragment : Fragment() {
 
@@ -23,7 +22,8 @@ class OnboardingScreenFragment : Fragment() {
     var position = 0
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
@@ -36,7 +36,6 @@ class OnboardingScreenFragment : Fragment() {
         nextButton = view.findViewById(R.id.next_button)
         skipButton = view.findViewById(R.id.skip_button)
         viewPager = view.findViewById(R.id.viewPager)
-
 
         onBoardingData.add(
             OnBoardingData(
@@ -60,17 +59,14 @@ class OnboardingScreenFragment : Fragment() {
             )
         )
 
-
         setOnboardingViewPagerAdapter(onBoardingData)
-
 
         position = onBoardingViewPager!!.currentItem
 
         changeTextOnButtonClick()
         changeTextOnViewPagerSwipe()
-
     }
-    private fun changeTextOnButtonClick(){
+    private fun changeTextOnButtonClick() {
         skipButton.setOnClickListener {
             if (position == onBoardingAdapter.count - 3) {
                 onBoardingViewPager!!.currentItem = onBoardingData.size - 1
@@ -92,39 +88,34 @@ class OnboardingScreenFragment : Fragment() {
         }
     }
 
-
-    private fun changeTextOnViewPagerSwipe(){
-        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+    private fun changeTextOnViewPagerSwipe() {
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
                 positionOffsetPixels: Int
             ) {
-
             }
 
             override fun onPageSelected(position: Int) {
-                if(position < onBoardingAdapter.count - 1){
+                if (position < onBoardingAdapter.count - 1) {
                     nextButton.text = "Next"
                     skipButton.text = "Skip"
-                }else {
+                } else {
                     nextButton.text = "Explore"
                     skipButton.text = ""
                 }
             }
 
             override fun onPageScrollStateChanged(state: Int) {
-
             }
-
         })
     }
 
-        private fun setOnboardingViewPagerAdapter(onBoardingData: List<OnBoardingData>){
-            onBoardingViewPager = view?.findViewById(R.id.viewPager)
-            onBoardingAdapter = SliderAdapter(requireActivity(), onBoardingData)
+    private fun setOnboardingViewPagerAdapter(onBoardingData: List<OnBoardingData>) {
+        onBoardingViewPager = view?.findViewById(R.id.viewPager)
+        onBoardingAdapter = SliderAdapter(requireActivity(), onBoardingData)
 
-            onBoardingViewPager!!.adapter = onBoardingAdapter
-        }
-
+        onBoardingViewPager!!.adapter = onBoardingAdapter
+    }
 }

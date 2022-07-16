@@ -9,16 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentSignUpBinding
-import com.example.lunchwallet.util.validation.FieldValidationTracker
-import com.example.lunchwallet.util.validation.FieldValidationTracker.populateFieldTypeMap
+import com.example.lunchwallet.util.validation.FieldValidations.validateConfirmPassword
 import com.example.lunchwallet.util.validation.FieldValidations.verifyEmail
 import com.example.lunchwallet.util.validation.FieldValidations.verifyLocation
 import com.example.lunchwallet.util.validation.FieldValidations.verifyName
 import com.example.lunchwallet.util.validation.FieldValidations.verifyPassword
 import com.example.lunchwallet.util.validation.FieldValidations.verifyStack
-import com.example.lunchwallet.util.validation.observeFieldsValidationToEnableButton
-import com.example.lunchwallet.util.validation.validateConfirmPassword
-import com.example.lunchwallet.util.validation.validateField
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 
@@ -38,16 +34,16 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
         super.onViewCreated(view, savedInstanceState)
         stackDropDown()
         locationDropDown()
-        validateFields()
-    }
-    override fun onResume() {
-        super.onResume()
-        binding.fullNameTv.clearFocus()
-    }
+        nameFocusListener()
+        emailFocusListener()
+        stackFocusListener()
+        locationFocusListener()
+        passwordFocusListener()
+        confirmPasswordFocusListener()
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        binding.signUpBtn.setOnClickListener {
+            submitForm()
+        }
     }
 
     private fun stackDropDown() {
@@ -66,60 +62,78 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
         }
     }
 
-    private fun validateFields() {
-
-        val fieldTypesToValidate = listOf(
-            FieldValidationTracker.FieldType.NAME,
-            FieldValidationTracker.FieldType.EMAIL,
-            FieldValidationTracker.FieldType.STACK,
-            FieldValidationTracker.FieldType.LOCATION,
-            FieldValidationTracker.FieldType.PASSWORD,
-            FieldValidationTracker.FieldType.CONFIRM_PASSWORD
-        )
-        populateFieldTypeMap(fieldTypesToValidate)
-
-        binding.apply {
-            fullNameContainer.validateField(
-                getString(R.string.enter_valid_name_str), FieldValidationTracker.FieldType.NAME
-            ) { input ->
-                verifyName(input)
-            }
-            emailContainer.validateField(
-                getString(R.string.enter_valid_email_str), FieldValidationTracker.FieldType.EMAIL
-            ) { input ->
-                verifyEmail(input)
-            }
-
-            stackContainer.validateField(
-                getString(R.string.select_stack), FieldValidationTracker.FieldType.STACK
-            ) { input ->
-                verifyStack(input)
-            }
-
-            locationContainer.validateField(
-                getString(R.string.select_location), FieldValidationTracker.FieldType.LOCATION
-            ) { input ->
-                verifyLocation(input)
-            }
-            passwordContainer.validateField(
-                getString(R.string.enter_valid_password_str),
-                FieldValidationTracker.FieldType.PASSWORD
-            ) { input ->
-                verifyPassword(input)
-            }
-            confirmPasswordContainer.validateConfirmPassword(
-                passwordContainer, FieldValidationTracker.FieldType.CONFIRM_PASSWORD,
-                getString(R.string.enter_valid_confirm_password_str)
-            )
-
-            signUpBtn.observeFieldsValidationToEnableButton(
-                requireContext(),
-                viewLifecycleOwner
-            )
-
-            signUpBtn.setOnClickListener {
-                findNavController().navigate(R.id.checkMailFragment)
-            }
+    private fun nameFocusListener() {
+        binding.fullNameTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.fullNameContainer.helperText = verifyName(binding.fullNameTv.text.toString())
         }
     }
+    private fun emailFocusListener() {
+        binding.emailTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.emailContainer.helperText = verifyEmail(binding.emailTv.text.toString())
+        }
+    }
+    private fun stackFocusListener() {
+        binding.stackTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.stackContainer.helperText = verifyStack(binding.stackTv.text.toString())
+        }
+    }
+    private fun locationFocusListener() {
+        binding.locationTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.locationContainer.helperText = verifyLocation(binding.locationTv.text.toString())
+        }
+    }
+    private fun passwordFocusListener() {
+        binding.passwordTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.passwordContainer.helperText = verifyPassword(binding.passwordTv.text.toString())
+        }
+    }
+    private fun confirmPasswordFocusListener() {
+        binding.confirmPasswordTv.setOnFocusChangeListener { _, focused ->
+            if (focused)
+                binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.passwordTv.text.toString(), binding.confirmPasswordTv.text.toString())
+        }
+    }
+
+    private fun submitForm() {
+        binding.fullNameContainer.helperText = verifyName(binding.fullNameTv.toString())
+        binding.emailContainer.helperText = verifyEmail(binding.emailTv.toString())
+        binding.stackContainer.helperText = verifyStack(binding.fullNameTv.toString())
+        binding.locationContainer.helperText = verifyLocation(binding.fullNameTv.toString())
+        binding.passwordContainer.helperText = verifyPassword(binding.fullNameTv.toString())
+        binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.passwordTv.toString(), binding.confirmPasswordTv.toString())
+
+        val validName = binding.fullNameContainer.helperText == null
+        val validEmail = binding.emailContainer.helperText == null
+        val validStack = binding.stackContainer.helperText == null
+        val validLocation = binding.locationContainer.helperText == null
+        val validPassword = binding.passwordContainer.helperText == null
+        val validConfirmPassword = binding.confirmPasswordContainer.helperText == null
+
+        if (validEmail && validName && validStack && validLocation && validPassword && validConfirmPassword) {
+            findNavController().navigate(R.id.checkMailFragment)
+        } else { invalidForm() }
+    }
+
+    private fun invalidForm() {
+        var message = ""
+        if (binding.fullNameContainer.helperText != null)
+            message = "\n\nName: " + binding.emailContainer.helperText
+        if (binding.emailContainer.helperText != null)
+            message += "\n\nEmail: " + binding.emailContainer.helperText
+        if (binding.stackContainer.helperText != null)
+            message += "\n\nStack: " + binding.stackContainer.helperText
+        if (binding.locationContainer.helperText != null)
+            message += "\n\nLocation: " + binding.locationContainer.helperText
+        if (binding.passwordContainer.helperText != null)
+            message += "\n\nPassword: " + binding.passwordContainer.helperText
+        if (binding.fullNameContainer.helperText != null)
+            message += "\n\nName: " + binding.confirmPasswordContainer.helperText
+    }
 }
+
+

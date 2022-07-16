@@ -6,34 +6,60 @@ import com.example.lunchwallet.R
 object FieldValidations {
 
     // Function to verify the name of the intended user
-    fun verifyName(name: String): Boolean {
+    fun verifyName(name: String): String? {
         val regex = Regex("^([a-zA-Z]{2,}\\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)")
-        return name.isNotBlank() && name.matches(regex) && name.length >= 2
+        return if (name.isNotEmpty() && name.matches(regex) && name.length >= 2) {
+            null
+        } else {
+            "Please enter first name & last name"
+        }
     }
 
     // Function to verify the e-mail of the intended user
-    fun verifyEmail(email: String): Boolean {
+    fun verifyEmail(email: String): String? {
         val regex = Regex("^[a-zA-Z.]+@(?:(?:[a-zA-Z-]+\\.)?[a-zA-Z]+\\.)?(decagon.dev|decagonhq.com)\$")
-        return email.isNotBlank() && email.matches(regex)
+        return if (email.isNotEmpty() && email.matches(regex)) {
+            null
+        } else {
+            "Please enter your decagon email"
+        }
     }
 
-    fun verifyStack(stack: String): Boolean {
-        return stack.isNotEmpty()
+    fun verifyStack(stack: String): String? {
+        val arrayList= listOf<String>("iOS","Android","Golang","Python","Node",".NET","Java")
+        return if (arrayList.contains(stack)) {
+            null
+        } else {
+            "Please select a stack"
+        }
     }
 
-    fun verifyLocation(location: String): Boolean {
-        return location.isNotEmpty()
+    fun verifyLocation(location: String): String? {
+        val arrayList= listOf<String>("Farah Park","UNO","Edo Tech Park")
+        return if (arrayList.contains(location)) {
+            null
+        } else {
+            "Please select a location"
+        }
     }
 
     // Function to verify the password of the intended user
-    fun verifyPassword(password: String): Boolean {
+    fun verifyPassword(password: String): String? {
         val regex = Regex(
             "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\da-zA-Z]).{8,15}\$"
         )
-        return password.isNotBlank() && password.matches(regex)
+        return if (password.isNotEmpty() && password.matches(regex)) {
+            null
+        } else {
+            "Password must be at least 8 characters with 1 special character, a digit, 1 uppercase, and 1 lowercase"
+        }
     }
 
-    fun validateConfirmPassword(password: String, confirmPassword: String): Boolean {
-        return password == confirmPassword && password.isNotBlank()
+    fun validateConfirmPassword(password: String, confirmPassword: String): String? {
+        return if (password == confirmPassword && password.isNotBlank()) {
+            null
+        } else {
+            "Password does not match"
+        }
     }
 }
