@@ -11,6 +11,9 @@
     <!--  Organizer's Color Palette <Start>  -->
     <color name="themePrimaryColor">#FD5900</color>
     <color name="textPrimaryColor">#21334F</color>
+    <color name="textSecondaryColor">#AAB2C5</color>
+    <color name="textSuccess">#14A800</color>
+    <color name="textDanger">#D00000</color>
     <color name="landingPageBannerBackDropBackgroundColor">#6B000000</color>
     <color name="textColorWhite">#FFFFFF</color>
     <!--  Organizer's Color Palette <End>  -->

@@ -1,5 +1,6 @@
 package com.example.lunchwallet.onboarding.ui.landingpage
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lunchwallet.MainActivity
 import com.example.lunchwallet.databinding.FragmentLandingPageBinding
 import com.example.lunchwallet.onboarding.ui.landingpage.adapter.LandingPageMealsPagerAdapter
 
@@ -28,5 +30,12 @@ class LandingPageFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (requireActivity() as MainActivity).apply {
+            setStatusBarColor(Color.WHITE)
+        }
     }
 }
