@@ -1,7 +1,5 @@
 package com.example.lunchwallet.util.validation
 
-import com.example.lunchwallet.R
-
 // Validation object for Sign-Up
 object FieldValidations {
 
@@ -26,7 +24,7 @@ object FieldValidations {
     }
 
     fun verifyStack(stack: String): String? {
-        val arrayList= listOf<String>("iOS","Android","Golang","Python","Node",".NET","Java")
+        val arrayList = listOf<String>("iOS", "Android", "Golang", "Python", "Node", ".NET", "Java")
         return if (arrayList.contains(stack)) {
             null
         } else {
@@ -35,7 +33,7 @@ object FieldValidations {
     }
 
     fun verifyLocation(location: String): String? {
-        val arrayList= listOf<String>("Farah Park","UNO","Edo Tech Park")
+        val arrayList = listOf<String>("Farah Park", "UNO", "Edo Tech Park")
         return if (arrayList.contains(location)) {
             null
         } else {
