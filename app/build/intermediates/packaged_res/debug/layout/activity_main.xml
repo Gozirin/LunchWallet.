@@ -20,43 +20,63 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/main_activity_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingHorizontal="10dp">
+                android:orientation="vertical">
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_launch_wallet_logo"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp">
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/manrope_extrabold"
-                        android:textSize="16sp"
-                        android:textColor="@color/textPrimaryColor"
-                        android:text="@string/APP_NAME"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="5dp"/>
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_launch_wallet_logo"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_extrabold"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimaryColor"
+                            android:text="@string/APP_NAME"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/toolbar_ic_hambuger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_hamburger" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
                 </androidx.appcompat.widget.LinearLayoutCompat>
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/toolbar_ic_hambuger"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_hamburger" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#f8f8f8"/>
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.Toolbar>
 
@@ -80,6 +100,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        app:itemIconTint="@color/drawer_item"
+        app:itemTextColor="@color/drawer_item"
+        app:itemBackground="@color/drawer_item_bg"
         app:headerLayout="@layout/navigation_drawer_menu_header"
         app:menu="@menu/navigation_drawer_menu"
         app:itemTextAppearance="@style/navigation_view_item_text"/>

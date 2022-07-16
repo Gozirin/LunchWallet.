@@ -1314,6 +1314,8 @@ int color dim_foreground_disabled_material_dark 0x7f050057
 int color dim_foreground_disabled_material_light 0x7f050058
 int color dim_foreground_material_dark 0x7f050059
 int color dim_foreground_material_light 0x7f05005a
+int color drawer_item 0x7f050265
+int color drawer_item_bg 0x7f050266
 int color error_color_material_dark 0x7f05005b
 int color error_color_material_light 0x7f05005c
 int color foreground_material_dark 0x7f05005d
@@ -1827,8 +1829,11 @@ int color test_color 0x7f050258
 int color test_mtrl_calendar_day 0x7f050259
 int color test_mtrl_calendar_day_selected 0x7f05025a
 int color textColorWhite 0x7f05025b
+int color textDanger 0x7f050263
 int color textNotification 0x7f050261
 int color textPrimaryColor 0x7f05025c
+int color textSecondaryColor 0x7f050262
+int color textSuccess 0x7f050264
 int color themePrimaryColor 0x7f05025d
 int color tooltip_background_dark 0x7f05025e
 int color tooltip_background_light 0x7f05025f
@@ -2526,6 +2531,7 @@ int drawable btn_radio_on_mtrl 0x7f070062
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070063
 int drawable compat_splash_screen 0x7f070064
 int drawable compat_splash_screen_no_icon_background 0x7f070065
+int drawable current_day_background 0x7f0700c0
 int drawable design_fab_background 0x7f070066
 int drawable design_ic_visibility 0x7f070067
 int drawable design_ic_visibility_off 0x7f070068
@@ -2612,6 +2618,9 @@ int drawable test_custom_background 0x7f0700ae
 int drawable test_level_drawable 0x7f0700af
 int drawable tooltip_frame_dark 0x7f0700b0
 int drawable tooltip_frame_light 0x7f0700b1
+int drawable view_group_border 0x7f0700c1
+int drawable view_group_border_oval 0x7f0700c2
+int drawable view_group_border_oval_v2 0x7f0700c3
 int font manrope_bold 0x7f080000
 int font manrope_extrabold 0x7f080001
 int font manrope_extralight 0x7f080002
@@ -2721,10 +2730,13 @@ int id bounceEnd 0x7f090062
 int id bounceStart 0x7f090063
 int id buttonPanel 0x7f090064
 int id cache_measures 0x7f090065
+int id calendarRecyclerView 0x7f09022e
+int id calender_cell_parent_view 0x7f090237
 int id callMeasure 0x7f090066
 int id cancel_action 0x7f090067
 int id cancel_button 0x7f090068
 int id carryVelocity 0x7f090069
+int id cellDayText 0x7f09022b
 int id center 0x7f09006a
 int id centerCrop 0x7f09006b
 int id centerInside 0x7f09006c
@@ -2768,6 +2780,7 @@ int id date_picker_2 0x7f09021b
 int id date_picker_3 0x7f09021c
 int id date_picker_4 0x7f09021d
 int id date_picker_actions 0x7f090090
+int id days_of_the_week_layout 0x7f09022f
 int id decelerate 0x7f090091
 int id decelerateAndComplete 0x7f090092
 int id decor_content_parent 0x7f090093
@@ -2908,6 +2921,7 @@ int id material_timepicker_ok_button 0x7f090116
 int id material_timepicker_view 0x7f090117
 int id material_value_index 0x7f090118
 int id matrix 0x7f090119
+int id meal_time_table 0x7f09022c
 int id media_actions 0x7f09011a
 int id menu_component_close_vector 0x7f090209
 int id menu_item_logout 0x7f090212
@@ -2916,6 +2930,7 @@ int id menu_item_notification 0x7f090214
 int id message 0x7f09011b
 int id middle 0x7f09011c
 int id mini 0x7f09011d
+int id monthYearTV 0x7f090238
 int id month_grid 0x7f09011e
 int id month_navigation_bar 0x7f09011f
 int id month_navigation_fragment_toggle 0x7f090120
@@ -3123,6 +3138,13 @@ int id textinput_helper_text 0x7f0901dc
 int id textinput_placeholder 0x7f0901dd
 int id textinput_prefix_text 0x7f0901de
 int id textinput_suffix_text 0x7f0901df
+int id th_fri 0x7f090230
+int id th_mon 0x7f090231
+int id th_sat 0x7f090232
+int id th_sun 0x7f090233
+int id th_thu 0x7f090234
+int id th_tue 0x7f090235
+int id th_wed 0x7f090236
 int id time 0x7f0901e0
 int id title 0x7f0901e1
 int id titleDividerNoCustom 0x7f0901e2
@@ -3156,6 +3178,7 @@ int id view_tree_saved_state_registry_owner 0x7f0901fb
 int id view_tree_view_model_store_owner 0x7f0901fc
 int id visible 0x7f0901fd
 int id visible_removing_fragment_view_tag 0x7f0901fe
+int id weekly_updated 0x7f09022d
 int id west 0x7f0901ff
 int id withText 0x7f090200
 int id withinBounds 0x7f090201
@@ -3261,6 +3284,7 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_main 0x7f0c001c
+int layout calender_cell 0x7f0c008e
 int layout custom_dialog 0x7f0c001d
 int layout design_bottom_navigation_item 0x7f0c001e
 int layout design_bottom_sheet_dialog 0x7f0c001f
@@ -3379,6 +3403,8 @@ int navigation nav_graph 0x7f0e0000
 int plurals mtrl_badge_content_description 0x7f0f0000
 int string APP_NAME 0x7f100080
 int string Rice_and_stew 0x7f100086
+int string _12_15pm_to_01_00pm 0x7f100087
+int string _7_00pm_to_07_30pm 0x7f100088
 int string abc_action_bar_home_description 0x7f100000
 int string abc_action_bar_up_description 0x7f100001
 int string abc_action_menu_overflow_description 0x7f100002
@@ -3409,8 +3435,11 @@ int string abc_toolbar_collapse_description 0x7f10001a
 int string androidx_startup 0x7f10001b
 int string app_name 0x7f10001c
 int string appbar_scrolling_view_behavior 0x7f10001d
+int string beans_amp_rice 0x7f100089
+int string beans_pourage 0x7f10008a
 int string bottom_sheet_behavior 0x7f10001e
 int string bottomsheet_action_expand_halfway 0x7f10001f
+int string brunch 0x7f10008b
 int string btn_next 0x7f100020
 int string btn_skip 0x7f100021
 int string character_counter_content_description 0x7f100022
@@ -3419,6 +3448,9 @@ int string character_counter_pattern 0x7f100024
 int string chip_text 0x7f100025
 int string clear_text_end_icon_content_description 0x7f100026
 int string closeDrawerContentDesc 0x7f100081
+int string dinner 0x7f10008c
+int string efo_amp_semo 0x7f10008d
+int string egusi_amp_semo 0x7f10008e
 int string error_icon_content_description 0x7f100027
 int string exposed_dropdown_menu_content_description 0x7f100028
 int string fab_transformation_scrim_behavior 0x7f100029
@@ -3430,6 +3462,7 @@ int string hello_blank_fragment 0x7f10002b
 int string hide_bottom_view_on_scroll_behavior 0x7f10002c
 int string icon_content_description 0x7f10002d
 int string item_view_role_description 0x7f10002e
+int string jollof_rice_amp_egg 0x7f10008f
 int string label 0x7f10002f
 int string m3_ref_typeface_brand_medium 0x7f100030
 int string m3_ref_typeface_brand_regular 0x7f100031
@@ -3504,14 +3537,19 @@ int string mtrl_picker_toggle_to_year_selection 0x7f100075
 int string mtrl_timepicker_confirm 0x7f100076
 int string nav_app_bar_navigate_up_description 0x7f100077
 int string nav_app_bar_open_drawer_description 0x7f100078
+int string not_serving 0x7f100090
 int string openDrawerContentDesc 0x7f100082
 int string password_toggle_content_description 0x7f100079
 int string path_password_eye 0x7f10007a
 int string path_password_eye_mask_strike_through 0x7f10007b
 int string path_password_eye_mask_visible 0x7f10007c
 int string path_password_strike_through 0x7f10007d
+int string rice_amp_chicken 0x7f100091
+int string scan_qr_code 0x7f100092
 int string search_menu_title 0x7f10007e
+int string serving 0x7f100093
 int string status_bar_notification_info_overflow 0x7f10007f
+int string uno_kitchen 0x7f100094
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002
@@ -4058,7 +4096,6 @@ int style Theme_Design_Light_BottomSheetDialog 0x7f110217
 int style Theme_Design_Light_NoActionBar 0x7f110218
 int style Theme_Design_NoActionBar 0x7f110219
 int style Theme_LunchWallet 0x7f11021a
-int style Theme_LunchWallet_PopupOverlay 0x7f110432
 int style Theme_LunchWallet_ToolBar 0x7f110434
 int style Theme_Material3_Dark 0x7f11021b
 int style Theme_Material3_Dark_BottomSheetDialog 0x7f11021c
