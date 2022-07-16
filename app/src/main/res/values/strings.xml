@@ -34,6 +34,9 @@
     <string name="password_successfully_reset">Password successfully reset</string>
     <string name="both_password_must_match">! Both password must match</string>
     <string name="must_be_at_least_8_characters">! Must be at least 8 characters</string>
+    <string name="did_not_receive_the_email_check_your">Did not receive the email check your</string>
+    <string name="spam_filter_or">spam filter, or</string>
+    <string name="Resend_instruction">Resend Instruction</string>
 
 
 </resources>

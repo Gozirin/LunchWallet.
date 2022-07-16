@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_checkMailResetPasswordFragment_to_createNewPasswordFragment"
             app:destination="@id/createNewPasswordFragment" />
+        <action
+            android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/createNewPasswordFragment"

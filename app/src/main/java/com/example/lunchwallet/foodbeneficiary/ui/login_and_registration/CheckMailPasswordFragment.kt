@@ -23,10 +23,17 @@ class CheckMailResetPasswordFragment : Fragment(R.layout.fragment_check_mail_pas
         _binding = FragmentCheckMailPasswordBinding.inflate(inflater, container, false)
         return binding.root
     }
-
+    // Initialising Binding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.checkmailPasswordFragmentButtonFoodBeneficiary.setOnClickListener { findNavController().navigate(R.id.action_checkMailResetPasswordFragment_to_createNewPasswordFragment)
+        binding.checkmailPasswordFragmentButtonFoodBeneficiary.setOnClickListener {
+            findNavController().navigate(R.id.action_checkMailResetPasswordFragment_to_createNewPasswordFragment)
+        }
+        // Resend Instruction_Text Back to Reset_Password_Fragment
+        binding.checkmailPasswordFragmentInstructionFoodBeneficiary.setOnClickListener {
+            findNavController().navigate(R.id.action_checkMailResetPasswordFragment_to_resetPasswordFragment)
         }
     }
 }
+
+
