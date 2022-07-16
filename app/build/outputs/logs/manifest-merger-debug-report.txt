@@ -37,7 +37,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/decagon/
 MERGED from [androidx.window:window:1.0.0] /Users/decagon/.gradle/caches/transforms-3/ae91a8fdf401bae412c8ec97693b21b0/transformed/jetified-window-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.core:core-ktx:1.8.0] /Users/decagon/.gradle/caches/transforms-3/db1367d27e403b5f43444d19035ed08f/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/decagon/.gradle/caches/transforms-3/2006c09a8e8169a206638315290460e6/transformed/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/decagon/.gradle/caches/transforms-3/679d6bef4692106b0931e0422eca9904/transformed/jetified-core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] /Users/decagon/.gradle/caches/transforms-3/c2181512759142442bbda5d6defa4faa/transformed/jetified-core-splashscreen-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /Users/decagon/.gradle/caches/transforms-3/2adea5f645164c57fbcc724fec02e051/transformed/jetified-appcompat-resources-1.4.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/decagon/.gradle/caches/transforms-3/5dba839fd48f2df1610f5c78742adaef/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/decagon/.gradle/caches/transforms-3/b042bc9ecabc6c452ffe8c37837845eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
@@ -214,8 +214,8 @@ MERGED from [androidx.core:core-ktx:1.8.0] /Users/decagon/.gradle/caches/transfo
 MERGED from [androidx.core:core-ktx:1.8.0] /Users/decagon/.gradle/caches/transforms-3/db1367d27e403b5f43444d19035ed08f/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/decagon/.gradle/caches/transforms-3/2006c09a8e8169a206638315290460e6/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/decagon/.gradle/caches/transforms-3/2006c09a8e8169a206638315290460e6/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/decagon/.gradle/caches/transforms-3/679d6bef4692106b0931e0422eca9904/transformed/jetified-core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/decagon/.gradle/caches/transforms-3/679d6bef4692106b0931e0422eca9904/transformed/jetified-core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] /Users/decagon/.gradle/caches/transforms-3/c2181512759142442bbda5d6defa4faa/transformed/jetified-core-splashscreen-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] /Users/decagon/.gradle/caches/transforms-3/c2181512759142442bbda5d6defa4faa/transformed/jetified-core-splashscreen-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /Users/decagon/.gradle/caches/transforms-3/2adea5f645164c57fbcc724fec02e051/transformed/jetified-appcompat-resources-1.4.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /Users/decagon/.gradle/caches/transforms-3/2adea5f645164c57fbcc724fec02e051/transformed/jetified-appcompat-resources-1.4.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/decagon/.gradle/caches/transforms-3/5dba839fd48f2df1610f5c78742adaef/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
