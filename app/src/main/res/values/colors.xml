@@ -11,6 +11,9 @@
     <!--  Organizer's Color Palette <Start>  -->
     <color name="themePrimaryColor">#FD5900</color>
     <color name="textPrimaryColor">#21334F</color>
+    <color name="textSecondaryColor">#AAB2C5</color>
+    <color name="textSuccess">#14A800</color>
+    <color name="textDanger">#D00000</color>
     <color name="landingPageBannerBackDropBackgroundColor">#6B000000</color>
     <color name="textColorWhite">#FFFFFF</color>
     <!--  Organizer's Color Palette <End>  -->
@@ -18,6 +21,7 @@
     <!-- Ekene's Color Begins-->
     <color name="bg_color_onboarding">#1AFFDE00</color>
     <color name="button_skip">#00FFFFFF</color>
+    <color name="textNotification">#14A800</color>
     <!-- Ekene's Color Ends   -->
     <color name="text_color">#203350</color>
     <color name="theme_color">#FD5900</color>
