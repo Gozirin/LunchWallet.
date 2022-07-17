@@ -55,7 +55,7 @@ object FieldValidations {
     }
 
     fun validateConfirmPassword(password: String, confirmPassword: String): String? {
-        return if (password == confirmPassword && confirmPassword.isNotBlank()) {
+        return if (password == confirmPassword) {
             null
         } else {
             "Password does not match"

@@ -6,6 +6,7 @@
     app:startDestination="@id/selectTypeFragment">
 
 
+
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.MainFragment"

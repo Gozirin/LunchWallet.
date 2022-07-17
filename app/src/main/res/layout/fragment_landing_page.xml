@@ -43,6 +43,7 @@
                     android:backgroundTint="@color/themePrimaryColor"
                     android:fontFamily="@font/manrope_semibold"
                     android:textSize="14sp"
+                    android:textAllCaps="false"
                     android:text="Get Started"/>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -129,6 +130,7 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/themePrimaryColor"
                         android:text="Get Started"
+                        android:textAllCaps="false"
                         android:fontFamily="@font/manrope_semibold"
                         android:textSize="14sp"/>
                 </androidx.appcompat.widget.LinearLayoutCompat>
