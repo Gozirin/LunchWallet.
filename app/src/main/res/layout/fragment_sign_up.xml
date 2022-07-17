@@ -34,6 +34,7 @@
                     android:id="@+id/signupFragment_layout_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:drawablePadding="5dp"
                     android:layout_gravity="center"
                     android:fontFamily="@font/manrope_bold"
@@ -70,7 +71,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintEnabled="false"
-                app:helperText=""
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
                 android:layout_marginTop="10dp"
                 app:helperTextTextColor="#a30306">
@@ -101,7 +101,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:helperTextTextColor="#a30306"
-                app:helperText=""
                 android:layout_marginTop="8dp"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
@@ -132,7 +131,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
@@ -164,7 +162,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
@@ -197,7 +194,6 @@
                 android:layout_height="wrap_content"
                 app:hintEnabled="false"
                 android:layout_marginTop="10dp"
-                app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:passwordToggleEnabled="true"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
@@ -230,7 +226,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 app:hintEnabled="false"
-                app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:passwordToggleEnabled="true"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
@@ -254,6 +249,7 @@
                 android:backgroundTint="@color/theme_color"
                 android:fontFamily="@font/manrope_medium"
                 android:paddingVertical="9dp"
+                android:padding="10dp"
                 android:layout_marginBottom="30dp"
                 android:text="@string/sign_up"
                 android:textAllCaps="false"
@@ -263,6 +259,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
                 android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
@@ -275,6 +272,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
                     android:text="@string/login"
                     android:textColor="@color/theme_color"/>
             </LinearLayout>

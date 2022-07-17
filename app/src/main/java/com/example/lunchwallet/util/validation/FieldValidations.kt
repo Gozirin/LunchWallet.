@@ -15,7 +15,8 @@ object FieldValidations {
 
     // Function to verify the e-mail of the intended user
     fun verifyEmail(email: String): String? {
-        val regex = Regex("^[a-zA-Z.]+@(?:(?:[a-zA-Z-]+\\.)?[a-zA-Z]+\\.)?(decagon.dev|decagonhq.com)\$")
+
+        val regex = Regex("(^[a-z]+\\.+[a-z]+?@decagon.dev)\$")
         return if (email.isNotEmpty() && email.matches(regex)) {
             null
         } else {
@@ -33,8 +34,8 @@ object FieldValidations {
     }
 
     fun verifyLocation(location: String): String? {
-        val arrayList = listOf<String>("Farah Park", "UNO", "Edo Tech Park")
-        return if (arrayList.contains(location)) {
+        val list = listOf<String>("Farah Park", "UNO", "Edo Tech Park")
+        return if (list.contains(location)) {
             null
         } else {
             "Please select a location"
@@ -54,7 +55,7 @@ object FieldValidations {
     }
 
     fun validateConfirmPassword(password: String, confirmPassword: String): String? {
-        return if (password == confirmPassword && password.isNotBlank()) {
+        return if (password == confirmPassword && confirmPassword.isNotBlank()) {
             null
         } else {
             "Password does not match"

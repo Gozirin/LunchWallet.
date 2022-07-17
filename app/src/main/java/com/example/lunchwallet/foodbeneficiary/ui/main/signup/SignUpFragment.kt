@@ -61,51 +61,55 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
             setAdapter(adapter)
         }
     }
-
     private fun nameFocusListener() {
-        binding.fullNameTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.fullNameContainer.helperText = verifyName(binding.fullNameTv.text.toString())
+        binding.signUpFullNameTextView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.fullNameContainer.helperText = verifyName(binding.signUpFullNameTextView.text.toString())
         }
     }
+
     private fun emailFocusListener() {
-        binding.emailTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.emailContainer.helperText = verifyEmail(binding.emailTv.text.toString())
+        binding.signUpEmailTextView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.emailContainer.helperText = verifyEmail(binding.signUpEmailTextView.text.toString())
         }
     }
+
     private fun stackFocusListener() {
-        binding.stackTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.stackContainer.helperText = verifyStack(binding.stackTv.text.toString())
+        binding.signUpStackAutoView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.stackContainer.helperText = verifyStack(binding.signUpStackAutoView.text.toString())
         }
     }
+
     private fun locationFocusListener() {
-        binding.locationTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.locationContainer.helperText = verifyLocation(binding.locationTv.text.toString())
+        binding.signUpLocationAutoView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.locationContainer.helperText = verifyLocation(binding.signUpLocationAutoView.text.toString())
         }
     }
+
     private fun passwordFocusListener() {
-        binding.passwordTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.passwordContainer.helperText = verifyPassword(binding.passwordTv.text.toString())
+        binding.signUpPasswordTextView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.passwordContainer.helperText = verifyPassword(binding.signUpPasswordTextView.text.toString())
         }
     }
+
     private fun confirmPasswordFocusListener() {
-        binding.confirmPasswordTv.setOnFocusChangeListener { _, focused ->
-            if (focused)
-                binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.passwordTv.text.toString(), binding.confirmPasswordTv.text.toString())
+        binding.signUpConfirmPasswordTextView.setOnFocusChangeListener { _, focused ->
+            if (!focused)
+                binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.signUpPasswordTextView.text.toString(), binding.signUpConfirmPasswordTextView.text.toString())
         }
     }
 
     private fun submitForm() {
-        binding.fullNameContainer.helperText = verifyName(binding.fullNameTv.toString())
-        binding.emailContainer.helperText = verifyEmail(binding.emailTv.toString())
-        binding.stackContainer.helperText = verifyStack(binding.fullNameTv.toString())
-        binding.locationContainer.helperText = verifyLocation(binding.fullNameTv.toString())
-        binding.passwordContainer.helperText = verifyPassword(binding.fullNameTv.toString())
-        binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.passwordTv.toString(), binding.confirmPasswordTv.toString())
+        binding.fullNameContainer.helperText = verifyName(binding.signUpFullNameTextView.text.toString())
+        binding.emailContainer.helperText = verifyEmail(binding.signUpEmailTextView.text.toString())
+        binding.stackContainer.helperText = verifyStack(binding.signUpStackAutoView.text.toString())
+        binding.locationContainer.helperText = verifyLocation(binding.signUpLocationAutoView.text.toString())
+        binding.passwordContainer.helperText = verifyPassword(binding.signUpPasswordTextView.text.toString())
+        binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.signUpPasswordTextView.text.toString(), binding.signUpConfirmPasswordTextView.text.toString())
 
         val validName = binding.fullNameContainer.helperText == null
         val validEmail = binding.emailContainer.helperText == null
@@ -135,5 +139,3 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
             message += "\n\nName: " + binding.confirmPasswordContainer.helperText
     }
 }
-
-
