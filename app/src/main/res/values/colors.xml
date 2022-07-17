@@ -22,4 +22,5 @@
     <color name="text_color">#203350</color>
     <color name="theme_color">#FD5900</color>
     <color name="grey">#ADBACD</color>
+    <color name="none">#00FFFFFF</color>
 </resources>

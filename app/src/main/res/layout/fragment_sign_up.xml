@@ -71,6 +71,7 @@
                 android:layout_height="wrap_content"
                 app:hintEnabled="false"
                 app:helperText=""
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 android:layout_marginTop="10dp"
                 app:helperTextTextColor="#a30306">
 
@@ -102,6 +103,7 @@
                 app:helperTextTextColor="#a30306"
                 app:helperText=""
                 android:layout_marginTop="8dp"
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
 
                 <EditText
@@ -132,6 +134,7 @@
                 android:layout_marginTop="10dp"
                 app:helperText=""
                 app:helperTextTextColor="#a30306"
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
@@ -163,6 +166,7 @@
                 android:layout_marginTop="10dp"
                 app:helperText=""
                 app:helperTextTextColor="#a30306"
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
@@ -196,6 +200,7 @@
                 app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:counterMaxLength="16">
 
                 <EditText
@@ -228,6 +233,7 @@
                 app:helperText=""
                 app:helperTextTextColor="#a30306"
                 app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:counterMaxLength="16">
 
                 <EditText
@@ -248,9 +254,30 @@
                 android:backgroundTint="@color/theme_color"
                 android:fontFamily="@font/manrope_medium"
                 android:paddingVertical="9dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
                 android:text="@string/sign_up"
+                android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="@string/already_have_an_account"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textColor="@color/theme_color"/>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
