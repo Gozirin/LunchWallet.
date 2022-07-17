@@ -23,4 +23,8 @@
     <color name="button_skip">#00FFFFFF</color>
     <color name="textNotification">#14A800</color>
     <!-- Ekene's Color Ends   -->
+    <color name="text_color">#203350</color>
+    <color name="theme_color">#FD5900</color>
+    <color name="grey">#ADBACD</color>
+    <color name="none">#00FFFFFF</color>
 </resources>

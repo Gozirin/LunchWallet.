@@ -1,4 +1,4 @@
-package com.example.lunchwallet.onboarding.ui.landingpage
+package com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage
 
 import android.graphics.Color
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lunchwallet.MainActivity
 import com.example.lunchwallet.databinding.FragmentLandingPageBinding
-import com.example.lunchwallet.onboarding.ui.landingpage.adapter.LandingPageMealsPagerAdapter
+import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.adapter.LandingPageMealsPagerAdapter
 
 class LandingPageFragment : Fragment() {
     private lateinit var binding: FragmentLandingPageBinding

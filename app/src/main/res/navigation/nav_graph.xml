@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/foodBeneficiaryDashboardFragment">
+    app:startDestination="@id/selectTypeFragment">
+
+
 
     <fragment
         android:id="@+id/mainFragment"
@@ -12,14 +14,47 @@
         tools:layout="@layout/main_fragment" />
     <fragment
         android:id="@+id/onboardingScreenFragment"
-        android:name="com.example.lunchwallet.onboarding.ui.onboarding.OnboardingScreenFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.onboarding.OnboardingScreenFragment"
         android:label="fragment_onboarding_screen"
         tools:layout="@layout/fragment_onboarding_screen" />
     <fragment
         android:id="@+id/landingPageFragment"
-        android:name="com.example.lunchwallet.onboarding.ui.landingpage.LandingPageFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.LandingPageFragment"
         android:label="fragment_landing_page"
         tools:layout="@layout/fragment_landing_page" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_checkMailFragment"
+            app:destination="@id/checkMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.checkmail.CheckMailFragment"
+        android:label="fragment_check_mail"
+        tools:layout="@layout/fragment_check_mail" >
+        <action
+            android:id="@+id/action_checkMailFragment_to_confirmMailFragment"
+            app:destination="@id/confirmMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.confirmMail.ConfirmMailFragment"
+        android:label="fragment_confrim_mail_frgament"
+        tools:layout="@layout/fragment_confrim_mail_frgament" >
+    </fragment>
+    <fragment
+        android:id="@+id/selectTypeFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.selectType.SelectTypeFragment"
+        android:label="fragment_select_type"
+        tools:layout="@layout/fragment_select_type" >
+        <action
+            android:id="@+id/action_selectTypeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/foodBeneficiaryDashboardFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment"
