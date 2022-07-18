@@ -1,11 +1,10 @@
-package com.example.lunchwallet.foodbeneficiary.ui.login_and_registration
+package com.example.lunchwallet.foodbeneficiary.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentResetPasswordBinding
 
@@ -25,7 +24,8 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_login) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.resetPasswordFragmentButtonFoodBeneficiary.setOnClickListener { findNavController().navigate(R.id.action_resetPasswordFragment_to_checkMailResetPasswordFragment)
+        binding.resetPasswordFragmentButtonFoodBeneficiary.setOnClickListener {
+//            findNavController().navigate(R.id.action_resetPasswordFragment_to_checkMailResetPasswordFragment)
         }
     }
 }

@@ -4,18 +4,6 @@ object LoginInputValidation {
     private var EMAIL_PATTERN = Regex("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+\$")
     private val validatePassword = Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\da-zA-Z]).{8,15}\$")
 
-    fun validateEmailInput(email: String): Boolean {
-        if (email.isEmpty() || !email.matches(EMAIL_PATTERN)) {
-            return false
-        }
-        return true
-    }
-
-    fun validateUserPassword(password: String): Boolean {
-        return if (password.isEmpty()) {
-            false
-        } else validatePassword.matches(password)
-    }
     fun validateEmail(email: String): String? {
         if (email.isEmpty()) {
             return "Enter a valid Email Address"

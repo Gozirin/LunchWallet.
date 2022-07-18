@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.ui.login_and_registration
+package com.example.lunchwallet.foodbeneficiary.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
-import com.example.lunchwallet.databinding.FragmentLoginBinding
 import com.example.lunchwallet.databinding.FragmentSuccessModalBinding
 
 class SuccessModalFragment : Fragment(R.layout.fragment_success_modal) {
