@@ -37,6 +37,7 @@
     <string name="did_not_receive_the_email_check_your">Did not receive the email check your</string>
     <string name="spam_filter_or">spam filter, or</string>
     <string name="Resend_instruction">Resend Instruction</string>
+    <string name="enter_your_email">Enter your email</string>
 
 
 </resources>

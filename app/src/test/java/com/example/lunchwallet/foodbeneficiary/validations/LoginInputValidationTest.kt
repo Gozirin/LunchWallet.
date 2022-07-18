@@ -10,12 +10,16 @@ class LoginInputValidationTest {
 
     @Test
     fun validateEmailInput() {
-        assertTrue(LoginInputValidation.validateEmailInput("Precious.anyaso@decagon.dev"))
+        assertEquals(LoginInputValidation.validateEmail("Precious.anyaso@decagon.dev"))
+    }
+
+    private fun assertEquals(validateEmail: String?) {
+        TODO("Not yet implemented")
     }
 
     @Test
     fun validateUserPassword() {
-        assertTrue(LoginInputValidation.validateUserPassword("Mer@d2n#"))
+        assertEquals(LoginInputValidation.validatePassword("Mer@d2n#"))
     }
 
     @Test
