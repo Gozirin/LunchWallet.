@@ -67,6 +67,7 @@ id date_picker_2
 id date_picker_3
 id date_picker_4
 id days_of_the_week_layout
+id dismiss_logout_btn
 id foodBeneficiaryDashboardFragment
 id fragmentContainerView
 id frameLayout
@@ -74,6 +75,7 @@ id landingPageFragment
 id landingPageMealsRecyclerView
 id landing_page_container
 id landing_page_meal_pager_item_image
+id logout_btn
 id mainFragment
 id main_activity_drawer_layout
 id main_activity_toolbar

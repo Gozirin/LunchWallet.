@@ -1,13 +1,18 @@
 package com.example.lunchwallet
 
+import android.app.Dialog
+import android.content.DialogInterface
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.* // ktlint-disable no-wildcard-imports
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.lunchwallet.databinding.ActivityMainBinding
 
@@ -24,6 +29,52 @@ class MainActivity : AppCompatActivity() {
             mainActivityToolbar.visibility = View.GONE
         }
         setContentView(binding.root)
+    }
+
+    private fun closeDrawer() {
+        binding.apply {
+            mainActivityDrawerLayout.closeDrawer(Gravity.START)
+        }
+    }
+
+    private fun openDrawer() {
+        binding.apply {
+            mainActivityDrawerLayout.openDrawer(Gravity.START)
+        }
+    }
+
+    private fun inflateLogoutView() {
+        closeDrawer()
+        val view = View.inflate(this@MainActivity, R.layout.logout_confirmation, null)
+        val builder = AlertDialog.Builder(this@MainActivity)
+        builder.setView(view)
+
+        val dialog = builder.create()
+
+        dialog.apply {
+            show()
+            window?.attributes?.apply {
+                gravity = Gravity.TOP
+            }
+            window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+            val dismissBtn = findViewById<Button>(R.id.dismiss_logout_btn)
+            val logoutBtn = findViewById<Button>(R.id.logout_btn)
+
+            logoutBtn?.apply {
+                setOnClickListener {
+                    dismiss()
+                    Toast.makeText(this@MainActivity, "Logged out!", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            dismissBtn?.apply {
+                setOnClickListener {
+                    dismiss()
+                    Toast.makeText(this@MainActivity, "Dismissed!", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 
     fun setToolBar() {
@@ -45,6 +96,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this@MainActivity, "menu_item_notification", Toast.LENGTH_SHORT).show()
                     }
                     R.id.menu_item_logout -> {
+                        inflateLogoutView()
                         Toast.makeText(this@MainActivity, "menu_item_logout", Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -52,11 +104,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             toolbarIcHambuger.setOnClickListener {
-                mainActivityDrawerLayout.openDrawer(Gravity.START)
+                openDrawer()
             }
 
             navView.getHeaderView(0).findViewById<ImageView>(R.id.menu_component_close_vector)?.setOnClickListener {
-                mainActivityDrawerLayout.closeDrawer(Gravity.START)
+                closeDrawer()
             }
         }
     }
