@@ -2801,6 +2801,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dismiss_logout_btn
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2894,6 +2895,7 @@ id linear
 id listMode
 id list_item
 id locale
+id logout_btn
 id ltr
 id mainFragment
 id main_activity_drawer_layout
