@@ -72,6 +72,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         val validPasswordInput = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEtFoodBeneficiary.text.toString()) == null
 
         if (validEmailInput && validPasswordInput) {
+            findNavController().navigate(R.id.action_loginFragment_to_foodBeneficiaryDashboardFragment)
         } else {
             invalidCredentials()
         }

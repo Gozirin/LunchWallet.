@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/createNewPasswordFragment">
+    app:startDestination="@id/onboardingScreenFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -72,6 +72,9 @@
         <action
             android:id="@+id/action_loginFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_foodBeneficiaryDashboardFragment"
+            app:destination="@id/foodBeneficiaryDashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/resetPasswordFragment"
@@ -89,7 +92,7 @@
         tools:layout="@layout/fragment_create_new_password" />
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.login.CheckMailResetPasswordFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CheckMailResetPasswordFragment"
         android:label="fragment_check_mail_reset_password"
         tools:layout="@layout/fragment_check_mail_reset_password" >
         <action
