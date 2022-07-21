@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.example.lunchwallet.R
 import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.adapter.SliderAdapter
@@ -84,6 +85,10 @@ class OnboardingScreenFragment : Fragment() {
             if (position == onBoardingAdapter.count - 1) {
                 nextButton.text = "Explore"
                 skipButton.text = ""
+            }
+
+            if (nextButton.text == "Explore") {
+                findNavController().navigate(R.id.action_onboardingScreenFragment_to_landingPageFragment)
             }
         }
     }

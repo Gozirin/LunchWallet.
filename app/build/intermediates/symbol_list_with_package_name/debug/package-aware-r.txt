@@ -2729,6 +2729,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_onboardingScreenFragment_to_landingPageFragment
 id action_resetPasswordFragment_to_checkMailResetPasswordFragment
 id action_selectTypeFragment_to_signUpFragment
 id action_signUpFragment_to_checkMailFragment
