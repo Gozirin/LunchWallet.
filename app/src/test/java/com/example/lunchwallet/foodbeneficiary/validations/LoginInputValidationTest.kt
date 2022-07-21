@@ -1,6 +1,6 @@
 package com.example.lunchwallet.foodbeneficiary.validations
 
-import com.example.lunchwallet.foodbeneficiary.validations.loginvalidation.LoginInputValidation
+import com.example.lunchwallet.util.loginvalidation.LoginInputValidation
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

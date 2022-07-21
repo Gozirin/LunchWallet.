@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentCreateNewPasswordBinding
-import com.example.lunchwallet.foodbeneficiary.validations.InputValidations.CreateNewPasswordValidation
+import com.example.lunchwallet.util.ResetPasswordInputValidations.CreateNewPasswordValidation
 
 
 

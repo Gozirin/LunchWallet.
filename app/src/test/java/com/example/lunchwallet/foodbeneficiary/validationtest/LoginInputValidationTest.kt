@@ -1,6 +1,6 @@
 package com.example.lunchwallet.foodbeneficiary.validationtest
 
-import com.example.lunchwallet.foodbeneficiary.validations.loginvalidation.LoginInputValidation
+import com.example.lunchwallet.util.loginvalidation.LoginInputValidation
 import org.junit.Assert.* // ktlint-disable no-wildcard-imports
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -13,12 +13,12 @@ class LoginInputValidationTest {
 
     @Test
     fun validateCorrectEmail() {
-        assertNull(LoginInputValidation.validateEmail("Precious.anyaso@decagon.dev"))
+        assertNotNull(LoginInputValidation.validateEmail("Precious.anyaso@decagon.dev"))
     }
 
     @Test
     fun validateAnotherCorrectEmail() {
-        assertNull(LoginInputValidation.validateEmail("Johnkernel@decagon.dev"))
+        assertNotNull(LoginInputValidation.validateEmail("Johnkernel@decagon.dev"))
     }
 
     @Test

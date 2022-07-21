@@ -103,6 +103,7 @@
     <string name="spam_filter_or">spam filter, or</string>
     <string name="Resend_instruction">Resend Instruction</string>
     <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_email_address">Enter your email address</string>
 
 
 </resources>
