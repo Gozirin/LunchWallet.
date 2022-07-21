@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentLoginBinding
-import com.example.lunchwallet.foodbeneficiary.validations.LoginInputValidation
+import com.example.lunchwallet.foodbeneficiary.validations.loginvalidation.LoginInputValidation
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
@@ -43,7 +43,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
         // SIGN-UP
         binding.loginFragmentSignupTvFoodBeneficiary.setOnClickListener {
-            //  findNavController().navigate(R.id.action_loginFragment_to_)
+            findNavController().navigate(R.id.action_loginFragment_to_foodBeneficiaryDashboardFragment)
         }
     }
 

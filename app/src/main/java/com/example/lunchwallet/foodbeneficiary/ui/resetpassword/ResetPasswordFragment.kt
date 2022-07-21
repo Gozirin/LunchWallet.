@@ -54,7 +54,6 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_login) {
         binding.resetPasswordFragmentTiIFoodBeneficiary.helperText =
             ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString())
 
-        val validEmailInput =
-            ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString()) == null
+        val validEmailInput = ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString()) == null
     }
 }

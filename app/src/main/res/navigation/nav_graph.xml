@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/onboardingScreenFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -14,7 +14,11 @@
         android:id="@+id/onboardingScreenFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.onboarding.OnboardingScreenFragment"
         android:label="fragment_onboarding_screen"
-        tools:layout="@layout/fragment_onboarding_screen" />
+        tools:layout="@layout/fragment_onboarding_screen" >
+        <action
+            android:id="@+id/action_onboardingScreenFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/landingPageFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.LandingPageFragment"
