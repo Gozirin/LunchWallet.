@@ -3,18 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".foodbeneficiary.ui.resetpassword.SuccessModalFragment">
+    android:background="@drawable/reset_password_success_modal_background"
+    android:padding="20dp"
+    tools:context=".foodbeneficiary.ui.login.SuccessModalFragment">
 
 
     <TextView
-        android:id="@+id/successModalFragment_passwordSuccess"
+        android:id="@+id/successModalFragment_title"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:background="@color/white"
         android:fontFamily="@font/manrope_regular"
         android:text="@string/password_successfully_reset"
         android:textAlignment="center"
@@ -24,12 +24,12 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/successModalFragment_textView"
+        android:id="@+id/successModalFragment_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/successModalFragment_passwordSuccess"
+        android:layout_below="@+id/successModalFragment_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/manrope_regular"
         android:text="@string/your_password_has_been_n_changed_successfully"
         android:textAlignment="center"

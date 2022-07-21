@@ -4,6 +4,7 @@ package com.example.lunchwallet.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,21 +22,30 @@ public final class FragmentLandingPageBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final Button landingPageCenterButtonGetStarted;
+
+  @NonNull
   public final LinearLayoutCompat landingPageContainer;
 
   @NonNull
   public final RecyclerView landingPageMealsRecyclerView;
 
   @NonNull
+  public final Button landingPageTopButtonGetStarted;
+
+  @NonNull
   public final LinearLayoutCompat relativeLayout;
 
   private FragmentLandingPageBinding(@NonNull FrameLayout rootView,
+      @NonNull Button landingPageCenterButtonGetStarted,
       @NonNull LinearLayoutCompat landingPageContainer,
       @NonNull RecyclerView landingPageMealsRecyclerView,
-      @NonNull LinearLayoutCompat relativeLayout) {
+      @NonNull Button landingPageTopButtonGetStarted, @NonNull LinearLayoutCompat relativeLayout) {
     this.rootView = rootView;
+    this.landingPageCenterButtonGetStarted = landingPageCenterButtonGetStarted;
     this.landingPageContainer = landingPageContainer;
     this.landingPageMealsRecyclerView = landingPageMealsRecyclerView;
+    this.landingPageTopButtonGetStarted = landingPageTopButtonGetStarted;
     this.relativeLayout = relativeLayout;
   }
 
@@ -66,6 +76,12 @@ public final class FragmentLandingPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.landing_page_center_button_get_started;
+      Button landingPageCenterButtonGetStarted = ViewBindings.findChildViewById(rootView, id);
+      if (landingPageCenterButtonGetStarted == null) {
+        break missingId;
+      }
+
       id = R.id.landing_page_container;
       LinearLayoutCompat landingPageContainer = ViewBindings.findChildViewById(rootView, id);
       if (landingPageContainer == null) {
@@ -78,14 +94,21 @@ public final class FragmentLandingPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.landing_page_top_button_get_started;
+      Button landingPageTopButtonGetStarted = ViewBindings.findChildViewById(rootView, id);
+      if (landingPageTopButtonGetStarted == null) {
+        break missingId;
+      }
+
       id = R.id.relative_layout;
       LinearLayoutCompat relativeLayout = ViewBindings.findChildViewById(rootView, id);
       if (relativeLayout == null) {
         break missingId;
       }
 
-      return new FragmentLandingPageBinding((FrameLayout) rootView, landingPageContainer,
-          landingPageMealsRecyclerView, relativeLayout);
+      return new FragmentLandingPageBinding((FrameLayout) rootView,
+          landingPageCenterButtonGetStarted, landingPageContainer, landingPageMealsRecyclerView,
+          landingPageTopButtonGetStarted, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

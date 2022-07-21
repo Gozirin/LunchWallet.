@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lunchwallet.MainActivity
+import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentLandingPageBinding
 import com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.adapter.LandingPageMealsPagerAdapter
 
@@ -36,6 +38,14 @@ class LandingPageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (requireActivity() as MainActivity).apply {
             setStatusBarColor(Color.WHITE)
+        }
+
+        binding.landingPageTopButtonGetStarted.setOnClickListener {
+            findNavController().navigate(R.id.action_landingPageFragment_to_selectTypeFragment)
+        }
+
+        binding.landingPageCenterButtonGetStarted.setOnClickListener {
+            findNavController().navigate(R.id.action_landingPageFragment_to_selectTypeFragment)
         }
     }
 }
