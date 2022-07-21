@@ -19,7 +19,11 @@
         android:id="@+id/landingPageFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.LandingPageFragment"
         android:label="fragment_landing_page"
-        tools:layout="@layout/fragment_landing_page" />
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPageFragment_to_selectTypeFragment"
+            app:destination="@id/selectTypeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.SignUpFragment"

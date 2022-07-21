@@ -37,6 +37,7 @@
                         android:text="Hi there!" />
                 </LinearLayout>
                 <Button
+                    android:id="@+id/landing_page_top_button_get_started"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,6 +127,7 @@
                     android:paddingVertical="10dp"
                     android:paddingHorizontal="20dp">
                     <Button
+                        android:id="@+id/landing_page_center_button_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/themePrimaryColor"

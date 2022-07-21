@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.ui.login
+package com.example.lunchwallet.foodbeneficiary.ui.resetpassword
 
 
 import android.app.AlertDialog

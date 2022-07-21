@@ -10,7 +10,7 @@ class LoginInputValidationTest {
 
     @Test
     fun validateEmailInput() {
-        assertEquals(LoginInputValidation.validateEmail("Precious.anyaso@decagon.dev"))
+//        assertNotNull(LoginInputValidation.validateEmail("Precious.anyaso@decagon.dev"))
     }
 
     private fun assertEquals(validateEmail: String?) {
@@ -18,20 +18,18 @@ class LoginInputValidationTest {
 
     @Test
     fun validateUserPassword() {
-        assertEquals(LoginInputValidation.validatePassword("Mer@d2n#"))
+//        assertNull(LoginInputValidation.validatePassword("Mer@d2n#1"))
     }
 
     @Test
     fun validateEmail() {
-        assertNotEquals(LoginInputValidation.validateEmail(""))
+        assertNotNull(LoginInputValidation.validateEmail(""))
     }
 
     @Test
     fun validatePassword() {
-        assertNotEquals(LoginInputValidation.validatePassword("123"))
+        assertNotNull(LoginInputValidation.validatePassword("123"))
     }
 
-    private fun assertNotEquals(validatePassword: String?) {
-    }
 }
 
