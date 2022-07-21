@@ -24,4 +24,11 @@ object CreateNewPasswordValidation {
         }
         return ""
     }
+
+    fun validateConfirmPassword(password: String, confirmPassword: String): String? {
+        if (password != confirmPassword) {
+            return "Passwords do not match"
+        }
+        return null
+    }
 }

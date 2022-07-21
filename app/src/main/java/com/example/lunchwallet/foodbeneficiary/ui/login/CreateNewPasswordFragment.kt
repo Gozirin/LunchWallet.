@@ -1,16 +1,20 @@
 package com.example.lunchwallet.foodbeneficiary.ui.login
 
+
+import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentCreateNewPasswordBinding
 import com.example.lunchwallet.foodbeneficiary.validations.InputValidations.CreateNewPasswordValidation
-import com.example.lunchwallet.foodbeneficiary.validations.LoginInputValidation
+
+
 
 class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password) {
 
@@ -33,52 +37,66 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
         passwordNewFocusListener()
         passwordConfirmFocusListener()
 
-        // Reset BUTTON
-        onClickResetButton()
 
-        // CreateNewPassword To SuccessModal
+
         binding.createNewPasswordFragmentButtonFoodBeneficiary.setOnClickListener {
-            findNavController().navigate(R.id.action_createNewPasswordFragment_to_successModalFragment)
+            onResetPasswordButtonClick()
+            Log.d("TAG", "onViewCreated: ${binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text}," +
+                    " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
+                    "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText.toString()}, " +
+                    binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
+            )
         }
     }
 
     private fun passwordNewFocusListener() {
-        binding.createNewPasswordFragmentEditEmail2FoodBeneficiary.setOnFocusChangeListener { _, focused ->
+        binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.setOnFocusChangeListener { _, focused ->
             if (!focused)
-                binding.createNewPasswordFragmentEditEmail1FoodBeneficiary.helperText =
-                    LoginInputValidation.validatePassword(binding.createNewPasswordFragmentEditEmail2FoodBeneficiary.text.toString())
+                binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText =
+                    CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString())
         }
     }
 
     private fun passwordConfirmFocusListener() {
-        binding.createNewPasswordFragmentEditPassword2FoodBeneficiary.setOnFocusChangeListener { _, focused ->
+        binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.setOnFocusChangeListener { _, focused ->
             if (!focused)
-                binding.createNewPasswordFragmentEditPassword1FoodBeneficiary.helperText =
-                    LoginInputValidation.validatePassword(binding.createNewPasswordFragmentEditPassword2FoodBeneficiary.text.toString())
+                binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText =
+                    CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString())
         }
     }
 
-    private fun onClickResetButton() {
-        binding.createNewPasswordFragmentEditEmail1FoodBeneficiary.helperText = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentEditEmail2FoodBeneficiary.text.toString())
-        binding.createNewPasswordFragmentEditPassword1FoodBeneficiary.helperText = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentEditPassword2FoodBeneficiary.text.toString())
+    private fun onResetPasswordButtonClick() {
+        binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString())
+        binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText = CreateNewPasswordValidation.validateConfirmPassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(), binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString())
 
-        val validNewPasswordInput = LoginInputValidation.validateEmail(binding.createNewPasswordFragmentEditEmail2FoodBeneficiary.text.toString()) == null
-        val validConfirmPasswordInput = LoginInputValidation.validatePassword(binding.createNewPasswordFragmentEditPassword2FoodBeneficiary.text.toString()) == null
+        val validNewPasswordInput = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString()) == null
+        val validConfirmPasswordInput = CreateNewPasswordValidation.validateConfirmPassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(), binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString()) == null
 
         if (validNewPasswordInput && validConfirmPasswordInput) {
-            // todo
+            showPasswordSuccessfullyChangedModal()
         } else {
             invalidCredentials()
         }
     }
+
     private fun invalidCredentials() {
         var message = ""
-        if (binding.createNewPasswordFragmentEditEmail1FoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.createNewPasswordFragmentEditEmail1FoodBeneficiary.helperText
+        if (binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText != null) {
+            message =  "\n\nEmail: " + binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText
         }
 
-        if (binding.createNewPasswordFragmentEditPassword1FoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.createNewPasswordFragmentEditPassword1FoodBeneficiary.helperText
+        if (binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText != null) {
+            message = "\n\nEmail: " + binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText
         }
+    }
+
+    private fun showPasswordSuccessfullyChangedModal() {
+        val view = layoutInflater.inflate(R.layout.fragment_success_modal, null)
+        val builder =  AlertDialog.Builder(requireContext())
+             .setView(view)
+
+        val dialog = builder.create()
+        dialog.show()
+        dialog.window?.attributes?.gravity = Gravity.CENTER
     }
 }

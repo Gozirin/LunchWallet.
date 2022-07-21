@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">LunchWallet</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="lunch_wallet">Lunch Wallet</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
@@ -46,7 +45,6 @@
     <string name="btn_next">Next</string>
     <string name="btn_skip">Skip</string>
     <string name="Rice_and_stew">Rice &amp; Stew</string>
-    <!-- TODO: Remove or change this placeholder text -->
 
     <string name="APP_NAME">Lunch Wallet</string>
     <string name="openDrawerContentDesc">open</string>
@@ -70,7 +68,6 @@
     <string name="beans_amp_rice"><![CDATA[Beans & rice]]></string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="login">Login</string>
-    <!-- TODO: Remove or change this placeholder text -->
 
 
     <string name="hey_nwelcome_back">Hey,\nWelcome Back</string>
