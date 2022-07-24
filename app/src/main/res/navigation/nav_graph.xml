@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/checkMailFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_checkMailFragment"
             app:destination="@id/checkMailFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/checkMailFragment"
@@ -51,6 +54,9 @@
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.confirmMail.ConfirmMailFragment"
         android:label="fragment_confrim_mail_frgament"
         tools:layout="@layout/fragment_confrim_mail_frgament" >
+        <action
+            android:id="@+id/action_confirmMailFragment_to_foodBeneficiaryDashboardFragment"
+            app:destination="@id/foodBeneficiaryDashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/selectTypeFragment"
@@ -100,7 +106,11 @@
         android:id="@+id/createNewPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
-        tools:layout="@layout/fragment_create_new_password" />
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_foodBeneficiaryDashboardFragment"
+            app:destination="@id/foodBeneficiaryDashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CheckMailResetPasswordFragment"

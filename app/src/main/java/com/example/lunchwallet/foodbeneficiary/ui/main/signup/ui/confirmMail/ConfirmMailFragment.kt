@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentConfrimMailFrgamentBinding
 
 class ConfirmMailFragment : Fragment() {
@@ -23,6 +25,10 @@ class ConfirmMailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.confirmEmailFragmentConfirmEmailButton.setOnClickListener {
+            findNavController().navigate(R.id.foodBeneficiaryDashboardFragment)
+        }
 
     }
 }
