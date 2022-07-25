@@ -53,6 +53,8 @@
                     android:textColor="@color/text_color"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
+
+
             </LinearLayout>
 
             <TextView
@@ -198,14 +200,13 @@
                 app:passwordToggleEnabled="true"
                 app:boxStrokeColor="@color/text_input_box_stroke_color"
                 app:counterMaxLength="16">
-
                 <EditText
                     android:id="@+id/signUp_password_text_view"
                     android:layout_width="match_parent"
-                    android:hint="@string/password"
                     android:layout_height="50dp"
-                    android:lines="1"
-                    android:inputType="textPassword"/>
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:lines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -270,6 +271,7 @@
                     android:text="@string/already_have_an_account"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sign_up_to_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"

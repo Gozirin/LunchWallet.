@@ -44,6 +44,10 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
         binding.signUpBtn.setOnClickListener {
             submitForm()
         }
+
+        binding.signUpToLogin.setOnClickListener {
+            findNavController().navigate(R.id.loginFragment)
+        }
     }
 
     private fun stackDropDown() {
