@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/kitchenStaffDashBoardFragment">
+    app:startDestination="@id/adminSignUpFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -132,4 +132,9 @@
             android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/adminSignUpFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.ui.signup.KitchenStaffSignUpFragment"
+        android:label="fragment_admin_sign_up"
+        tools:layout="@layout/fragment_kitchen_staff_sign_up" />
 </navigation>

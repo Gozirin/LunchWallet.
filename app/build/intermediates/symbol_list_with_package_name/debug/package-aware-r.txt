@@ -2569,11 +2569,13 @@ drawable ic_arrow
 drawable ic_arrow_right
 drawable ic_back
 drawable ic_baseline_menu_24
+drawable ic_chevron_down_filled
 drawable ic_chevron_left
 drawable ic_clock_black_24dp
 drawable ic_close
 drawable ic_cuisine
 drawable ic_cuisine_logo
+drawable ic_eye_closed
 drawable ic_frame_40
 drawable ic_hamburger
 drawable ic_keyboard_black_24dp
@@ -2757,6 +2759,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adminSignUpFragment
 id alertTitle
 id aligned
 id all
@@ -2835,6 +2838,8 @@ id confirmMailFragment
 id confirmPassword_container
 id confirmPassword_tv
 id confirm_button
+id confirm_password_container
+id confirm_password_tv
 id constraint
 id consumer_check_mail_button
 id consumer_check_mail_imageView1
@@ -3206,9 +3211,11 @@ id signFragment
 id signUpBtn
 id signUpFragment
 id signUp_confirmPassword_text_view
+id signUp_confirm_password_text_view
 id signUp_email_text_view
 id signUp_fullName_text_view
 id signUp_location_auto_view
+id signUp_location_dropdown
 id signUp_password_text_view
 id signUp_stack_auto_view
 id sign_up_to_login
@@ -3461,6 +3468,7 @@ layout fragment_confrim_mail_frgament
 layout fragment_create_new_password
 layout fragment_food_beneficiary_dashboard
 layout fragment_kitchen_staff_dash_board
+layout fragment_kitchen_staff_sign_up
 layout fragment_landing_page
 layout fragment_login
 layout fragment_notifications_screen
