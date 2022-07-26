@@ -1,18 +1,17 @@
 package com.example.lunchwallet
 
-import android.app.Dialog
-import android.content.DialogInterface
-import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.view.* // ktlint-disable no-wildcard-imports
+import android.view.Gravity
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.lunchwallet.databinding.ActivityMainBinding
 
