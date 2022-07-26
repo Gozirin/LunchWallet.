@@ -1,14 +1,11 @@
 package com.example.lunchwallet.admin
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.lunchwallet.MainActivity
-import com.example.lunchwallet.databinding.FragmentFoodBeneficiaryDashboardBinding
 import com.example.lunchwallet.databinding.FragmentMealTimeTableBinding
 import com.example.lunchwallet.foodbeneficiary.adapter.CalenderAdapter
 import com.example.lunchwallet.foodbeneficiary.adapter.OnItemListener
@@ -30,15 +27,9 @@ class MealTimeTableFragment : Fragment(), OnItemListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMealTimeTableBinding.inflate(layoutInflater)
-
         selectedDate = LocalDate.now()
-        (requireActivity() as MainActivity).apply {
-            setStatusBarColor(Color.WHITE)
-            setToolBar()
-        }
-
         return binding.root
     }
 
@@ -49,7 +40,6 @@ class MealTimeTableFragment : Fragment(), OnItemListener {
 
     private fun setWeekView() {
         binding.monthYearTV.text = monthYearFromDate(selectedDate)
-        // val daysInMonth = daysInMonthArray(selectedDate)
         val daysInWeek = daysInWeekArray(selectedDate)
         val calendarAdapter = CalenderAdapter(daysInWeek)
         val layoutManager = GridLayoutManager(context, 7)
