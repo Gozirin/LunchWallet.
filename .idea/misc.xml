@@ -24,7 +24,7 @@
         <entry key="app/src/main/res/layout/calender_cell.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/layout/fragment_admin_sign_up.xml" value="0.21442215854823304" />
         <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.33720092773437504" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_side_bar_menu.xml" value="0.21052631578947367" />

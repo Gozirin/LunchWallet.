@@ -55,13 +55,13 @@
     <string name="food_beneficiary_menu_item_label_logout">Logout</string>
     <string name="not_serving">Not serving</string>
     <string name="_12_15pm_to_01_00pm">12:15PM to 01:00PM</string>
-    <string name="dinner">DINNER</string>
+    <string name="dinner">Dinner</string>
     <string name="uno_kitchen">Uno kitchen</string>
     <string name="rice_amp_chicken"><![CDATA[Rice & chicken]]></string>
     <string name="egusi_amp_semo"><![CDATA[Egusi & semo]]></string>
     <string name="beans_pourage">Beans pourage</string>
     <string name="serving">Serving</string>
-    <string name="brunch">BRUNCH</string>
+    <string name="brunch">Brunch</string>
     <string name="scan_qr_code">Scan QR code</string>
     <string name="_7_00pm_to_07_30pm">7:00PM to 07:30PM</string>
     <string name="efo_amp_semo"><![CDATA[Efo & semo]]></string>
