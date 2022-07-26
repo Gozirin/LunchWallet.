@@ -25,4 +25,14 @@
     <string name="efo_amp_semo"><![CDATA[Efo & semo]]></string>
     <string name="jollof_rice_amp_egg"><![CDATA[Jollof rice & egg]]></string>
     <string name="beans_amp_rice"><![CDATA[Beans & rice]]></string>
+    <string name="meal_time_table">Meal Time Table</string>
+    <string name="april_2022">April 2022</string>
+    <string name="weekly_updated">Weekly updated</string>
+    <string name="sun">SUN</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
 </resources>

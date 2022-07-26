@@ -9,13 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.MainActivity
 import com.example.lunchwallet.databinding.FragmentFoodBeneficiaryDashboardBinding
-import com.example.lunchwallet.foodbeneficiary.adapter.CalenderAdapter
-import com.example.lunchwallet.foodbeneficiary.adapter.OnItemListener
+import com.example.lunchwallet.util.adapter.CalenderAdapter
 import com.example.lunchwallet.util.daysInWeekArray
 import com.example.lunchwallet.util.monthYearFromDate
 import java.time.LocalDate
 
-class FoodBeneficiaryDashboardFragment : Fragment(), OnItemListener {
+class FoodBeneficiaryDashboardFragment : Fragment() {
     private lateinit var binding: FragmentFoodBeneficiaryDashboardBinding
     private lateinit var selectedDate: LocalDate
 
@@ -61,11 +60,6 @@ class FoodBeneficiaryDashboardFragment : Fragment(), OnItemListener {
 
     fun nextWeekAction(view: View) {
         selectedDate = selectedDate.plusWeeks(1)
-        setWeekView()
-    }
-
-    override fun onItemClick(position: Int, date: LocalDate) {
-        selectedDate = date
         setWeekView()
     }
 }

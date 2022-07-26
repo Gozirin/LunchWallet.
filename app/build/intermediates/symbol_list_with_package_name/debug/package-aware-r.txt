@@ -921,6 +921,18 @@ attr region_widthMoreThan
 attr restoreState
 attr reverseLayout
 attr rippleColor
+attr riv_border_color
+attr riv_border_width
+attr riv_corner_radius
+attr riv_corner_radius_bottom_left
+attr riv_corner_radius_bottom_right
+attr riv_corner_radius_top_left
+attr riv_corner_radius_top_right
+attr riv_mutate_background
+attr riv_oval
+attr riv_tile_mode
+attr riv_tile_mode_x
+attr riv_tile_mode_y
 attr rotationCenterId
 attr round
 attr roundPercent
@@ -2530,6 +2542,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_shape
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable current_day_background
@@ -2540,6 +2553,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_back
 drawable ic_baseline_menu_24
+drawable ic_chevron_left
 drawable ic_clock_black_24dp
 drawable ic_close
 drawable ic_cuisine_logo
@@ -2560,6 +2574,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon_background
+drawable kitchen_staff
 drawable landing_page_banner
 drawable landing_page_dish_1
 drawable landing_page_dish_2
@@ -2691,6 +2706,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment2
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -2755,6 +2771,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id clamp
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2880,6 +2897,8 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kitchenStaffDashBoardFragment
+id kitchen_staff_dashboard_toolbar
 id labeled
 id landingPageFragment
 id landingPageMealsRecyclerView
@@ -2933,6 +2952,7 @@ id menu_item_notification
 id message
 id middle
 id mini
+id mirror
 id monthYearTV
 id month_grid
 id month_navigation_bar
@@ -3028,6 +3048,7 @@ id ratio
 id rectangles
 id relativeLayout2
 id relative_layout
+id repeat
 id reverseSawtooth
 id rice_and_stew
 id rice_and_stew_2
@@ -3305,6 +3326,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_food_beneficiary_dashboard
+layout fragment_kitchen_staff_dash_board
 layout fragment_landing_page
 layout fragment_notifications_screen
 layout fragment_onboarding_screen
@@ -3438,6 +3460,7 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string april_2022
 string beans_amp_rice
 string beans_pourage
 string bottom_sheet_behavior
@@ -3451,6 +3474,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string closeDrawerContentDesc
+string define_roundedimageview
 string dinner
 string efo_amp_semo
 string egusi_amp_semo
@@ -3461,12 +3485,22 @@ string fab_transformation_sheet_behavior
 string food_beneficiary_menu_item_label_logout
 string food_beneficiary_menu_item_label_meal_time_table
 string food_beneficiary_menu_item_label_notification
+string fri
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string jollof_rice_amp_egg
 string label
+string library_roundedimageview_author
+string library_roundedimageview_authorWebsite
+string library_roundedimageview_isOpenSource
+string library_roundedimageview_libraryDescription
+string library_roundedimageview_libraryName
+string library_roundedimageview_libraryVersion
+string library_roundedimageview_libraryWebsite
+string library_roundedimageview_licenseId
+string library_roundedimageview_repositoryLink
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium
@@ -3502,6 +3536,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string meal_time_table
+string mon
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -3548,11 +3584,17 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string rice_amp_chicken
+string sat
 string scan_qr_code
 string search_menu_title
 string serving
 string status_bar_notification_info_overflow
+string sun
+string thu
+string tue
 string uno_kitchen
+string wed
+string weekly_updated
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -4754,6 +4796,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RoundedImageView android_scaleType riv_border_color riv_border_width riv_corner_radius riv_corner_radius_bottom_left riv_corner_radius_bottom_right riv_corner_radius_top_left riv_corner_radius_top_right riv_mutate_background riv_oval riv_tile_mode riv_tile_mode_x riv_tile_mode_y
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon

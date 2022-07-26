@@ -21,9 +21,11 @@ color themePrimaryColor
 color white
 drawable btn_bg_shape_filled
 drawable btn_bg_shape_outline
+drawable circle_shape
 drawable current_day_background
 drawable ic_back
 drawable ic_baseline_menu_24
+drawable ic_chevron_left
 drawable ic_close
 drawable ic_cuisine_logo
 drawable ic_hamburger
@@ -34,6 +36,7 @@ drawable ic_launcher_foreground
 drawable ic_menu_meal_plate
 drawable ic_menu_notification
 drawable ic_menu_sign_out
+drawable kitchen_staff
 drawable landing_page_banner
 drawable landing_page_dish_1
 drawable landing_page_dish_2
@@ -58,6 +61,7 @@ font manrope_light
 font manrope_medium
 font manrope_regular
 font manrope_semibold
+id action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment2
 id calendarRecyclerView
 id calender_cell_parent_view
 id cellDayText
@@ -71,6 +75,8 @@ id dismiss_logout_btn
 id foodBeneficiaryDashboardFragment
 id fragmentContainerView
 id frameLayout
+id kitchenStaffDashBoardFragment
+id kitchen_staff_dashboard_toolbar
 id landingPageFragment
 id landingPageMealsRecyclerView
 id landing_page_container
@@ -125,6 +131,7 @@ id yesterday
 layout activity_main
 layout calender_cell
 layout fragment_food_beneficiary_dashboard
+layout fragment_kitchen_staff_dash_board
 layout fragment_landing_page
 layout fragment_notifications_screen
 layout fragment_onboarding_screen
@@ -144,6 +151,7 @@ string Rice_and_stew
 string _12_15pm_to_01_00pm
 string _7_00pm_to_07_30pm
 string app_name
+string april_2022
 string beans_amp_rice
 string beans_pourage
 string brunch
@@ -156,14 +164,23 @@ string egusi_amp_semo
 string food_beneficiary_menu_item_label_logout
 string food_beneficiary_menu_item_label_meal_time_table
 string food_beneficiary_menu_item_label_notification
+string fri
 string hello_blank_fragment
 string jollof_rice_amp_egg
+string meal_time_table
+string mon
 string not_serving
 string openDrawerContentDesc
 string rice_amp_chicken
+string sat
 string scan_qr_code
 string serving
+string sun
+string thu
+string tue
 string uno_kitchen
+string wed
+string weekly_updated
 style Theme.App.Starting
 style Theme.LunchWallet
 style Theme.LunchWallet.ToolBar

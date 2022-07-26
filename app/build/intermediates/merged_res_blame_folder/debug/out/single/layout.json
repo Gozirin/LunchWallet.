@@ -8,6 +8,10 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/navigation_drawer_menu_header.xml"
     },
     {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kitchen_staff_dash_board.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml"
+    },
+    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/calender_cell.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/calender_cell.xml"
     },

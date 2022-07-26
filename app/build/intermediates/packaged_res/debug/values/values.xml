@@ -22,6 +22,7 @@
     <string name="_12_15pm_to_01_00pm">12:15PM to 01:00PM</string>
     <string name="_7_00pm_to_07_30pm">7:00PM to 07:30PM</string>
     <string name="app_name">LunchWallet</string>
+    <string name="april_2022">April 2022</string>
     <string name="beans_amp_rice"><![CDATA[Beans & rice]]></string>
     <string name="beans_pourage">Beans pourage</string>
     <string name="brunch">BRUNCH</string>
@@ -34,14 +35,23 @@
     <string name="food_beneficiary_menu_item_label_logout">Logout</string>
     <string name="food_beneficiary_menu_item_label_meal_time_table">Meal Time-table</string>
     <string name="food_beneficiary_menu_item_label_notification">Notification</string>
+    <string name="fri">Fri</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="jollof_rice_amp_egg"><![CDATA[Jollof rice & egg]]></string>
+    <string name="meal_time_table">Meal Time Table</string>
+    <string name="mon">Mon</string>
     <string name="not_serving">Not serving</string>
     <string name="openDrawerContentDesc">open</string>
     <string name="rice_amp_chicken"><![CDATA[Rice & chicken]]></string>
+    <string name="sat">Sat</string>
     <string name="scan_qr_code">Scan QR code</string>
     <string name="serving">Serving</string>
+    <string name="sun">SUN</string>
+    <string name="thu">Thu</string>
+    <string name="tue">Tue</string>
     <string name="uno_kitchen">Uno kitchen</string>
+    <string name="wed">Wed</string>
+    <string name="weekly_updated">Weekly updated</string>
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launch_wallet_splash_screen</item>

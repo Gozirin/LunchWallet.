@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.adapter
+package com.example.lunchwallet.util.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater

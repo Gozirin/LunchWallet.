@@ -1,4 +1,4 @@
-#Mon Jul 18 02:49:16 WAT 2022
+#Tue Jul 26 09:24:34 WAT 2022
 path.4=12/classes.dex
 path.3=11/classes.dex
 path.2=10/classes.dex
@@ -7,7 +7,8 @@ path.1=0/classes.dex
 renamed.8=classes9.dex
 path.8=2/classes.dex
 path.7=15/classes.dex
-path.6=14/classes.dex
+renamed.13=classes14.dex
+path.6=3/classes.dex
 renamed.12=classes13.dex
 path.5=13/classes.dex
 renamed.11=classes12.dex
@@ -21,6 +22,7 @@ base.0=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/merg
 renamed.3=classes4.dex
 path.12=classes2.dex
 renamed.2=classes3.dex
+path.13=8/classes.dex
 renamed.1=classes2.dex
 path.10=5/classes.dex
 renamed.0=classes.dex
@@ -32,9 +34,10 @@ base.8=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/merg
 renamed.6=classes7.dex
 base.7=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
 renamed.5=classes6.dex
-base.6=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.6=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
 renamed.4=classes5.dex
 base.5=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.13=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
 base.12=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 base.11=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
 base.10=/Users/decagon/Desktop/LunchWallet/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex

@@ -74,4 +74,7 @@ dependencies {
 
     //splash screen API
     implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
+
+    // Rounded Image
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }

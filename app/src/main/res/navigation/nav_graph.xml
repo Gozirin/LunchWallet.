@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/foodBeneficiaryDashboardFragment">
+    app:startDestination="@id/kitchenStaffDashBoardFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -24,10 +24,19 @@
         android:id="@+id/foodBeneficiaryDashboardFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment"
         android:label="fragment_food_beneficiary_dashboard"
-        tools:layout="@layout/fragment_food_beneficiary_dashboard" />
+        tools:layout="@layout/fragment_food_beneficiary_dashboard" >
+        <action
+            android:id="@+id/action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment2"
+            app:destination="@id/notificationsScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/notificationsScreenFragment"
         android:name="com.example.lunchwallet.onboarding.ui.notifications.ui.NotificationsScreenFragment"
         android:label="fragment_notifications_screen"
         tools:layout="@layout/fragment_notifications_screen" />
+    <fragment
+        android:id="@+id/kitchenStaffDashBoardFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.ui.dashboard.KitchenStaffDashBoardFragment"
+        android:label="fragment_kitchen_staff_dash_board"
+        tools:layout="@layout/fragment_kitchen_staff_dash_board" />
 </navigation>
