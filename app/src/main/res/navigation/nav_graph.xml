@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/checkMailFragment">
+    app:startDestination="@id/mealTimeTableFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -123,4 +123,9 @@
             android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.MealTimeTableFragment"
+        android:label="fragment_meal_time_table"
+        tools:layout="@layout/fragment_meal_time_table" />
 </navigation>
