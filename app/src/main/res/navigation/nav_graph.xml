@@ -125,7 +125,7 @@
     </fragment>
     <fragment
         android:id="@+id/mealTimeTableFragment"
-        android:name="com.example.lunchwallet.admin.MealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
         android:label="fragment_meal_time_table"
         tools:layout="@layout/fragment_meal_time_table" />
 </navigation>

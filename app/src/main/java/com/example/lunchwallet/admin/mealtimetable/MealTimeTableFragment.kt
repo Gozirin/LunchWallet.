@@ -1,4 +1,4 @@
-package com.example.lunchwallet.admin
+package com.example.lunchwallet.admin.mealtimetable
 
 import android.os.Bundle
 import android.view.LayoutInflater
