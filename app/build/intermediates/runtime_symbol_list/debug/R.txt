@@ -2758,7 +2758,6 @@ int id action_text 0x7f0a0056
 int id actions 0x7f0a0057
 int id activity_chooser_view_content 0x7f0a0058
 int id add 0x7f0a0059
-int id adminSignUpFragment 0x7f0a005a
 int id alertTitle 0x7f0a005b
 int id aligned 0x7f0a005c
 int id all 0x7f0a005d
@@ -2979,6 +2978,7 @@ int id item_touch_helper_previous_elevation 0x7f0a0133
 int id jumpToEnd 0x7f0a0134
 int id jumpToStart 0x7f0a0135
 int id kitchenStaffDashBoardFragment 0x7f0a0136
+int id kitchenStaffSignUpFragment 0x7f0a02a9
 int id kitchen_staff_dashboard_toolbar 0x7f0a0137
 int id labeled 0x7f0a0138
 int id landingPageFragment 0x7f0a0139

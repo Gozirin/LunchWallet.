@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable-xxxhdpi/btn_bg_shape_filled.xml" value="0.174" />
         <entry key="app/src/main/res/drawable-xxxhdpi/shape.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable/btn_bg_shape.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/btn_bg_shape_outline.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.237" />
@@ -25,6 +26,8 @@
         <entry key="app/src/main/res/layout/fragment_admin_sign_up.xml" value="0.21442215854823304" />
         <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_sign_up.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_side_bar_menu.xml" value="0.21052631578947367" />
