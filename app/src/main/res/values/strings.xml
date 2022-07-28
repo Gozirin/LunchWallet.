@@ -59,7 +59,7 @@
     <string name="uno_kitchen">Uno kitchen</string>
     <string name="rice_amp_chicken"><![CDATA[Rice & chicken]]></string>
     <string name="egusi_amp_semo"><![CDATA[Egusi & semo]]></string>
-    <string name="beans_pourage">Beans pourage</string>
+    <string name="beans_pourage">Beans porridge</string>
     <string name="serving">Serving</string>
     <string name="brunch">Brunch</string>
     <string name="scan_qr_code">Scan QR code</string>
@@ -103,6 +103,7 @@
 
     <!--  Create new password code-->
     <style name="new_password">New Password</style>
+
     <string name="Confirm_password">Confirm Password</string>
     <string name="Reset_password">Reset Password</string>
     <string name="Password">Password</string>
@@ -115,6 +116,8 @@
     <string name="Resend_instruction">Resend Instruction</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_your_email_address">Enter your email address</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
