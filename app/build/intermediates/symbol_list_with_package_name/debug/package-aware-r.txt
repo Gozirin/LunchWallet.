@@ -2651,6 +2651,7 @@ drawable notify_panel_notification_icon_bg
 drawable onboarding_screen_one
 drawable onboarding_screen_three
 drawable onboarding_screen_two
+drawable profile_image
 drawable reset_password_success_modal_background
 drawable shape
 drawable shape2
@@ -2759,6 +2760,10 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adminMealTimetableFragment_layout
+id adminMealTimetableFragment_weekdays
+id adminMealTimetableFragment_weekly_updated
+id admin_timetable_profilePic_iv
 id alertTitle
 id aligned
 id all
@@ -3044,6 +3049,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id mealTimeTable_toolbar
 id meal_time_table
 id media_actions
 id menu_component_close_vector
@@ -3471,6 +3477,7 @@ layout fragment_kitchen_staff_dash_board
 layout fragment_kitchen_staff_sign_up
 layout fragment_landing_page
 layout fragment_login
+layout fragment_meal_time_table
 layout fragment_notifications_screen
 layout fragment_onboarding_screen
 layout fragment_reset_password

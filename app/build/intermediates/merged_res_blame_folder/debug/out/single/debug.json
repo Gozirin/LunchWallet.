@@ -24,12 +24,12 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_confrim_mail_frgament.xml"
     },
     {
-        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_cuisine_logo.xml.flat",
-        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_cuisine_logo.xml"
-    },
-    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/font_manrope_extralight.ttf.flat",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/font/manrope_extralight.ttf"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_ic_cuisine_logo.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/ic_cuisine_logo.xml"
     },
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_kitchen_staff.jpg.flat",
@@ -128,6 +128,10 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable-xxxhdpi/shape.xml"
     },
     {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_fragment_meal_time_table.xml.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_meal_time_table.xml"
+    },
+    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_fragment_check_mail_reset_password.xml.flat",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_check_mail_reset_password.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/drawable_profile_image.png.flat",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/drawable/profile_image.png"
     },
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/merged_res/debug/layout_sidebar_menu.xml.flat",

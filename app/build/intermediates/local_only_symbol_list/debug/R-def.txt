@@ -72,6 +72,7 @@ drawable login_input_background
 drawable onboarding_screen_one
 drawable onboarding_screen_three
 drawable onboarding_screen_two
+drawable profile_image
 drawable reset_password_success_modal_background
 drawable shape
 drawable shape2
@@ -104,6 +105,10 @@ id action_resetPasswordFragment_to_checkMailResetPasswordFragment
 id action_selectTypeFragment_to_signUpFragment
 id action_signUpFragment_to_checkMailFragment
 id action_signUpFragment_to_loginFragment
+id adminMealTimetableFragment_layout
+id adminMealTimetableFragment_weekdays
+id adminMealTimetableFragment_weekly_updated
+id admin_timetable_profilePic_iv
 id calendarRecyclerView
 id calender_cell_parent_view
 id cellDayText
@@ -187,6 +192,7 @@ id mainFragment
 id main_activity_drawer_layout
 id main_activity_toolbar
 id main_fragment_view_landing_page_button
+id mealTimeTable_toolbar
 id meal_time_table
 id menu_component_close_vector
 id menu_item_logout
@@ -276,6 +282,7 @@ layout fragment_kitchen_staff_dash_board
 layout fragment_kitchen_staff_sign_up
 layout fragment_landing_page
 layout fragment_login
+layout fragment_meal_time_table
 layout fragment_notifications_screen
 layout fragment_onboarding_screen
 layout fragment_reset_password
