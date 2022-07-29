@@ -29,12 +29,6 @@ class CalenderAdapter(private val days: ArrayList<LocalDate>) : RecyclerView.Ada
         val currentDate = days[position]
         holder.dayOfMonth.text = currentDate.dayOfMonth.toString()
 
-        holder.itemView.setOnClickListener {
-            println("clicked")
-            println(selectedDate)
-            println(currentDate)
-        }
-
         if (currentDate == selectedDate) {
             holder.dayOfMonth.setBackgroundResource(R.drawable.current_day_background)
             holder.dayOfMonth.setTextColor(Color.WHITE)

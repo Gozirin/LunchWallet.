@@ -22,6 +22,7 @@
         <entry key="app/src/main/res/drawable/ic_hamburger.xml" value="0.2385" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_cuisine.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_ellipse_9.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_frame_40.xml" value="0.2285" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_logo.xml" value="0.17" />
         <entry key="app/src/main/res/drawable/ic_launch_wallet_splash_screen.xml" value="0.1" />
@@ -47,6 +48,7 @@
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.33720092773437504" />
         <entry key="app/src/main/res/layout/fragment_landing_page.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_meal_time_table.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.25" />
