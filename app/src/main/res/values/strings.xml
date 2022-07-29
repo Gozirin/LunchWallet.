@@ -46,7 +46,6 @@
     <string name="btn_skip">Skip</string>
     <string name="Rice_and_stew">Rice &amp; Stew</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="APP_NAME">Lunch Wallet</string>
     <string name="openDrawerContentDesc">open</string>
     <string name="closeDrawerContentDesc">close</string>

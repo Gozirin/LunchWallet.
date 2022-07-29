@@ -84,6 +84,10 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_meal_time_table.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_meal_time_table.xml"
+    },
+    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/stack_list.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/stack_list.xml"
     },
