@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/dashBoardLunchWalletFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -100,7 +100,11 @@
         android:id="@+id/createNewPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
-        tools:layout="@layout/fragment_create_new_password" />
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_dashBoardLunchWalletFragment2"
+            app:destination="@id/dashBoardLunchWalletFragment" />
+    </fragment>
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CheckMailResetPasswordFragment"
@@ -112,5 +116,36 @@
         <action
             android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optionMealFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.OptionMealFragment"
+        android:label="fragment_option_meal"
+        tools:layout="@layout/fragment_option_meal" >
+        <action
+            android:id="@+id/action_optionMealFragment_to_messageAlertFragment"
+            app:destination="@id/messageAlertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageAlertFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.MessageAlertFragment"
+        android:label="fragment_message_alert"
+        tools:layout="@layout/fragment_message_alert" />
+    <fragment
+        android:id="@+id/uploadMealFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.UploadMealFragment"
+        android:label="UploadMealFragment" >
+        <action
+            android:id="@+id/action_uploadMealFragment_to_optionMealFragment"
+            app:destination="@id/optionMealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardLunchWalletFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.dashboard.DashBoardLunchWalletFragment"
+        android:label="fragment_dash_board_lunch_wallet"
+        tools:layout="@layout/fragment_dash_board_lunch_wallet" >
+        <action
+            android:id="@+id/action_dashBoardLunchWalletFragment_to_uploadMealFragment"
+            app:destination="@id/uploadMealFragment" />
     </fragment>
 </navigation>

@@ -92,6 +92,7 @@
 
     <!--  Create new password code-->
     <style name="new_password">New Password</style>
+
     <string name="Confirm_password">Confirm Password</string>
     <string name="Reset_password">Reset Password</string>
     <string name="Password">Password</string>
@@ -104,6 +105,46 @@
     <string name="Resend_instruction">Resend Instruction</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_your_email_address">Enter your email address</string>
+
+    <string-array name="kitchen">
+        <item>Farah Park</item>
+        <item>UNO</item>
+        <item>Edo Tech Park</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ugochukwu">Ugochukwu</string>
+    <string name="total_number_of_users">Total number of users</string>
+    <string name="users">Users</string>
+    <string name="tickets">Tickets</string>
+    <string name="upload_meal">Upload Meal</string>
+    <string name="timetable">Timetable</string>
+    <string name="upload_successful">Upload Successful</string>
+    <string name="your_meal_has_been_added_successfully">Your meal has been added successfully</string>
+    <string name="done">Done</string>
+    <string name="todo">TODO</string>
+    <string name="add_meal">Add Meal</string>
+    <string name="Todo">Todo</string>
+    <string name="Lunch_Wallet">Lunch Wallet</string>
+    <string name="weekly_meal">Weekly meal</string>
+    <string name="meals_will_be_updated_daily_amp_weekly"><![CDATA[Meals will be updated daily & weekly]]></string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="you_have_not_added_any_meal_yet_click_on_nthe_button_to_add_meal">You have not added any meal yet. Click on\nthe button to add meal</string>
+    <string name="Add_meal">Add Meal</string>
+    <string name="add_a_meal">Add a meal</string>
+    <string name="title_of_meal">Title of Meal</string>
+    <string name="serving_time">Serving Time</string>
+    <string name="add_time">Add time</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="select">Select</string>
+    <string name="Add_a_Meal">Add a meal</string>
+    <string name="Add_Meal">Add Meal</string>
+    <string name="Add_image">Add image</string>
+    <string name="name_of_meal">Name of Meal</string>
+    <string name="Lunch_wallet">Lunch Wallet</string>
+    <string name="hello">Hello</string>
+    <string name="_445">445</string>
+    <string name="view">View</string>
 
 
 </resources>

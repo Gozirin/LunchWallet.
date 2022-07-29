@@ -30,4 +30,8 @@
     <color name="loginbutton">#FD5900</color>
     <color name="login_input_background">#C4C4C4</color>
     <color name="helper_text_color">#A30306</color>
+
+    <!-- precious Color -->
+    <color name="Nothing_to_show">#21334F</color>
+
 </resources>
