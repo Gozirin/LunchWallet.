@@ -100,11 +100,7 @@
         android:id="@+id/createNewPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
-        tools:layout="@layout/fragment_create_new_password" >
-        <action
-            android:id="@+id/action_createNewPasswordFragment_to_dashBoardLunchWalletFragment2"
-            app:destination="@id/dashBoardLunchWalletFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_create_new_password" />
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CheckMailResetPasswordFragment"
