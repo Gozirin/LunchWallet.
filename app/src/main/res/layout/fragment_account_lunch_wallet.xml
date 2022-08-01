@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".foodbeneficiary.ui.main.signup.uploadmeals.AccountLunchWalletFragment">
-
-   <androidx.appcompat.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:background="@drawable/login_input_background"
@@ -19,21 +18,19 @@
            android:orientation="horizontal"
            android:paddingHorizontal="10dp"
            android:paddingVertical="10dp">
-
            <androidx.appcompat.widget.LinearLayoutCompat
                android:id="@+id/uploadMealFragment_layout"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_weight="3">
-
                <ImageView
                    android:id="@+id/account_lunch_wallet_Fragment_logo"
                    android:layout_width="32dp"
                    android:layout_height="32dp"
                    android:layout_gravity="center"
                    android:scaleType="fitCenter"
-                   android:src="@drawable/ic_cuisine"/>
-
+                   android:src="@drawable/ic_cuisine"
+                   tools:ignore="ContentDescription" />
                <TextView
                    android:id="@+id/account_lunch_wallet_Fragment_lunch_wallet_TV"
                    android:layout_width="wrap_content"
@@ -43,9 +40,9 @@
                    android:fontFamily="@font/manrope_extrabold"
                    android:text="@string/Lunch_Wallet"
                    android:textColor="@color/black"
-                   android:textFontWeight="800" />
+                   android:textFontWeight="800"
+                   tools:ignore="UnusedAttribute" />
            </androidx.appcompat.widget.LinearLayoutCompat>
-
            <androidx.appcompat.widget.LinearLayoutCompat
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -55,33 +52,27 @@
                    android:layout_width="32dp"
                    android:layout_height="32dp"
                    android:layout_gravity="center"
-                   android:src="@drawable/ic_ellipse" />
+                   android:src="@drawable/ic_ellipse"
+                   tools:ignore="ContentDescription" />
            </androidx.appcompat.widget.LinearLayoutCompat>
        </androidx.appcompat.widget.LinearLayoutCompat>
    </androidx.appcompat.widget.Toolbar>
-
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp">
-
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="1dp"
             android:orientation="vertical"
             android:padding="8dp">
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
                 android:layout_weight="2"
                 app:cardElevation="5dp">
-
                 <TextView
                     android:id="@+id/account_lunch_wallet_Fragment_Meal_Updated_Tv"
                     android:layout_width="match_parent"
@@ -92,8 +83,8 @@
                     android:text="@string/weekly_meal"
                     android:textColor="@color/text_color"
                     android:textFontWeight="400"
-                    android:textSize="24sp" />
-
+                    android:textSize="24sp"
+                    tools:ignore="UnusedAttribute" />
                 <TextView
                     android:id="@+id/account_lunch_wallet_Fragment_Weekly_meal_Tv"
                     android:layout_width="match_parent"
@@ -105,7 +96,8 @@
                     android:text="@string/meals_will_be_updated_daily_amp_weekly"
                     android:textFontWeight="400"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="UnusedAttribute" />
 
             </androidx.cardview.widget.CardView>
 
@@ -123,14 +115,13 @@
                     android:text="@string/today"
                     android:textColor="#21334F"
                     android:textFontWeight="400"
-                    android:textSize="14sp" />
-
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:orientation="horizontal">
-
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/account_lunch_wallet_Add_meal_button"
                         android:layout_width="wrap_content"
@@ -144,12 +135,10 @@
                         android:textAppearance="@style/TextAppearance.AppCompat"
                         android:textColor="@color/white"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded,UnusedAttribute" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
             </androidx.appcompat.widget.LinearLayoutCompat>
-
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,11 +153,11 @@
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp">
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/chicken" />
+                        android:src="@drawable/chicken"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/jellof_rice_Tv"
@@ -179,7 +168,8 @@
                         android:text="@string/jellof_rice_amp_chicken"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="700"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RtlHardcoded,UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/Brunch_Tv"
@@ -191,7 +181,8 @@
                         android:text="@string/_12_15pm_brunch"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/Uno_kitchen_Tv"
@@ -203,21 +194,24 @@
                         android:text="@string/uno_kitchen"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginRight="1dp"
+                        android:layout_marginEnd="1dp"
                         android:fontFamily="@font/manrope_regular"
                         android:text="@string/remove"
                         android:textColor="@color/Remove_color"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,UnusedAttribute" />
 
 
                     <TextView
+                        android:id="@+id/jellof_rice_edit_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -229,16 +223,10 @@
                         android:text="@string/edit"
                         android:textColor="#21334F"
                         android:textFontWeight="600"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,RtlHardcoded,UnusedAttribute" />
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
-
-
-
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -258,7 +246,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:src="@drawable/jellofrice" />
+                        android:src="@drawable/jellofrice"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -269,7 +258,8 @@
                         android:text="@string/rice_amp_egg_sauce"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="700"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/time_Tv"
@@ -281,7 +271,8 @@
                         android:text="@string/_12_15_PM_Brunch"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
 
                     <TextView
@@ -294,10 +285,12 @@
                         android:text="@string/fara_park_kitchen"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
 
                     <TextView
+                        android:id="@+id/rice_and_egg_sauce_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -306,9 +299,11 @@
                         android:text="@string/Remove"
                         android:textColor="@color/Remove_color"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/egg_sauce_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -320,7 +315,8 @@
                         android:text="@string/Edit"
                         android:textColor="#21334F"
                         android:textFontWeight="600"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,RtlHardcoded,UnusedAttribute" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -344,7 +340,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:src="@drawable/egusi_soup" />
+                        android:src="@drawable/egusi_soup"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -355,7 +352,8 @@
                         android:text="@string/egusi_soup_amp_semo"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="700"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
 
                     <TextView
@@ -368,7 +366,8 @@
                         android:text="@string/_12_15_PM_Brunch"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/Egusi_Uno_kitchen_Tv"
@@ -380,10 +379,11 @@
                         android:text="@string/Uno_kitchen"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
-
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/Egusi_edit_Tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -392,9 +392,11 @@
                         android:text="@string/Remove"
                         android:textColor="@color/Remove_color"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/Egusisoup_and_semo_Tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -406,11 +408,10 @@
                         android:text="@string/Edit"
                         android:textColor="#21334F"
                         android:textFontWeight="600"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,RtlHardcoded,UnusedAttribute" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
-
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -429,7 +430,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:src="@drawable/eforiro" />
+                        android:src="@drawable/eforiro"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -440,7 +442,8 @@
                         android:text="@string/eforiro_amp_semo"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="700"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/Eforirosoup_time_Tv"
@@ -452,7 +455,8 @@
                         android:text="@string/_12_15_PM_Brunch"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/Eforiro_kitchen_Tv"
@@ -464,9 +468,11 @@
                         android:text="@string/fara_park_kitchen"
                         android:textColor="@color/Jellof_rice"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/Eforiro_and_semo_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -475,9 +481,11 @@
                         android:text="@string/Remove"
                         android:textColor="@color/Remove_color"
                         android:textFontWeight="400"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/semo_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -489,7 +497,8 @@
                         android:text="@string/Edit"
                         android:textColor="#21334F"
                         android:textFontWeight="600"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,UnusedAttribute" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </androidx.appcompat.widget.LinearLayoutCompat>
