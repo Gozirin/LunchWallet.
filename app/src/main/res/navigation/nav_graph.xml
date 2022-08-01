@@ -126,7 +126,11 @@
         android:id="@+id/messageAlertFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.MessageAlertFragment"
         android:label="fragment_message_alert"
-        tools:layout="@layout/fragment_message_alert" />
+        tools:layout="@layout/fragment_message_alert" >
+        <action
+            android:id="@+id/action_messageAlertFragment_to_accountLunchWalletFragment2"
+            app:destination="@id/accountLunchWalletFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/uploadMealFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.UploadMealFragment"
@@ -144,4 +148,9 @@
             android:id="@+id/action_dashBoardLunchWalletFragment_to_uploadMealFragment"
             app:destination="@id/uploadMealFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/accountLunchWalletFragment2"
+        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals.AccountLunchWalletFragment"
+        android:label="fragment_account_lunch_wallet"
+        tools:layout="@layout/fragment_account_lunch_wallet" />
 </navigation>

@@ -33,5 +33,7 @@
 
     <!-- precious Color -->
     <color name="Nothing_to_show">#21334F</color>
+    <color name="Jellof_rice">#21334F</color>
+    <color name="Remove_color">#D00000</color>
 
 </resources>

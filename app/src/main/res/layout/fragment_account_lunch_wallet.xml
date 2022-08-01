@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodbeneficiary.ui.main.signup.uploadmeals.AccountLunchWalletFragment">
+
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/login_input_background"
+       android:padding="6dp">
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:paddingHorizontal="10dp"
+           android:paddingVertical="10dp">
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:id="@+id/uploadMealFragment_layout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="3">
+
+               <ImageView
+                   android:id="@+id/account_lunch_wallet_Fragment_logo"
+                   android:layout_width="32dp"
+                   android:layout_height="32dp"
+                   android:layout_gravity="center"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/ic_cuisine"/>
+
+               <TextView
+                   android:id="@+id/account_lunch_wallet_Fragment_lunch_wallet_TV"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="5dp"
+                   android:fontFamily="@font/manrope_extrabold"
+                   android:text="@string/Lunch_Wallet"
+                   android:textColor="@color/black"
+                   android:textFontWeight="800" />
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <ImageView
+                   android:id="@+id/account_lunch_wallet_Fragment_image"
+                   android:layout_width="32dp"
+                   android:layout_height="32dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_ellipse" />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="1dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:layout_weight="2"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/account_lunch_wallet_Fragment_Meal_Updated_Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="@string/weekly_meal"
+                    android:textColor="@color/text_color"
+                    android:textFontWeight="400"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/account_lunch_wallet_Fragment_Weekly_meal_Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/meals_will_be_updated_daily_amp_weekly"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/today_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="@font/manrope_regular"
+                    android:text="@string/today"
+                    android:textColor="#21334F"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/account_lunch_wallet_Add_meal_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="@color/loginbutton"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:fontFamily="@font/manrope_regular"
+                        android:padding="8dp"
+                        android:text="@string/Add_Meal"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/white"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chicken" />
+
+                    <TextView
+                        android:id="@+id/jellof_rice_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/jellof_rice_amp_chicken"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="700"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Brunch_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/_12_15pm_brunch"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Uno_kitchen_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Brunch_Tv"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/uno_kitchen"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="1dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/remove"
+                        android:textColor="@color/Remove_color"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/login_input_background"
+                        android:fontFamily="@font/manrope_regular"
+                        android:padding="10dp"
+                        android:text="@string/edit"
+                        android:textColor="#21334F"
+                        android:textFontWeight="600"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/jellofrice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/rice_amp_egg_sauce"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="700"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/time_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/_12_15_PM_Brunch"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/Farapark_kitchen_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/time_Tv"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/fara_park_kitchen"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/Remove"
+                        android:textColor="@color/Remove_color"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/login_input_background"
+                        android:fontFamily="@font/manrope_regular"
+                        android:padding="10dp"
+                        android:text="@string/Edit"
+                        android:textColor="#21334F"
+                        android:textFontWeight="600"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/egusi_soup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/egusi_soup_amp_semo"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="700"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/Egusisoup_time_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/_12_15_PM_Brunch"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Egusi_Uno_kitchen_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Egusisoup_time_Tv"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/Uno_kitchen"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/Remove"
+                        android:textColor="@color/Remove_color"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/login_input_background"
+                        android:fontFamily="@font/manrope_regular"
+                        android:padding="10dp"
+                        android:text="@string/Edit"
+                        android:textColor="#21334F"
+                        android:textFontWeight="600"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="1dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/eforiro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/eforiro_amp_semo"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="700"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Eforirosoup_time_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/_12_15_PM_Brunch"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Eforiro_kitchen_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Eforirosoup_time_Tv"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/fara_park_kitchen"
+                        android:textColor="@color/Jellof_rice"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/manrope_regular"
+                        android:text="@string/Remove"
+                        android:textColor="@color/Remove_color"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="1dp"
+                        android:background="@color/login_input_background"
+                        android:fontFamily="@font/manrope_regular"
+                        android:padding="10dp"
+                        android:text="@string/Edit"
+                        android:textColor="#21334F"
+                        android:textFontWeight="600"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+</RelativeLayout>

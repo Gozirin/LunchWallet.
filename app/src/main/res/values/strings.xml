@@ -145,6 +145,20 @@
     <string name="hello">Hello</string>
     <string name="_445">445</string>
     <string name="view">View</string>
+    <string name="today">Today</string>
+    <string name="add_Meal">Add meal</string>
+    <string name="jellof_rice_amp_chicken"><![CDATA[Jellof rice & chicken]]></string>
+    <string name="_12_15pm_brunch">12:15PM (Brunch)</string>
+    <string name="Uno_kitchen">Uno kitchen</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="rice_amp_egg_sauce"><![CDATA[Rice & Egg Sauce]]></string>
+    <string name="_12_15_PM_Brunch">12:15PM (Brunch)</string>
+    <string name="fara_park_kitchen">Fara park kitchen</string>
+    <string name="Remove">remove</string>
+    <string name="Edit">edit</string>
+    <string name="egusi_soup_amp_semo"><![CDATA[Egusi soup & semo]]></string>
+    <string name="eforiro_amp_semo"><![CDATA[Eforiro & semo]]></string>
 
 
 </resources>
