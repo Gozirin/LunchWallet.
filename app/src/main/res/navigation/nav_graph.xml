@@ -132,4 +132,14 @@
             android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
+        android:label="fragment_meal_time_table"
+        tools:layout="@layout/fragment_meal_time_table" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lunchwallet.admin.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 </navigation>
