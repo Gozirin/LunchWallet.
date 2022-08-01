@@ -25,6 +25,7 @@
     <!-- Ekene's Color Ends   -->
     <color name="text_color">#203350</color>
     <color name="theme_color">#FD5900</color>
+    <color name="back_color">#0DFD5900</color>
     <color name="grey">#ADBACD</color>
     <color name="none">#00FFFFFF</color>
     <color name="loginbutton">#FD5900</color>
