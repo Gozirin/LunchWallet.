@@ -137,4 +137,15 @@
         android:name="com.example.lunchwallet.kitchenstaff.ui.signup.KitchenStaffSignUpFragment"
         android:label="fragment_kitchen_staff_sign_up"
         tools:layout="@layout/fragment_kitchen_staff_sign_up" />
+        />
+    <fragment
+        android:id="@+id/mealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
+        android:label="fragment_meal_time_table"
+        tools:layout="@layout/fragment_meal_time_table" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lunchwallet.admin.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 </navigation>
