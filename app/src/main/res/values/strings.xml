@@ -149,4 +149,5 @@
     <string name="Edit">edit</string>
     <string name="egusi_soup_amp_semo"><![CDATA[Egusi soup & semo]]></string>
     <string name="eforiro_amp_semo"><![CDATA[Eforiro & semo]]></string>
+    <string name="change_status">Change Status</string>
 </resources>

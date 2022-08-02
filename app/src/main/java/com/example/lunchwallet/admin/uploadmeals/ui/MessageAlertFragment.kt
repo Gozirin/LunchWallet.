@@ -1,15 +1,13 @@
-package com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals
+package com.example.lunchwallet.admin.uploadmeals.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentMessageAlertBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class MessageAlertFragment : Fragment(R.layout.fragment_message_alert) {
+class MessageAlertFragment : BottomSheetDialogFragment() {
     private lateinit var binding: FragmentMessageAlertBinding
 
     override fun onCreateView(
@@ -28,7 +26,7 @@ class MessageAlertFragment : Fragment(R.layout.fragment_message_alert) {
 
         // Done Button
         binding.messageAlertFragmentDoneButton.setOnClickListener {
-            findNavController().navigate(R.id.action_messageAlertFragment_to_accountLunchWalletFragment2)
+//            findNavController().navigate(R.id.action_messageAlertFragment_to_accountLunchWalletFragment2)
         }
     }
 }

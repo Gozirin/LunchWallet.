@@ -1,82 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".foodbeneficiary.ui.dashboard.DashBoardLunchWalletFragment">
+    tools:context=".kitchenstaff.dashboard.KitchenStaffDashBoardFragment">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/login_input_background"
-        android:padding="10dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="10dp">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/uploadMealFragment_layout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="20dp">
 
                 <ImageView
                     android:id="@+id/uploadMealFragment_logo"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_gravity="center"
+                    android:layout_gravity="start"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_cuisine" />
+                    android:src="@drawable/ic_cuisine"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
 
                 <TextView
                     android:id="@+id/uploadMealFragment_lunch_wallet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/manrope_extrabold"
                     android:text="@string/Lunch_Wallet"
                     android:textColor="@color/black"
-                    android:textFontWeight="800" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center">
+                    android:textFontWeight="800"
+                    tools:ignore="UnusedAttribute" />
 
                 <ImageView
                     android:id="@+id/uploadMealFragment_image"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_ellipse" />
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_ellipse"
+                    tools:ignore="ContentDescription" />
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.Toolbar>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <LinearLayout
-        android:id="@+id/nested_scrollview"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/f"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="1dp"
-            android:orientation="vertical"
-            android:padding="8dp">
+        android:layout_height="2dp"
+        android:background="@color/Layout_background"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -87,7 +59,8 @@
                 android:fontFamily="@font/inter"
                 android:textFontWeight="400"
                 android:textSize="14sp"
-                android:textColor="#21334F"/>
+                android:textColor="@color/Today_color"
+                tools:ignore="UnusedAttribute" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -97,81 +70,14 @@
                 android:textFontWeight="600"
                 android:fontFamily="@font/inter"
                 android:textSize="18sp"
-                android:textColor="#21334F"/>
-
-
-            <androidx.core.widget.NestedScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:background="#F6E4D9">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:fontFamily="@font/manrope_regular"
-                        android:text="@string/total_number_of_users"
-                        android:textFontWeight="600"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/total_users_iv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:fontFamily="@font/manrope_regular"
-                        android:src="@drawable/ic_users"
-                        android:textFontWeight="700"
-                        android:textSize="24sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:fontFamily="@font/manrope_regular"
-                        android:text="@string/_445"
-                        android:textFontWeight="600"
-                        android:textSize="24sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/total_users_iv"
-                        android:layout_alignLeft="@id/total_users_iv"
-                        android:fontFamily="@font/manrope_regular"
-                        android:text="@string/view"
-                        android:textColor="@color/loginbutton"
-                        android:textFontWeight="500"
-                        android:textSize="16sp" />
-
-                </RelativeLayout>
-            </androidx.core.widget.NestedScrollView>
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </LinearLayout>
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/Today_color"
+                tools:ignore="UnusedAttribute" />
 
     <LinearLayout
         android:id="@+id/cardview_lo1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@id/nested_scrollview"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
 
         <androidx.cardview.widget.CardView
@@ -193,7 +99,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/ic_users" />
+                    android:background="@drawable/ic_users"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/user_tv"
@@ -204,7 +111,8 @@
                     android:fontFamily="@font/manrope_regular"
                     android:text="@string/users"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -223,23 +131,25 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/user_timetable_iv"
+                    android:id="@+id/change_status__iv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/ic_bag" />
+                    android:background="@drawable/ic_bag"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
-                    android:id="@+id/user_timetable_tv"
+                    android:id="@+id/change_status_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/user_timetable_iv"
+                    android:layout_below="@id/change_status__iv"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/manrope_regular"
-                    android:text="@string/timetable"
+                    android:text="@string/change_status"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -266,28 +176,31 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/user_ticket_iv"
+                    android:id="@+id/user_timetable_iv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/ic_ladder" />
+                    android:background="@drawable/ic_bag"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
-                    android:id="@+id/user_ticket_tv"
+                    android:id="@+id/user_timetable_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/user_ticket_iv"
+                    android:layout_below="@id/user_timetable_iv"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/manrope_regular"
-                    android:text="@string/tickets"
+                    android:text="@string/timetable"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_margin="10dp"
@@ -307,7 +220,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="75dp"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/ic_food" />
+                    android:background="@drawable/ic_food"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:id="@+id/user_upload_plate_iv"
@@ -317,7 +231,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="73dp"
                     android:layout_marginTop="1dp"
-                    android:background="@drawable/ic_plate" />
+                    android:background="@drawable/ic_plate"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/user_upload_meal_tv"
@@ -328,11 +243,12 @@
                     android:fontFamily="@font/manrope_regular"
                     android:text="@string/upload_meal"
                     android:textFontWeight="500"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="UnusedAttribute" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-</RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,25 +1,26 @@
-package com.example.lunchwallet.foodbeneficiary.ui.main.signup.uploadmeals
+package com.example.lunchwallet.admin.uploadmeals.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentOptionMealBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class OptionMealFragment : Fragment(R.layout.fragment_option_meal) {
+class OptionMealBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
-    private lateinit var binding: FragmentOptionMealBinding
+    private var _binding: FragmentOptionMealBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentOptionMealBinding.inflate(inflater, container, false)
+        _binding = FragmentOptionMealBinding.inflate(inflater, container, false)
         return binding.root
     }
 
