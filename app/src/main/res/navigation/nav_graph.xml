@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/kitchenStaffDashBoardFragment">
+    app:startDestination="@id/onboardingScreenFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -82,10 +82,10 @@
         android:label="fragment_notifications_screen"
         tools:layout="@layout/fragment_notifications_screen" />
     <fragment
-        android:id="@+id/kitchenStaffDashBoardFragment"
-        android:name="com.example.lunchwallet.kitchenstaff.ui.dashboard.KitchenStaffDashBoardFragment"
+        android:id="@+id/kitchenStaffMealTimeTableFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.mealtimetable.KitchenStaffMealTimeTableFragment"
         android:label="fragment_kitchen_staff_dash_board"
-        tools:layout="@layout/fragment_kitchen_staff_dash_board" />
+        tools:layout="@layout/fragment_kitchen_staff_meal_time_table" />
 
     <fragment
         android:id="@+id/loginFragment"
@@ -133,13 +133,49 @@
             app:destination="@id/resetPasswordFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mealTimeTableFragment"
-        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
-        android:label="fragment_meal_time_table"
-        tools:layout="@layout/fragment_meal_time_table" />
+        android:id="@+id/kitchenStaffSignUpFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.signup.KitchenStaffSignUpFragment"
+        android:label="fragment_kitchen_staff_sign_up"
+        tools:layout="@layout/fragment_kitchen_staff_sign_up" />
+    <dialog
+        android:id="@+id/optionMealFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.OptionMealBottomSheetDialogFragment"
+        android:label="fragment_option_meal"
+        tools:layout="@layout/fragment_option_meal" >
+        <action
+            android:id="@+id/action_optionMealFragment_to_messageAlertFragment"
+            app:destination="@id/messageAlertFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/messageAlertFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.MessageAlertFragment"
+        android:label="fragment_message_alert"
+        tools:layout="@layout/fragment_message_alert" >
+        <action
+            android:id="@+id/action_messageAlertFragment_to_kitchenStaffDashBoardFragment"
+            app:destination="@id/kitchenStaffDashBoardFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/uploadMealFragment"
+        android:name="com.example.lunchwallet.admin.uploadmeals.ui.UploadMealFragment"
+        android:label="UploadMealFragment" >
+        <action
+            android:id="@+id/action_uploadMealFragment_to_optionMealFragment"
+            app:destination="@id/optionMealFragment" />
+    </fragment>
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.example.lunchwallet.admin.dashboard.DashboardFragment"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/kitchenStaffDashBoardFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.dashboard.KitchenStaffDashBoardFragment"
+        android:label="fragment_kitchen_staff_dashboard"
+        tools:layout="@layout/fragment_admin_upload_meal_recycler_view" />
+    <fragment
+        android:id="@+id/mealTimeTableFragment"
+        android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
+        android:label="fragment_meal_time_table"
+        tools:layout="@layout/fragment_meal_time_table" />
 </navigation>

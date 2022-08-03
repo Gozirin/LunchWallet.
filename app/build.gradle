@@ -53,7 +53,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-contrib:3.4.0"
 
     //Fragment Testing
-    debugImplementation "androidx.fragment:fragment-testing:1.5.0"
+    debugImplementation "androidx.fragment:fragment-testing:1.5.1"
 
     // Added Dependencies
     implementation "androidx.recyclerview:recyclerview:1.2.1"
@@ -88,4 +88,7 @@ dependencies {
 
     // Rounded Image
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
 }

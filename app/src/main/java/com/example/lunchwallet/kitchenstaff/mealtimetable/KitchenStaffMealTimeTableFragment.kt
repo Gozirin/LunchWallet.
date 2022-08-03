@@ -1,4 +1,4 @@
-package com.example.lunchwallet.kitchenstaff.ui.dashboard
+package com.example.lunchwallet.kitchenstaff.mealtimetable
 
 import android.graphics.Color
 import android.os.Bundle
@@ -9,18 +9,18 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.MainActivity
-import com.example.lunchwallet.databinding.FragmentKitchenStaffDashBoardBinding
+import com.example.lunchwallet.databinding.FragmentKitchenStaffMealTimeTableBinding
 import com.example.lunchwallet.util.adapter.CalenderAdapter
 import com.example.lunchwallet.util.daysInWeekArray
 import com.example.lunchwallet.util.monthYearFromDate
 import java.time.LocalDate
 
-class KitchenStaffDashBoardFragment : Fragment() {
-    private lateinit var binding: FragmentKitchenStaffDashBoardBinding
+class KitchenStaffMealTimeTableFragment : Fragment() {
+    private lateinit var binding: FragmentKitchenStaffMealTimeTableBinding
     private lateinit var selectedDate: LocalDate
 
     companion object {
-        fun newInstance() = KitchenStaffDashBoardFragment()
+        fun newInstance() = KitchenStaffMealTimeTableFragment()
     }
 
     private lateinit var viewModel: KitchenStaffDashBoardViewModel
@@ -29,7 +29,7 @@ class KitchenStaffDashBoardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentKitchenStaffDashBoardBinding.inflate(layoutInflater)
+        binding = FragmentKitchenStaffMealTimeTableBinding.inflate(layoutInflater)
 
         selectedDate = LocalDate.now()
         (requireActivity() as MainActivity).apply {

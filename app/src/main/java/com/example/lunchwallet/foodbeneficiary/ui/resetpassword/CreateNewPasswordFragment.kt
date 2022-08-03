@@ -37,13 +37,13 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
         passwordNewFocusListener()
         passwordConfirmFocusListener()
 
-
-
         binding.createNewPasswordFragmentButtonFoodBeneficiary.setOnClickListener {
             onResetPasswordButtonClick()
-            Log.d("TAG", "onViewCreated: ${binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text}," +
+            Log.d(
+                "TAG",
+                "onViewCreated: ${binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text}," +
                     " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
-                    "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText.toString()}, " +
+                    "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText}, " +
                     binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
             )
         }
@@ -82,7 +82,7 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
     private fun invalidCredentials() {
         var message = ""
         if (binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText != null) {
-            message =  "\n\nEmail: " + binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText
+            message = "\n\nEmail: " + binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText
         }
 
         if (binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText != null) {
@@ -92,8 +92,8 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
 
     private fun showPasswordSuccessfullyChangedModal() {
         val view = layoutInflater.inflate(R.layout.fragment_success_modal, null)
-        val builder =  AlertDialog.Builder(requireContext())
-             .setView(view)
+        val builder = AlertDialog.Builder(requireContext())
+            .setView(view)
 
         val dialog = builder.create()
         dialog.show()
