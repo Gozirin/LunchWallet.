@@ -43,6 +43,7 @@
         <entry key="app/src/main/res/layout/fragment_create_new_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.26268115942028986" />
         <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_dashboard.xml" value="0.18115942028985507" />
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_reset_password.xml" value="0.15572916666666667" />
         <entry key="app/src/main/res/layout/fragment_landing_page.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
