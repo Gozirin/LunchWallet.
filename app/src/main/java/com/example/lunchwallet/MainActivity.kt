@@ -2,10 +2,7 @@ package com.example.lunchwallet
 
 import android.os.Build
 import android.os.Bundle
-import android.view.Gravity
-import android.view.View
-import android.view.Window
-import android.view.WindowManager
+import android.view.*
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -13,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.fragment.app.Fragment
 import com.example.lunchwallet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
