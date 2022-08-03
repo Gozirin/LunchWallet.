@@ -77,6 +77,7 @@ drawable ic_menu_notification
 drawable ic_menu_sign_out
 drawable ic_message_icon
 drawable ic_plate
+drawable ic_rectangle
 drawable ic_straightline
 drawable ic_tickets
 drawable ic_timetable
@@ -212,6 +213,8 @@ id kitchenStaffSignUpFragment
 id kitchen_Auto_View
 id kitchen_menu_list
 id kitchen_staff_dashboard_toolbar
+id kitchen_staff_generate_qr_code_dinner
+id kitchen_staff_generate_qr_code_lunch
 id landingPageFragment
 id landingPageMealsRecyclerView
 id landing_page_center_button_get_started
