@@ -82,7 +82,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginBottom="10dp">
+                            android:layout_marginBottom="16dp">
 
                             <TextView
                                 android:id="@+id/full_name_tv"
@@ -124,7 +124,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginBottom="10dp">
+                            android:layout_marginBottom="16dp">
 
                             <TextView
                                 android:id="@+id/email_tv"
@@ -166,7 +166,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginBottom="10dp">
+                            android:layout_marginBottom="16dp">
 
                             <TextView
                                 android:id="@+id/location_tv"
@@ -208,7 +208,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginBottom="10dp">
+                            android:layout_marginBottom="16dp">
 
                             <TextView
                                 android:id="@+id/password_tv"
@@ -251,7 +251,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginBottom="10dp">
+                            android:layout_marginBottom="16dp">
 
                             <TextView
                                 android:id="@+id/confirm_password_tv"
@@ -289,11 +289,6 @@
 
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
-                        <androidx.appcompat.widget.LinearLayoutCompat
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginTop="20dp">
 
                             <com.google.android.material.button.MaterialButton
                                 android:id="@+id/signUpBtn"
@@ -302,11 +297,12 @@
                                 android:backgroundTint="@color/theme_color"
                                 android:fontFamily="@font/manrope_medium"
                                 android:text="@string/sign_up"
+                                android:layout_marginTop="20dp"
+                                android:paddingVertical="20dp"
                                 android:textAllCaps="false"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
 
-                        </androidx.appcompat.widget.LinearLayoutCompat>
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="match_parent"

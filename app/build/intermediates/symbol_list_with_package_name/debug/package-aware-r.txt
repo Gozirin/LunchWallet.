@@ -1267,6 +1267,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color back_color
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -2595,6 +2596,11 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_rectangle
+drawable ic_tickets
+drawable ic_timetable
+drawable ic_uploadmeal
+drawable ic_user
+drawable ic_view
 drawable icon_background
 drawable kitchen_staff
 drawable landing_page_banner
@@ -2677,6 +2683,7 @@ id CTRL
 id FUNCTION
 id LoginErrorMsg
 id META
+id MealTimetableFragment_layout
 id NO_DEBUG
 id ResetErrorMsg
 id ResetPasswordErrorMsg
@@ -2760,6 +2767,10 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adminDashboard_ticketBtn
+id adminDashboard_timetableBtn
+id adminDashboard_uploadBtn
+id adminDashboard_userBtn
 id adminMealTimetableFragment_layout
 id adminMealTimetableFragment_weekdays
 id adminMealTimetableFragment_weekly_updated
@@ -2874,6 +2885,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dashboardFragment
 id date_picker
 id date_picker_2
 id date_picker_3
@@ -3000,6 +3012,8 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayoutCompat
+id linearLayoutCompat2
 id listMode
 id list_item
 id locale
@@ -3049,6 +3063,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id mealTimeTableFragment
 id mealTimeTable_toolbar
 id meal_time_table
 id media_actions
@@ -3472,6 +3487,7 @@ layout fragment_check_mail
 layout fragment_check_mail_reset_password
 layout fragment_confrim_mail_frgament
 layout fragment_create_new_password
+layout fragment_dashboard
 layout fragment_food_beneficiary_dashboard
 layout fragment_kitchen_staff_dash_board
 layout fragment_kitchen_staff_sign_up
@@ -3674,6 +3690,7 @@ string food_beneficiary_menu_item_label_notification
 string forgot_password
 string fri
 string full_name
+string hello
 string hello_blank_fragment
 string hey_nwelcome_back
 string hide_bottom_view_on_scroll_behavior
@@ -3801,6 +3818,7 @@ string sun
 string thu
 string try_another_email
 string tue
+string ugochukwu
 string uno_kitchen
 string we_have_sent_a_password_recover_instruction_to_your_account
 string we_have_sent_a_password_recover_n_instruction_to_your_account

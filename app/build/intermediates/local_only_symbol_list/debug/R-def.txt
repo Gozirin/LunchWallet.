@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 array location
 array stack
+color back_color
 color bg_color_onboarding
 color black
 color button_skip
@@ -58,6 +59,11 @@ drawable ic_menu_notification
 drawable ic_menu_sign_out
 drawable ic_message_icon
 drawable ic_rectangle
+drawable ic_tickets
+drawable ic_timetable
+drawable ic_uploadmeal
+drawable ic_user
+drawable ic_view
 drawable kitchen_staff
 drawable landing_page_banner
 drawable landing_page_dish_1
@@ -88,6 +94,7 @@ font manrope_medium
 font manrope_regular
 font manrope_semibold
 id LoginErrorMsg
+id MealTimetableFragment_layout
 id ResetErrorMsg
 id ResetPasswordErrorMsg
 id action_checkMailFragment_to_confirmMailFragment
@@ -105,6 +112,10 @@ id action_resetPasswordFragment_to_checkMailResetPasswordFragment
 id action_selectTypeFragment_to_signUpFragment
 id action_signUpFragment_to_checkMailFragment
 id action_signUpFragment_to_loginFragment
+id adminDashboard_ticketBtn
+id adminDashboard_timetableBtn
+id adminDashboard_uploadBtn
+id adminDashboard_userBtn
 id adminMealTimetableFragment_layout
 id adminMealTimetableFragment_weekdays
 id adminMealTimetableFragment_weekly_updated
@@ -147,6 +158,7 @@ id createNewPasswordFragment_confirmPasswordEt_foodBeneficiary
 id createNewPasswordFragment_createnewpassword_foodBeneficiary
 id createNewPasswordFragment_newPasswordContainer_foodBeneficiary
 id createNewPasswordFragment_newPasswordEt_foodBeneficiary
+id dashboardFragment
 id date_picker
 id date_picker_2
 id date_picker_3
@@ -170,6 +182,8 @@ id landing_page_center_button_get_started
 id landing_page_container
 id landing_page_meal_pager_item_image
 id landing_page_top_button_get_started
+id linearLayoutCompat
+id linearLayoutCompat2
 id location_container
 id location_list_view
 id location_tv
@@ -192,6 +206,7 @@ id mainFragment
 id main_activity_drawer_layout
 id main_activity_toolbar
 id main_fragment_view_landing_page_button
+id mealTimeTableFragment
 id mealTimeTable_toolbar
 id meal_time_table
 id menu_component_close_vector
@@ -277,6 +292,7 @@ layout fragment_check_mail
 layout fragment_check_mail_reset_password
 layout fragment_confrim_mail_frgament
 layout fragment_create_new_password
+layout fragment_dashboard
 layout fragment_food_beneficiary_dashboard
 layout fragment_kitchen_staff_dash_board
 layout fragment_kitchen_staff_sign_up
@@ -353,6 +369,7 @@ string food_beneficiary_menu_item_label_notification
 string forgot_password
 string fri
 string full_name
+string hello
 string hello_blank_fragment
 string hey_nwelcome_back
 string jollof_rice_amp_egg
@@ -387,6 +404,7 @@ string sun
 string thu
 string try_another_email
 string tue
+string ugochukwu
 string uno_kitchen
 string we_have_sent_a_password_recover_instruction_to_your_account
 string we_have_sent_a_password_recover_n_instruction_to_your_account

@@ -14,6 +14,7 @@
         <item>.NET</item>
         <item>Java</item>
     </string-array>
+    <color name="back_color">#0DFD5900</color>
     <color name="bg_color_onboarding">#1AFFDE00</color>
     <color name="black">#FF000000</color>
     <color name="button_skip">#00FFFFFF</color>
@@ -89,6 +90,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="fri">Fri</string>
     <string name="full_name">Full Name</string>
+    <string name="hello">Hello,</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hey_nwelcome_back">Hey,\nWelcome Back</string>
     <string name="jollof_rice_amp_egg"><![CDATA[Jollof rice & egg]]></string>
@@ -123,6 +125,7 @@
     <string name="thu">Thu</string>
     <string name="try_another_email">resend instructions</string>
     <string name="tue">Tue</string>
+    <string name="ugochukwu">Ugochukwu</string>
     <string name="uno_kitchen">Uno kitchen</string>
     <string name="we_have_sent_a_password_recover_instruction_to_your_account">We have sent you a link to your email for email confirmation</string>
     <string name="we_have_sent_a_password_recover_n_instruction_to_your_account">We have sent a password recover\n instruction to your account</string>
