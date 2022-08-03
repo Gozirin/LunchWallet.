@@ -34,6 +34,8 @@ class OnboardingScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        requireActivity().window.statusBarColor = resources.getColor(R.color.bg_color_onboarding)
+
         nextButton = view.findViewById(R.id.next_button)
         skipButton = view.findViewById(R.id.skip_button)
         viewPager = view.findViewById(R.id.viewPager)

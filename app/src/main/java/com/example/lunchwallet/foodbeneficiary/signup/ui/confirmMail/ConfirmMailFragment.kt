@@ -27,7 +27,7 @@ class ConfirmMailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.confirmEmailFragmentConfirmEmailButton.setOnClickListener {
-            findNavController().navigate(R.id.foodBeneficiaryDashboardFragment)
+            findNavController().navigate(R.id.loginFragment)
         }
 
     }

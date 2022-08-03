@@ -34,45 +34,52 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         passwordFocusListener()
 
         // LOGIN BUTTON
-        binding.loginFragmentButtonFoodBeneficiary.setOnClickListener {
+        binding.loginFragmentButton.setOnClickListener {
             onClickLoginButton()
         }
         // Forgot Password
-        binding.loginFragmentForgotpasswordTvFoodBeneficiary.setOnClickListener {
+        binding.loginFragmentForgotpasswordTv.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_resetPasswordFragment)
         }
         // SIGN-UP
-        binding.loginFragmentSignupTvFoodBeneficiary.setOnClickListener {
+        binding.loginFragmentSignupTv.setOnClickListener {
             // findNavController().navigate(R.id.action_loginFragment_to_uploadMealFragment)
         }
     }
 
     private fun emailFocusListener() {
-        binding.loginFragmentEmailEtFoodBeneficiary.setOnFocusChangeListener { _, focused ->
+        binding.loginFragmentEmailEt.setOnFocusChangeListener { _, focused ->
             if (!focused)
-                binding.loginFragmentEmailTilFoodBeneficiary.helperText =
-                    LoginInputValidation.validateEmail(binding.loginFragmentEmailEtFoodBeneficiary.text.toString())
+                binding.loginFragmentEmailTil.helperText =
+                    LoginInputValidation.validateEmail(binding.loginFragmentEmailEt.text.toString())
         }
     }
 
     private fun passwordFocusListener() {
-        binding.loginFragmentPasswordEtFoodBeneficiary.setOnFocusChangeListener { _, focused ->
+        binding.loginFragmentPasswordEt.setOnFocusChangeListener { _, focused ->
             if (!focused)
-                binding.loginFragmentPasswordTilFoodBeneficiary.helperText =
-                    LoginInputValidation.validatePassword(binding.loginFragmentPasswordEtFoodBeneficiary.text.toString())
+                binding.loginFragmentPasswordTil.helperText =
+                    LoginInputValidation.validatePassword(binding.loginFragmentPasswordEt.text.toString())
         }
     }
 
     private fun onClickLoginButton() {
-        binding.loginFragmentEmailTilFoodBeneficiary.helperText = LoginInputValidation.validateEmail(binding.loginFragmentEmailEtFoodBeneficiary.text.toString())
+        binding.loginFragmentEmailTil.helperText = LoginInputValidation.validateEmail(binding.loginFragmentEmailEt.text.toString())
 
-        binding.loginFragmentPasswordTilFoodBeneficiary.helperText = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEtFoodBeneficiary.text.toString())
+        binding.loginFragmentPasswordTil.helperText = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEt.text.toString())
 
-        val validEmailInput = LoginInputValidation.validateEmail(binding.loginFragmentEmailEtFoodBeneficiary.text.toString()) == null
-        val validPasswordInput = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEtFoodBeneficiary.text.toString()) == null
+        val validEmailInput = LoginInputValidation.validateEmail(binding.loginFragmentEmailEt.text.toString()) == null
+        val validPasswordInput = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEt.text.toString()) == null
 
         if (validEmailInput && validPasswordInput) {
+            if (binding.loginFragmentPasswordEt.text.toString() == "Beneficiary@123")
             findNavController().navigate(R.id.action_loginFragment_to_foodBeneficiaryDashboardFragment)
+            if (binding.loginFragmentPasswordEt.text.toString() == "Kitchenstaff@123"){
+                findNavController().navigate(R.id.action_loginFragment_to_kitchenStaffDashBoardFragment2)
+            }
+            if (binding.loginFragmentPasswordEt.text.toString() == "Admin@123"){
+                findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
+            }
         } else {
             invalidCredentials()
         }
@@ -80,11 +87,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private fun invalidCredentials() {
         var message = ""
-        if (binding.loginFragmentEmailTilFoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.loginFragmentEmailTilFoodBeneficiary.helperText
+        if (binding.loginFragmentEmailTil.helperText != null) {
+            message = "\n\nEmail: " + binding.loginFragmentEmailTil.helperText
         }
-        if (binding.loginFragmentPasswordTilFoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.loginFragmentPasswordTilFoodBeneficiary.helperText
+        if (binding.loginFragmentPasswordTil.helperText != null) {
+            message = "\n\nEmail: " + binding.loginFragmentPasswordTil.helperText
         }
     }
 }
