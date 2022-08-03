@@ -94,6 +94,7 @@
     <string name="new_password">New Password</string>
     <!--  Create new password code-->
     <style name="new_password">New Password</style>
+
     <string name="Confirm_password">Confirm Password</string>
     <string name="Reset_password">Reset Password</string>
     <string name="Password">Password</string>

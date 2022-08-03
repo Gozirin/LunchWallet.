@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".foodbeneficiary.ui.main.onboarding.ui.landingpage.LandingPageFragment">
+    tools:context=".common.onboarding.ui.landingpage.LandingPageFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -121,23 +121,20 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingVertical="10dp"
-                    android:paddingHorizontal="20dp">
                     <Button
                         android:id="@+id/landing_page_center_button_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/themePrimaryColor"
                         android:text="Get Started"
+                        android:textColor="@color/white"
                         android:textAllCaps="false"
+                        android:paddingVertical="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:fontFamily="@font/manrope_semibold"
                         android:textSize="14sp"/>
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"

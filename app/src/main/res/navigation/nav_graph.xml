@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/kitchenStaffMealTimeTableFragment">
+    app:startDestination="@id/onboardingScreenFragment">
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.MainFragment"
+        android:name="com.example.lunchwallet.main.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_fragment" />
     <fragment
         android:id="@+id/onboardingScreenFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.onboarding.OnboardingScreenFragment"
+        android:name="com.example.lunchwallet.common.onboarding.ui.onboarding.OnboardingScreenFragment"
         android:label="fragment_onboarding_screen"
         tools:layout="@layout/fragment_onboarding_screen" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/landingPageFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.onboarding.ui.landingpage.LandingPageFragment"
+        android:name="com.example.lunchwallet.common.onboarding.ui.landingpage.LandingPageFragment"
         android:label="fragment_landing_page"
         tools:layout="@layout/fragment_landing_page" >
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.SignUpFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.signup.ui.signup.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/checkMailFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.checkmail.CheckMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.signup.ui.checkmail.CheckMailFragment"
         android:label="fragment_check_mail"
         tools:layout="@layout/fragment_check_mail" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmMailFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.confirmMail.ConfirmMailFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.signup.ui.confirmMail.ConfirmMailFragment"
         android:label="fragment_confrim_mail_frgament"
         tools:layout="@layout/fragment_confrim_mail_frgament" >
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectTypeFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.main.signup.ui.selectType.SelectTypeFragment"
+        android:name="com.example.lunchwallet.common.selectType.SelectTypeFragment"
         android:label="fragment_select_type"
         tools:layout="@layout/fragment_select_type" >
         <action
@@ -69,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/foodBeneficiaryDashboardFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.dashboard.FoodBeneficiaryDashboardFragment"
         android:label="fragment_food_beneficiary_dashboard"
         tools:layout="@layout/fragment_food_beneficiary_dashboard" >
         <action
@@ -78,7 +78,7 @@
     </fragment>
     <fragment
         android:id="@+id/notificationsScreenFragment"
-        android:name="com.example.lunchwallet.onboarding.ui.notifications.ui.NotificationsScreenFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.notifications.ui.NotificationsScreenFragment"
         android:label="fragment_notifications_screen"
         tools:layout="@layout/fragment_notifications_screen" />
     <fragment
@@ -89,7 +89,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.login.LoginFragment"
+        android:name="com.example.lunchwallet.common.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -101,10 +101,16 @@
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_kitchenStaffDashBoardFragment2"
+            app:destination="@id/kitchenStaffDashBoardFragment" />
     </fragment>
     <fragment
         android:id="@+id/resetPasswordFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.ResetPasswordFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.resetpassword.ResetPasswordFragment"
         android:label="fragment_reset_password"
         tools:layout="@layout/fragment_reset_password" >
         <action
@@ -113,7 +119,7 @@
     </fragment>
     <fragment
         android:id="@+id/createNewPasswordFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CreateNewPasswordFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.resetpassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
         tools:layout="@layout/fragment_create_new_password" >
         <action
@@ -122,7 +128,7 @@
     </fragment>
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.ui.resetpassword.CheckMailResetPasswordFragment"
+        android:name="com.example.lunchwallet.foodbeneficiary.resetpassword.CheckMailResetPasswordFragment"
         android:label="fragment_check_mail_reset_password"
         tools:layout="@layout/fragment_check_mail_reset_password" >
         <action
@@ -150,11 +156,7 @@
         android:id="@+id/messageAlertFragment"
         android:name="com.example.lunchwallet.admin.uploadmeals.ui.MessageAlertFragment"
         android:label="fragment_message_alert"
-        tools:layout="@layout/fragment_message_alert" >
-        <action
-            android:id="@+id/action_messageAlertFragment_to_kitchenStaffDashBoardFragment"
-            app:destination="@id/kitchenStaffDashBoardFragment" />
-    </dialog>
+        tools:layout="@layout/fragment_message_alert" />
     <fragment
         android:id="@+id/uploadMealFragment"
         android:name="com.example.lunchwallet.admin.uploadmeals.ui.UploadMealFragment"
@@ -167,15 +169,22 @@
         android:id="@+id/dashboardFragment"
         android:name="com.example.lunchwallet.admin.dashboard.DashboardFragment"
         android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-    <fragment
-        android:id="@+id/kitchenStaffDashBoardFragment"
-        android:name="com.example.lunchwallet.kitchenstaff.dashboard.KitchenStaffDashBoardFragment"
-        android:label="fragment_kitchen_staff_dashboard"
-        tools:layout="@layout/fragment_admin_upload_meal_recycler_view" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_uploadMealFragment"
+            app:destination="@id/uploadMealFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_mealTimeTableFragment"
+            app:destination="@id/mealTimeTableFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mealTimeTableFragment"
         android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
         android:label="fragment_meal_time_table"
         tools:layout="@layout/fragment_meal_time_table" />
+    <fragment
+        android:id="@+id/kitchenStaffDashBoardFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.dashboard.KitchenStaffDashBoardFragment"
+        android:label="fragment_kitchen_staff_dashboard"
+        tools:layout="@layout/fragment_kitchen_staff_dashboard" />
 </navigation>

@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.lunchwallet.databinding.ActivityMainBinding
 
@@ -30,13 +31,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun closeDrawer() {
         binding.apply {
-            mainActivityDrawerLayout.closeDrawer(Gravity.START)
+            mainActivityDrawerLayout.closeDrawer(GravityCompat.START)
         }
     }
 
     private fun openDrawer() {
         binding.apply {
-            mainActivityDrawerLayout.openDrawer(Gravity.START)
+            mainActivityDrawerLayout.openDrawer(GravityCompat.START)
         }
     }
 

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     android:id="@+id/selectTypeFragment"
-    tools:context=".foodbeneficiary.ui.main.signup.ui.selectType.SelectTypeFragment">
+    tools:context=".common.selectType.SelectTypeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,33 +101,6 @@
                 android:paddingTop="23dp"
                 android:paddingBottom="23dp"
                 app:drawableEndCompat="@drawable/ic_arrow_right"/>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardUseCompatPadding="true"
-            android:layout_weight="1"
-            app:cardElevation="5dp">
-
-            <TextView
-                android:id="@+id/selectTypeFragment_adminTv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:textSize="14sp"
-                android:clickable="true"
-                android:focusable="true"
-                android:background="@drawable/border"
-                android:textColor="@color/selecttext"
-                android:fontFamily="@font/manrope_medium"
-                android:text="@string/admin"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:paddingTop="23dp"
-                android:paddingBottom="23dp"
-                android:drawablePadding="10dp"
-                app:drawableEndCompat="@drawable/ic_arrow_right" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
