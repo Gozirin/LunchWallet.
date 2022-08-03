@@ -43,7 +43,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
         // SIGN-UP
         binding.loginFragmentSignupTvFoodBeneficiary.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
+            // findNavController().navigate(R.id.action_loginFragment_to_uploadMealFragment)
         }
     }
 
