@@ -160,4 +160,5 @@
     <string name="egusi_soup_amp_semo"><![CDATA[Egusi soup & semo]]></string>
     <string name="eforiro_amp_semo"><![CDATA[Eforiro & semo]]></string>
     <string name="change_status">Change Status</string>
+    <string name="generate_qr_code">GENERATE QR CODE</string>
 </resources>

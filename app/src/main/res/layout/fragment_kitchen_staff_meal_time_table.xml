@@ -248,7 +248,6 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="5dp"
                     android:weightSum="7">
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -400,6 +399,18 @@
                             </FrameLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kitchen_staff_generate_qr_code_lunch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            app:cornerRadius="5dp"
+                            android:text="@string/generate_qr_code"
+                            android:textAlignment="center"
+                            android:paddingVertical="12dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_bg_shape_filled"/>
+
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
@@ -532,6 +543,17 @@
                             </FrameLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kitchen_staff_generate_qr_code_dinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            app:cornerRadius="5dp"
+                            android:text="@string/generate_qr_code"
+                            android:textAlignment="center"
+                            android:paddingVertical="12dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_bg_shape_filled"/>
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>

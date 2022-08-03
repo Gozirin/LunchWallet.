@@ -30,7 +30,7 @@ class KitchenStaffSignUpFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this)[KitchenStaffSignUpViewModel::class.java]
-        // TODO: Use the ViewModel
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
