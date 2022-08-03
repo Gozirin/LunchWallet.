@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.databinding.FragmentMealTimeTableBinding
-import com.example.lunchwallet.common.adapter.CalenderAdapter
-import com.example.lunchwallet.common.adapter.OnItemListener
-import com.example.lunchwallet.foodbeneficiary.dashboard.FoodBeneficiaryDashboardFragment
+import com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment
+import com.example.lunchwallet.util.adapter.CalenderAdapter
+import com.example.lunchwallet.util.adapter.OnItemListener
 import com.example.lunchwallet.util.daysInWeekArray
 import com.example.lunchwallet.util.monthYearFromDate
 import java.time.LocalDate

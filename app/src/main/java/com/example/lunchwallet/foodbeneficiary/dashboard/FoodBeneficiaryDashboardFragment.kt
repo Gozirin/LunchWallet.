@@ -1,4 +1,4 @@
-package com.example.lunchwallet.foodbeneficiary.dashboard
+package com.example.lunchwallet.foodbeneficiary.ui.dashboard
 
 import android.graphics.Color
 import android.os.Bundle
@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.MainActivity
 import com.example.lunchwallet.databinding.FragmentFoodBeneficiaryDashboardBinding
-import com.example.lunchwallet.common.adapter.CalenderAdapter
-import com.example.lunchwallet.common.adapter.OnItemListener
+import com.example.lunchwallet.util.adapter.CalenderAdapter
+import com.example.lunchwallet.util.adapter.OnItemListener
 import com.example.lunchwallet.util.daysInWeekArray
 import com.example.lunchwallet.util.monthYearFromDate
 import java.time.LocalDate

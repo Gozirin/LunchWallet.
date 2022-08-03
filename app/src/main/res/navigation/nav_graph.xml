@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectTypeFragment"
-        android:name="com.example.lunchwallet.foodbeneficiary.signup.ui.selectType.SelectTypeFragment"
+        android:name="com.example.lunchwallet.common.selectType.SelectTypeFragment"
         android:label="fragment_select_type"
         tools:layout="@layout/fragment_select_type" >
         <action
@@ -71,12 +71,21 @@
         android:id="@+id/foodBeneficiaryDashboardFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.dashboard.FoodBeneficiaryDashboardFragment"
         android:label="fragment_food_beneficiary_dashboard"
-        tools:layout="@layout/fragment_food_beneficiary_dashboard" />
+        tools:layout="@layout/fragment_food_beneficiary_dashboard" >
+        <action
+            android:id="@+id/action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment2"
+            app:destination="@id/notificationsScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/notificationsScreenFragment"
         android:name="com.example.lunchwallet.foodbeneficiary.notifications.ui.NotificationsScreenFragment"
         android:label="fragment_notifications_screen"
         tools:layout="@layout/fragment_notifications_screen" />
+    <fragment
+        android:id="@+id/kitchenStaffMealTimeTableFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.mealtimetable.KitchenStaffMealTimeTableFragment"
+        android:label="fragment_kitchen_staff_dash_board"
+        tools:layout="@layout/fragment_kitchen_staff_meal_time_table" />
 
     <fragment
         android:id="@+id/loginFragment"
@@ -129,6 +138,11 @@
             android:id="@+id/action_checkMailResetPasswordFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/kitchenStaffSignUpFragment"
+        android:name="com.example.lunchwallet.kitchenstaff.signup.KitchenStaffSignUpFragment"
+        android:label="fragment_kitchen_staff_sign_up"
+        tools:layout="@layout/fragment_kitchen_staff_sign_up" />
     <dialog
         android:id="@+id/optionMealFragment"
         android:name="com.example.lunchwallet.admin.uploadmeals.ui.OptionMealBottomSheetDialogFragment"
