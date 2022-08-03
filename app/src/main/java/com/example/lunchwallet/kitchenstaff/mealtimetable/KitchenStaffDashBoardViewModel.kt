@@ -1,4 +1,4 @@
-package com.example.lunchwallet.kitchenstaff.ui.dashboard
+package com.example.lunchwallet.kitchenstaff.mealtimetable
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.example.lunchwallet.kitchenstaff.ui.signup
+package com.example.lunchwallet.kitchenstaff.signup
 
 import androidx.lifecycle.ViewModel
 
