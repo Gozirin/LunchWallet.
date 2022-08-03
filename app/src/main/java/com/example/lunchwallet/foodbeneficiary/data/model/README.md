@@ -1,1 +1,0 @@
-# LunchWallet - Model Package

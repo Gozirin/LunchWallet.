@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/reset_password_success_modal_background"
     android:padding="20dp"
-    tools:context=".foodbeneficiary.ui.login.SuccessModalFragment">
+    tools:context=".common.login.SuccessModalFragment">
 
 
     <TextView

@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".foodbeneficiary.ui.main.signup.ui.confirmMail.ConfirmMailFragment">
+    tools:context=".foodbeneficiary.signup.ui.confirmMail.ConfirmMailFragment">
 
     <LinearLayout
         android:id="@+id/confirmFragment_layout"
