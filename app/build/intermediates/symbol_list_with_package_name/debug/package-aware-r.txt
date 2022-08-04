@@ -3047,14 +3047,6 @@ id kitchen_staff_generate_qr_code_dinner
 id kitchen_staff_generate_qr_code_lunch
 id kitchen_staff_meal_time_table_card_view
 id kitchen_staff_users_card_view
-id kitchenstaff_ResetPasswordErrorMsg
-id kitchenstaff_resetPasswordFragment_ET
-id kitchenstaff_resetPasswordFragment_Email
-id kitchenstaff_resetPasswordFragment_EnterEmail
-id kitchenstaff_resetPasswordFragment_Password
-id kitchenstaff_resetPasswordFragment_TiI
-id kitchenstaff_resetPasswordFragment_backarrow
-id kitchenstaff_resetPasswordFragment_button
 id labeled
 id landingPageFragment
 id landingPageMealsRecyclerView
@@ -3246,7 +3238,6 @@ id relative_layout
 id repeat
 id resetPasswordFragment
 id resetPasswordFragment_ET_foodBeneficiary
-id resetPasswordFragment_Email
 id resetPasswordFragment_Email_foodBeneficiary
 id resetPasswordFragment_EnterEmail_foodBeneficiary
 id resetPasswordFragment_Password_foodBeneficiary
@@ -3595,7 +3586,6 @@ layout fragment_dashboard
 layout fragment_food_beneficiary_dashboard
 layout fragment_kitchen_staff_dashboard
 layout fragment_kitchen_staff_meal_time_table
-layout fragment_kitchen_staff_reset_password
 layout fragment_kitchen_staff_sign_up
 layout fragment_landing_page
 layout fragment_login
