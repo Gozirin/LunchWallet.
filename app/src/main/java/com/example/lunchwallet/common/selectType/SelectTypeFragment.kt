@@ -34,7 +34,7 @@ class SelectTypeFragment : Fragment() {
             findNavController().navigate(R.id.action_selectTypeFragment_to_signUpFragment)
         }
         binding.selectTypeFragmentKitchenStaffTv.setOnClickListener {
-            findNavController().navigate(R.id.action_selectTypeFragment_to_signUpFragment)
+            findNavController().navigate(R.id.action_selectTypeFragment_to_kitchenStaffSignUpFragment)
         }
     }
 }

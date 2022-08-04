@@ -81,6 +81,7 @@
         android:layout_marginTop="10dp">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_users_card_view"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             app:cardElevation="10dp"
@@ -118,6 +119,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_change_status_card_view"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             app:cardElevation="10dp"
@@ -163,6 +165,7 @@
         android:layout_below="@id/cardview_lo1">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/kitchen_staff_meal_time_table_card_view"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_margin="10dp"
