@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.databinding.FragmentMealTimeTableBinding
-import com.example.lunchwallet.foodbeneficiary.ui.dashboard.FoodBeneficiaryDashboardFragment
 import com.example.lunchwallet.util.adapter.CalenderAdapter
 import com.example.lunchwallet.util.adapter.OnItemListener
 import com.example.lunchwallet.util.daysInWeekArray
@@ -19,9 +18,7 @@ class MealTimeTableFragment : Fragment(), OnItemListener {
     private lateinit var binding: FragmentMealTimeTableBinding
     private lateinit var selectedDate: LocalDate
 
-    companion object {
-        fun newInstance() = FoodBeneficiaryDashboardFragment()
-    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,

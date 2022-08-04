@@ -2766,14 +2766,13 @@ int id action_bar_title 0x7f0a003e
 int id action_checkMailFragment_to_confirmMailFragment 0x7f0a003f
 int id action_checkMailResetPasswordFragment_to_createNewPasswordFragment 0x7f0a0040
 int id action_checkMailResetPasswordFragment_to_resetPasswordFragment 0x7f0a0041
-int id action_confirmMailFragment_to_foodBeneficiaryDashboardFragment 0x7f0a0042
+int id action_confirmMailFragment_to_successModalFragment 0x7f0a0308
 int id action_container 0x7f0a0043
 int id action_context_bar 0x7f0a0044
-int id action_createNewPasswordFragment_to_foodBeneficiaryDashboardFragment 0x7f0a0045
 int id action_dashboardFragment_to_mealTimeTableFragment 0x7f0a0046
 int id action_dashboardFragment_to_uploadMealFragment 0x7f0a0047
 int id action_divider 0x7f0a0048
-int id action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment2 0x7f0a0049
+int id action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment 0x7f0a0307
 int id action_image 0x7f0a004a
 int id action_kitchenStaffDashBoardFragment_to_kitchenStaffMealTimeTableFragment 0x7f0a0302
 int id action_kitchenStaffSignUpFragment_to_checkMailFragment 0x7f0a02ff
@@ -3355,6 +3354,7 @@ int id stop 0x7f0a0284
 int id stretch 0x7f0a0285
 int id submenuarrow 0x7f0a0286
 int id submit_area 0x7f0a0287
+int id successModalFragment 0x7f0a0306
 int id successModalFragment_message 0x7f0a0288
 int id successModalFragment_title 0x7f0a0289
 int id supportScrollUp 0x7f0a028a

@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentCreateNewPasswordBinding
 import com.example.lunchwallet.util.ResetPasswordInputValidations.CreateNewPasswordValidation
@@ -30,6 +31,7 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
         binding = FragmentCreateNewPasswordBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     // initialising Binding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -42,9 +44,9 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
             Log.d(
                 "TAG",
                 "onViewCreated: ${binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text}," +
-                    " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
-                    "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText}, " +
-                    binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
+                        " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
+                        "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText}, " +
+                        binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
             )
         }
     }
@@ -66,14 +68,25 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
     }
 
     private fun onResetPasswordButtonClick() {
-        binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString())
-        binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText = CreateNewPasswordValidation.validateConfirmPassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(), binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString())
+        binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText =
+            CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString())
+        binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText =
+            CreateNewPasswordValidation.validateConfirmPassword(
+                binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(),
+                binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString()
+            )
 
-        val validNewPasswordInput = CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString()) == null
-        val validConfirmPasswordInput = CreateNewPasswordValidation.validateConfirmPassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(), binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString()) == null
+        val validNewPasswordInput =
+            CreateNewPasswordValidation.validatePassword(binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString()) == null
+        val validConfirmPasswordInput = CreateNewPasswordValidation.validateConfirmPassword(
+            binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text.toString(),
+            binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text.toString()
+        ) == null
 
         if (validNewPasswordInput && validConfirmPasswordInput) {
-            showPasswordSuccessfullyChangedModal()
+            SuccessModalFragment().show(
+                childFragmentManager, SuccessModalFragment.TAG)
+           // findNavController().navigate(R.id.successModalFragment)
         } else {
             invalidCredentials()
         }
@@ -82,21 +95,13 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
     private fun invalidCredentials() {
         var message = ""
         if (binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText
+            message =
+                "\n\nEmail: " + binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText
         }
 
         if (binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText != null) {
-            message = "\n\nEmail: " + binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText
+            message =
+                "\n\nEmail: " + binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText
         }
-    }
-
-    private fun showPasswordSuccessfullyChangedModal() {
-        val view = layoutInflater.inflate(R.layout.fragment_success_modal, null)
-        val builder = AlertDialog.Builder(requireContext())
-            .setView(view)
-
-        val dialog = builder.create()
-        dialog.show()
-        dialog.window?.attributes?.gravity = Gravity.CENTER
     }
 }

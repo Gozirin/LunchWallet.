@@ -2,17 +2,18 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:layout_gravity="center"
     android:background="@drawable/reset_password_success_modal_background"
     android:padding="20dp"
-    tools:context=".common.login.SuccessModalFragment">
+    tools:context=".common.resetpassword.SuccessModalFragment">
 
 
     <TextView
         android:id="@+id/successModalFragment_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:fontFamily="@font/manrope_regular"
