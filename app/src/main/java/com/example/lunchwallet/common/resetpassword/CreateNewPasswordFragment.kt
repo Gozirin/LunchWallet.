@@ -84,9 +84,7 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
         ) == null
 
         if (validNewPasswordInput && validConfirmPasswordInput) {
-            SuccessModalFragment().show(
-                childFragmentManager, SuccessModalFragment.TAG)
-           // findNavController().navigate(R.id.successModalFragment)
+            findNavController().navigate(R.id.action_createNewPasswordFragment_to_successModalFragment)
         } else {
             invalidCredentials()
         }

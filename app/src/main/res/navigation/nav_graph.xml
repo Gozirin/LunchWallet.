@@ -25,8 +25,8 @@
         android:label="fragment_landing_page"
         tools:layout="@layout/fragment_landing_page" >
         <action
-            android:id="@+id/action_landingPageFragment_to_selectTypeFragment"
-            app:destination="@id/selectTypeFragment" />
+            android:id="@+id/action_landingPageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -53,11 +53,7 @@
         android:id="@+id/confirmMailFragment"
         android:name="com.example.lunchwallet.common.confirmMail.ConfirmMailFragment"
         android:label="fragment_confrim_mail_frgament"
-        tools:layout="@layout/fragment_confrim_mail_frgament" >
-        <action
-            android:id="@+id/action_confirmMailFragment_to_successModalFragment"
-            app:destination="@id/successModalFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_confrim_mail_frgament" />
     <fragment
         android:id="@+id/selectTypeFragment"
         android:name="com.example.lunchwallet.common.selectType.SelectTypeFragment"
@@ -101,6 +97,9 @@
         <action
             android:id="@+id/action_loginFragment_to_foodBeneficiaryDashboardFragment"
             app:destination="@id/foodBeneficiaryDashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_selectTypeFragment"
+            app:destination="@id/selectTypeFragment" />
     </fragment>
     <fragment
         android:id="@+id/resetPasswordFragment"
@@ -115,7 +114,11 @@
         android:id="@+id/createNewPasswordFragment"
         android:name="com.example.lunchwallet.common.resetpassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
-        tools:layout="@layout/fragment_create_new_password" />
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_successModalFragment"
+            app:destination="@id/successModalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/checkMailResetPasswordFragment"
         android:name="com.example.lunchwallet.common.resetpassword.CheckMailResetPasswordFragment"
@@ -188,7 +191,7 @@
             android:id="@+id/action_kitchenStaffDashBoardFragment_to_kitchenStaffMealTimeTableFragment"
             app:destination="@id/kitchenStaffMealTimeTableFragment" />
     </fragment>
-    <dialog
+    <fragment
         android:id="@+id/successModalFragment"
         android:name="com.example.lunchwallet.common.resetpassword.SuccessModalFragment"
         android:label="fragment_success_modal"

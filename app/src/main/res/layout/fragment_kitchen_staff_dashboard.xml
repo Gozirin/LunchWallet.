@@ -12,7 +12,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="20dp">
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp">
 
                 <ImageView
                     android:id="@+id/uploadMealFragment_logo"
@@ -47,7 +48,7 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="5dp"
         android:background="@color/Layout_background"/>
 
             <TextView
