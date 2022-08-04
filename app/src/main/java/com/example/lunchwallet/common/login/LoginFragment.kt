@@ -72,14 +72,14 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         val validPasswordInput = LoginInputValidation.validatePassword(binding.loginFragmentPasswordEt.text.toString()) == null
 
         if (validEmailInput && validPasswordInput) {
-            if (binding.loginFragmentPasswordEt.text.toString() == "Beneficiary@123")
-            findNavController().navigate(R.id.action_loginFragment_to_foodBeneficiaryDashboardFragment)
-            if (binding.loginFragmentPasswordEt.text.toString() == "Kitchenstaff@123"){
-                findNavController().navigate(R.id.action_loginFragment_to_kitchenStaffDashBoardFragment2)
-            }
-            if (binding.loginFragmentPasswordEt.text.toString() == "Admin@123"){
-                findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
-            }
+//            if (binding.loginFragmentPasswordEt.text.toString() == "Beneficiary@123")
+//            findNavController().navigate(R.id.action_loginFragment_to_foodBeneficiaryDashboardFragment)
+//            if (binding.loginFragmentPasswordEt.text.toString() == "Kitchenstaff@123"){
+//                findNavController().navigate(R.id.action_loginFragment_to_kitchenStaffDashBoardFragment2)
+//            }
+//            if (binding.loginFragmentPasswordEt.text.toString() == "Admin@123"){
+//                findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
+//            }
         } else {
             invalidCredentials()
         }
