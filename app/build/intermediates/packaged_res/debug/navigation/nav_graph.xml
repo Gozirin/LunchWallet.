@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/onboardingScreenFragment">
+    app:startDestination="@id/createNewPasswordFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -191,7 +191,7 @@
             android:id="@+id/action_kitchenStaffDashBoardFragment_to_kitchenStaffMealTimeTableFragment"
             app:destination="@id/kitchenStaffMealTimeTableFragment" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/successModalFragment"
         android:name="com.example.lunchwallet.common.resetpassword.SuccessModalFragment"
         android:label="fragment_success_modal"

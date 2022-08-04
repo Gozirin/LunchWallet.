@@ -9,14 +9,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.example.lunchwallet.R
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.lang.IllegalStateException
 
 
 
 class SuccessModalFragment : DialogFragment(){
-    companion object{
-      const  val TAG = "SuccessModalDialog"
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

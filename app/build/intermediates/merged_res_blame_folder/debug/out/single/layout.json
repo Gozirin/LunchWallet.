@@ -20,12 +20,12 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/calender_cell.xml"
     },
     {
-        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sign_up.xml",
-        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_sign_up.xml"
-    },
-    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_message_alert.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_message_alert.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sign_up.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_sign_up.xml"
     },
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/landing_page_meal_pager_item.xml",
@@ -134,6 +134,10 @@
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/location_list.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/location_list.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_password_change_success_modal.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_password_change_success_modal.xml"
     },
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/slides_layout.xml",

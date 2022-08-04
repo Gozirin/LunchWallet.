@@ -22,7 +22,7 @@ object CreateNewPasswordValidation {
         if (!passwordText.matches(".*[`~!@#$%^&*()\\-_=+|}{\\]\\[\"\';:?/>.<,].*".toRegex())) {
             return "Password must contain at least 1 special character (@#$%&?!)."
         }
-        return ""
+        return null
     }
 
     fun validateConfirmPassword(password: String, confirmPassword: String): String? {
