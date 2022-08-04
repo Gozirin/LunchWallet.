@@ -41,11 +41,11 @@ class LandingPageFragment : Fragment() {
         }
 
         binding.landingPageTopButtonGetStarted.setOnClickListener {
-            findNavController().navigate(R.id.action_landingPageFragment_to_selectTypeFragment)
+            findNavController().navigate(R.id.action_landingPageFragment_to_loginFragment)
         }
 
         binding.landingPageCenterButtonGetStarted.setOnClickListener {
-            findNavController().navigate(R.id.action_landingPageFragment_to_selectTypeFragment)
+            findNavController().navigate(R.id.action_landingPageFragment_to_loginFragment)
         }
     }
 }
