@@ -29,7 +29,6 @@ class FoodBeneficiaryDashboardFragment : Fragment() {
         selectedDate = LocalDate.now()
         (requireActivity() as MainActivity).apply {
             setStatusBarColor(Color.WHITE)
-            setToolBar()
         }
 
         return binding.root

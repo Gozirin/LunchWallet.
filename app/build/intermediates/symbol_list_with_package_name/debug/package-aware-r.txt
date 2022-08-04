@@ -3126,8 +3126,6 @@ id meal_time_table
 id media_actions
 id menu_component_close_vector
 id menu_item_logout
-id menu_item_meal_time_table
-id menu_item_notification
 id message
 id messageAlertFragment
 id messageAlertFragment_Image
@@ -3201,7 +3199,6 @@ id notification_back_view
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id notification_toolbar
 id notificationsScreenFragment
 id off
 id on

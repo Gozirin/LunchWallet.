@@ -268,8 +268,6 @@ id mealTimeTable_toolbar
 id meal_time_table
 id menu_component_close_vector
 id menu_item_logout
-id menu_item_meal_time_table
-id menu_item_notification
 id messageAlertFragment
 id messageAlertFragment_Image
 id messageAlertFragment_done_Button
@@ -288,7 +286,6 @@ id nav_graph
 id nav_view
 id next_button
 id notification_back_view
-id notification_toolbar
 id notificationsScreenFragment
 id onboardingScreenFragment
 id optionMealFragment

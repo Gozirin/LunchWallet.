@@ -12,6 +12,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupWithNavController
 import com.example.lunchwallet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,10 +30,19 @@ class MainActivity : AppCompatActivity() {
         installSplashScreen().apply {
         }
         binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.apply {
-            mainActivityToolbar.visibility = View.GONE
-        }
         setContentView(binding.root)
+
+        setToolBar()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.navigation_drawer_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val navController = findNavController(R.id.fragmentContainerView)
+        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
 
     private fun closeDrawer() {
@@ -76,26 +92,43 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setToolBar() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.navView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener{_, destination, _ ->
+            if (destination.id == R.id.foodBeneficiaryDashboardFragment ||
+                destination.id == R.id.notificationsScreenFragment ) {
+                binding.mainActivityToolbar.visibility = View.VISIBLE
+            }else{
+                binding.  mainActivityToolbar.visibility = View.GONE
+            }
+
+        }
         binding.apply {
-            mainActivityToolbar.visibility = View.VISIBLE
-            toggle = ActionBarDrawerToggle(this@MainActivity, mainActivityDrawerLayout, R.string.openDrawerContentDesc, R.string.closeDrawerContentDesc)
-            mainActivityDrawerLayout.addDrawerListener(toggle)
 
-            toggle.syncState()
-
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+//            toggle = ActionBarDrawerToggle(this@MainActivity, mainActivityDrawerLayout, R.string.openDrawerContentDesc, R.string.closeDrawerContentDesc)
+//            mainActivityDrawerLayout.addDrawerListener(toggle)
+//
+//            toggle.syncState()
+//
+//            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//
             navView.setNavigationItemSelectedListener {
                 when (it.itemId) {
-                    R.id.menu_item_meal_time_table -> {
-                        Toast.makeText(this@MainActivity, "menu_item_meal_time_table", Toast.LENGTH_SHORT).show()
+                    R.id.foodBeneficiaryDashboardFragment -> {
+                        closeDrawer()
+                        navController.navigate(R.id.foodBeneficiaryDashboardFragment)
+//                        Toast.makeText(this@MainActivity, "menu_item_meal_time_table", Toast.LENGTH_SHORT).show()
                     }
-                    R.id.menu_item_notification -> {
-                        Toast.makeText(this@MainActivity, "menu_item_notification", Toast.LENGTH_SHORT).show()
+                    R.id.notificationsScreenFragment-> {
+                        closeDrawer()
+                        navController.navigate(R.id.notificationsScreenFragment)
+//                        Toast.makeText(this@MainActivity, "menu_item_notification", Toast.LENGTH_SHORT).show()
                     }
                     R.id.menu_item_logout -> {
                         inflateLogoutView()
-                        Toast.makeText(this@MainActivity, "menu_item_logout", Toast.LENGTH_SHORT).show()
+//                        Toast.makeText(this@MainActivity, "menu_item_logout", Toast.LENGTH_SHORT).show()
                     }
                 }
                 true

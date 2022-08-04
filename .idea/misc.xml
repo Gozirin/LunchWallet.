@@ -65,7 +65,7 @@
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_meal_time_table.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_message_alert.xml" value="0.2484375" />
-        <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_option_meal.xml" value="0.2484375" />
         <entry key="app/src/main/res/layout/fragment_password_change_success_modal.xml" value="0.29583333333333334" />
