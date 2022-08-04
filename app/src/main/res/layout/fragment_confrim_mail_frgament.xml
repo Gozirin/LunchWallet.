@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".foodbeneficiary.signup.ui.confirmMail.ConfirmMailFragment">
+    tools:context=".common.confirmMail.ConfirmMailFragment">
 
     <LinearLayout
         android:id="@+id/confirmFragment_layout"
@@ -31,7 +31,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:gravity="center"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:fontFamily="@font/manrope_extrabold"
             android:layout_marginTop="20dp"
             android:text="@string/confirm_email_msg"/>
@@ -43,7 +43,7 @@
             android:paddingBottom="5dp"
             android:fontFamily="@font/manrope_regular"
             android:gravity="center"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"
             android:text="@string/please_confirm_your_email"/>
         <Button
@@ -57,7 +57,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/confirm_email_msg"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 

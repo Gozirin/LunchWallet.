@@ -1,33 +1,29 @@
-package com.example.lunchwallet.foodbeneficiary.ui.dashboard
+package com.example.lunchwallet.foodbeneficiary.dashboard
 
 import android.graphics.Color
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.lunchwallet.MainActivity
+import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentFoodBeneficiaryDashboardBinding
 import com.example.lunchwallet.util.adapter.CalenderAdapter
-import com.example.lunchwallet.util.adapter.OnItemListener
 import com.example.lunchwallet.util.daysInWeekArray
 import com.example.lunchwallet.util.monthYearFromDate
 import java.time.LocalDate
 
-class FoodBeneficiaryDashboardFragment : Fragment(), OnItemListener {
+class FoodBeneficiaryDashboardFragment : Fragment() {
     private lateinit var binding: FragmentFoodBeneficiaryDashboardBinding
     private lateinit var selectedDate: LocalDate
 
-    companion object {
-        fun newInstance() = FoodBeneficiaryDashboardFragment()
-    }
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflate the layout for this fragment
         binding = FragmentFoodBeneficiaryDashboardBinding.inflate(layoutInflater)
 
         selectedDate = LocalDate.now()
@@ -42,6 +38,8 @@ class FoodBeneficiaryDashboardFragment : Fragment(), OnItemListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setWeekView()
+
+
     }
 
     private fun setWeekView() {
@@ -61,11 +59,6 @@ class FoodBeneficiaryDashboardFragment : Fragment(), OnItemListener {
 
     fun nextWeekAction(view: View) {
         selectedDate = selectedDate.plusWeeks(1)
-        setWeekView()
-    }
-
-    override fun onItemClick(position: Int, date: LocalDate) {
-        selectedDate = date
         setWeekView()
     }
 }
