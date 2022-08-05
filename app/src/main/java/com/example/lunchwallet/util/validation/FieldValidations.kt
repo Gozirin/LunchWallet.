@@ -1,4 +1,4 @@
-
+@file:Suppress("Annotator")
 
 package com.example.lunchwallet.util.validation
 
