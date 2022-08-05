@@ -20,12 +20,12 @@
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/calender_cell.xml"
     },
     {
-        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sign_up.xml",
-        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_sign_up.xml"
-    },
-    {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_message_alert.xml",
         "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_message_alert.xml"
+    },
+    {
+        "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sign_up.xml",
+        "source": "/Users/decagon/Desktop/LunchWallet/app/src/main/res/layout/fragment_sign_up.xml"
     },
     {
         "merged": "/Users/decagon/Desktop/LunchWallet/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/landing_page_meal_pager_item.xml",

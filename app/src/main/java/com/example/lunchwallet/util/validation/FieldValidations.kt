@@ -1,3 +1,5 @@
+
+
 package com.example.lunchwallet.util.validation
 
 // Validation object for Sign-Up
@@ -5,7 +7,7 @@ object FieldValidations {
 
     // Function to verify the name of the intended user
     fun verifyName(name: String): String? {
-        val regex = Regex("^([a-zA-Z]{2,}\\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)")
+        val regex = Regex("^([a-zA-Z]{2,}\\s[a-zA-Z]+'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)")
         return if (name.isNotEmpty() && name.matches(regex) && name.length >= 2) {
             null
         } else {

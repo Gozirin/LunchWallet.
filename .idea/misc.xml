@@ -60,6 +60,7 @@
         <entry key="app/src/main/res/layout/fragment_food_beneficiary_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_dash_board.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_dashboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_kitchen_staff_meal_time_table.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_kitchen_staff_sign_up.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_landing_page.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
