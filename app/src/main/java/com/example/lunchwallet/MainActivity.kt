@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         setToolBar()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.navigation_drawer_menu, menu)
-        return true
-    }
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        menuInflater.inflate(R.menu.navigation_drawer_menu, menu)
+//        return true
+//    }
 
 //    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 //        val navController = findNavController(R.id.fragmentContainerView)
