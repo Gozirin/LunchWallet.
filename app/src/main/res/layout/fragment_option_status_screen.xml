@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/Relative_background"
+    tools:context=".admin.optionstatus.OptionStatusScreenFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorner_radius"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/optionMealFragment_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_rectangle" />
+
+        <TextView
+            android:id="@+id/uploadMealFragment_add_meal_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center"
+            android:text="Select option"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/optionMealFragment_line_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="TODO"
+            android:padding="4dp"
+            android:src="@drawable/ic_line1"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/option_status_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option_status_serving_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Serving"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:buttonTint="@color/loginbutton"
+                android:textSize="14sp" />
+            <!--  app:boxStrokeColor="@color/text_input_box_stroke_color"-->
+
+            <RadioButton
+                android:id="@+id/option_status_Not_serving_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Not Serving"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:buttonTint="@color/loginbutton"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option_status_served_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="63dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Served"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:buttonTint="@color/loginbutton"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

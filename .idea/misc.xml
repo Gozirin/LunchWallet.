@@ -21,6 +21,7 @@
         <entry key="app/src/main/res/drawable/ic_food.xml" value="0.193" />
         <entry key="app/src/main/res/drawable/ic_frame.xml" value="0.1275" />
         <entry key="app/src/main/res/drawable/ic_frame_40.xml" value="0.2285" />
+        <entry key="app/src/main/res/drawable/ic_greendot.xml" value="0.1715" />
         <entry key="app/src/main/res/drawable/ic_hamburger.xml" value="0.2385" />
         <entry key="app/src/main/res/drawable/ic_icons.xml" value="0.1275" />
         <entry key="app/src/main/res/drawable/ic_ladder.xml" value="0.193" />
@@ -31,6 +32,7 @@
         <entry key="app/src/main/res/drawable/ic_message_icon.xml" value="0.17" />
         <entry key="app/src/main/res/drawable/ic_plate.xml" value="0.193" />
         <entry key="app/src/main/res/drawable/ic_rectangle.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable/ic_reddot.xml" value="0.1715" />
         <entry key="app/src/main/res/drawable/ic_uploadmeal.xml" value="0.179" />
         <entry key="app/src/main/res/drawable/ic_users.xml" value="0.193" />
         <entry key="app/src/main/res/drawable/ic_vector.xml" value="0.1275" />
@@ -69,12 +71,14 @@
         <entry key="app/src/main/res/layout/fragment_notifications_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_option_meal.xml" value="0.2484375" />
+        <entry key="app/src/main/res/layout/fragment_option_status_screen.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_password_change_success_modal.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_select_type.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/fragment_serving_status.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_side_bar_menu.xml" value="0.21052631578947367" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_success_modal.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_success_modal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_upload_meal.xml" value="0.375" />
         <entry key="app/src/main/res/layout/kitchen_menu_list.xml" value="0.2484375" />
         <entry key="app/src/main/res/layout/landing_page_meal_pager_item.xml" value="0.24739583333333334" />

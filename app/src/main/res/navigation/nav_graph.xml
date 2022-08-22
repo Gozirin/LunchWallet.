@@ -205,4 +205,18 @@
             android:id="@+id/action_foodBeneficiaryDashboardFragment_to_notificationsScreenFragment"
             app:destination="@id/notificationsScreenFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/servingStatusFragment"
+        android:name="com.example.lunchwallet.admin.servingstatus.ServingStatusFragment"
+        android:label="fragment_serving_status"
+        tools:layout="@layout/fragment_serving_status" >
+        <action
+            android:id="@+id/action_servingStatusFragment_to_optionStatusScreenFragment"
+            app:destination="@id/optionStatusScreenFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/optionStatusScreenFragment"
+        android:name="com.example.lunchwallet.admin.optionstatus.OptionStatusScreenFragment"
+        android:label="fragment_option_status_screen"
+        tools:layout="@layout/fragment_option_status_screen" />
 </navigation>

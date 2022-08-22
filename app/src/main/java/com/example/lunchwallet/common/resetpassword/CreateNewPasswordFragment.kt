@@ -1,10 +1,7 @@
 package com.example.lunchwallet.common.resetpassword
 
-
-import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Log
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,8 +11,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentCreateNewPasswordBinding
 import com.example.lunchwallet.util.ResetPasswordInputValidations.CreateNewPasswordValidation
-
-
 
 class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password) {
 
@@ -44,9 +39,9 @@ class CreateNewPasswordFragment : Fragment(R.layout.fragment_create_new_password
             Log.d(
                 "TAG",
                 "onViewCreated: ${binding.createNewPasswordFragmentNewPasswordEtFoodBeneficiary.text}," +
-                        " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
-                        "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText}, " +
-                        binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
+                    " ${binding.createNewPasswordFragmentConfirmPasswordEtFoodBeneficiary.text}, " +
+                    "${binding.createNewPasswordFragmentNewPasswordContainerFoodBeneficiary.helperText}, " +
+                    binding.createNewPasswordFragmentConfirmPasswordContainerFoodBeneficiary.helperText.toString()
             )
         }
     }
