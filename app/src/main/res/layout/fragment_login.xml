@@ -19,7 +19,7 @@
             android:layout_width="46dp"
             android:layout_height="46dp"
             android:layout_marginTop="56dp"
-            app:srcCompat="@drawable/ic_launch_wallet_logo" />
+            app:srcCompat="@drawable/ic_launch_wallet_logo"/>
 
         <TextView
             android:id="@+id/loginFragment_lunch_wallet_Tv"
@@ -193,9 +193,35 @@
             android:text="@string/sign_up"
             android:textColor="@color/loginbutton"
             android:textFontWeight="700"
+            android:textStyle="italic"
             android:textSize="14sp" />
-
     </LinearLayout>
+
+
+                   <!-- TESTING OUT WORKS-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/loginbutton"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launch_wallet_logo"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uno_kitchen"/>
+    </GridLayout>
 
 
 

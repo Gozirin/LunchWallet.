@@ -4,18 +4,27 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.lunchwallet.R
+import com.example.lunchwallet.databinding.FragmentOptionStatusScreenBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class OptionStatusScreenFragment : BottomSheetDialogFragment() {
+
+    private var _binding: FragmentOptionStatusScreenBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_option_status_screen, container, false)
+        _binding = FragmentOptionStatusScreenBinding.inflate(inflater, container, false)
+        return _binding!!.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        _binding?.optionStatusServingTV?.setOnClickListener() {
+            //  findNavController().navigate(R.id.action_optionStatusScreenFragment)
+        }
     }
 }

@@ -17,7 +17,6 @@ object FieldValidations {
 
     // Function to verify the e-mail of the intended user
     fun verifyEmail(email: String): String? {
-
         val regex = Regex("(^[a-z]+\\.+[a-z]+?@decagon.dev)\$")
         return if (email.isNotEmpty() && email.matches(regex)) {
             null

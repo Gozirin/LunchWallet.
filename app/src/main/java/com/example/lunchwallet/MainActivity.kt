@@ -2,7 +2,10 @@ package com.example.lunchwallet
 
 import android.os.Build
 import android.os.Bundle
-import android.view.*
+import android.view.Gravity
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -53,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun inflateLogoutView() {
         closeDrawer()
-        val view = View.inflate(this@MainActivity, R.layout.logout_confirmation, null)
+        val view = View.inflate(this@MainActivity, R.layout.fragment_logout_confirmation, null)
         val builder = AlertDialog.Builder(this@MainActivity)
         builder.setView(view)
 
@@ -90,17 +93,16 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         binding.navView.setupWithNavController(navController)
 
-        navController.addOnDestinationChangedListener{_, destination, _ ->
+        navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.foodBeneficiaryDashboardFragment ||
-                destination.id == R.id.notificationsScreenFragment ) {
+                destination.id == R.id.notificationsScreenFragment
+            ) {
                 binding.mainActivityToolbar.visibility = View.VISIBLE
-            }else{
-                binding.  mainActivityToolbar.visibility = View.GONE
+            } else {
+                binding.mainActivityToolbar.visibility = View.GONE
             }
-
         }
         binding.apply {
-
 //            toggle = ActionBarDrawerToggle(this@MainActivity, mainActivityDrawerLayout, R.string.openDrawerContentDesc, R.string.closeDrawerContentDesc)
 //            mainActivityDrawerLayout.addDrawerListener(toggle)
 //
@@ -115,7 +117,7 @@ class MainActivity : AppCompatActivity() {
                         navController.navigate(R.id.foodBeneficiaryDashboardFragment)
 //                        Toast.makeText(this@MainActivity, "menu_item_meal_time_table", Toast.LENGTH_SHORT).show()
                     }
-                    R.id.notificationsScreenFragment-> {
+                    R.id.notificationsScreenFragment -> {
                         closeDrawer()
                         navController.navigate(R.id.notificationsScreenFragment)
 //                        Toast.makeText(this@MainActivity, "menu_item_notification", Toast.LENGTH_SHORT).show()

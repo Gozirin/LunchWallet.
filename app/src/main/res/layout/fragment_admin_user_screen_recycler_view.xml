@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_screen_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/user_screen_fragment_nonso_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Nonso John"
+                android:textColor="@color/Jellof_rice"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_screen_fragment_python_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="95dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Python"
+                android:textColor="@color/Jellof_rice"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_screen_fragment_farapark_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Fara park"
+                android:textColor="@color/Jellof_rice"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

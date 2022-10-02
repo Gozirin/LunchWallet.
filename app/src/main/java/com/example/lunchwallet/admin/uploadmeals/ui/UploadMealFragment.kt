@@ -67,7 +67,6 @@ class UploadMealFragment : Fragment() {
         }
         // Add Meal Button
 //        binding.uploadMealFragmentAddMealButton.setOnClickListener {
-//            findNavController().navigate(R.id.action_uploadMealFragment_to_optionMealFragment)
-//        }
+//            findNavController().navigate(R.id.action_uploadMealFragment_to_optionMealFragment)}
     }
 }

@@ -17,52 +17,58 @@
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/kitchen_staff_dashboard_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentInsetLeft="0dp"
                 android:contentInsetStart="0dp"
-                app:contentInsetLeft="0dp"
-                app:contentInsetStart="0dp"
-                android:contentInsetRight="0dp"
+                android:contentInsetLeft="0dp"
                 android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
                 app:contentInsetRight="0dp"
-                app:contentInsetEnd="0dp">
+                app:contentInsetStart="0dp">
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingVertical="10dp">
+
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
+
                             <ImageView
                                 android:layout_width="32dp"
                                 android:layout_height="32dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ic_launch_wallet_logo"
                                 android:layout_gravity="center"
-                                />
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_launch_wallet_logo" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/manrope_extrabold"
-                                android:textSize="16sp"
-                                android:textColor="@color/textPrimaryColor"
-                                android:text="@string/APP_NAME"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="5dp"/>
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/manrope_extrabold"
+                                android:text="@string/APP_NAME"
+                                android:textColor="@color/textPrimaryColor"
+                                android:textSize="16sp" />
                         </androidx.appcompat.widget.LinearLayoutCompat>
+
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="32dp"
                             android:layout_height="32dp"
@@ -70,21 +76,21 @@
                             android:background="@drawable/circle_shape">
 
                             <com.makeramen.roundedimageview.RoundedImageView
-                                android:layout_height="match_parent"
                                 android:layout_width="match_parent"
-                                android:src="@drawable/kitchen_staff"
+                                android:layout_height="match_parent"
                                 android:scaleType="fitCenter"
+                                android:src="@drawable/kitchen_staff"
                                 app:riv_corner_radius="30dip"
                                 app:riv_oval="true" />
 
 
-
                         </androidx.appcompat.widget.LinearLayoutCompat>
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
-                        android:background="#f8f8f8"/>
+                        android:background="#f8f8f8" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.Toolbar>
 
@@ -96,8 +102,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_chevron_left"/>
-                
+                    android:src="@drawable/ic_chevron_left" />
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -309,9 +315,9 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:textAllCaps="false"
                                         android:fontFamily="@font/manrope_bold"
                                         android:text="@string/brunch"
+                                        android:textAllCaps="false"
                                         android:textColor="@color/textPrimaryColor"
                                         android:textSize="14sp" />
 
@@ -404,12 +410,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
-                            app:cornerRadius="5dp"
+                            android:background="@drawable/btn_bg_shape_filled"
+                            android:paddingVertical="12dp"
                             android:text="@string/generate_qr_code"
                             android:textAlignment="center"
-                            android:paddingVertical="12dp"
                             android:textColor="@color/white"
-                            android:background="@drawable/btn_bg_shape_filled"/>
+                            app:cornerRadius="5dp" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -548,12 +554,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
-                            app:cornerRadius="5dp"
+                            android:background="@drawable/btn_bg_shape_filled"
+                            android:paddingVertical="12dp"
                             android:text="@string/generate_qr_code"
                             android:textAlignment="center"
-                            android:paddingVertical="12dp"
                             android:textColor="@color/white"
-                            android:background="@drawable/btn_bg_shape_filled"/>
+                            app:cornerRadius="5dp" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>

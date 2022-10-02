@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+           <!--NAVIGATION DRAWER LAYOUT-->
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/serving_status_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -39,6 +43,7 @@
             android:id="@+id/uploadMealFragment_image"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
             android:layout_gravity="end"
             android:src="@drawable/ic_ellipse"
             tools:ignore="ContentDescription" />
@@ -59,25 +64,36 @@
             android:id="@+id/serving_status_backarrow_IV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="20dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_arrow" />
 
         <TextView
             android:id="@+id/serving_status_status_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Status"
             android:layout_centerInParent="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/manrope_regular"
-            android:textSize="16sp"
-            android:textFontWeight="700"
-            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
+            android:text="Status"
             android:textColor="@color/black"
-            android:layout_marginStart="130dp"/>
-    </RelativeLayout>
+            android:textFontWeight="700"
+            android:textSize="16sp" />
 
+        <!--NAVIGATION DRAWER EXTRACTED-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nav_floating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_hamburger"
+            android:backgroundTint="@color/loginbutton"/>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/serving_status_see_status_TV"
@@ -253,156 +269,163 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="14dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="0dp"
-            app:cardElevation="10dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="10dp">
 
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/ic_reddot"/>
-
-
-                <TextView
-                    android:id="@+id/serving_status_Dinner_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="17dp"
-                    android:fontFamily="@font/manrope_regular"
-                    android:padding="2dp"
-                    android:text="DINNER"
-                    android:textColor="@color/black"
-                    android:textFontWeight="400"/>
-
-
-                <TextView
-                    android:id="@+id/serving_status_U_kitchen_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Uno kitchen"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:fontFamily="@font/manrope_regular"
-                    android:textFontWeight="400"
-                    android:textSize="14sp"/>
-
-                <TextView
-                    android:id="@+id/serving_status_timer_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/serving_status_Dinner_TV"
-                    android:layout_marginStart="36dp"
-                    android:fontFamily="@font/manrope_regular"
-                    android:text="07:00PM to 07:20PM"
-                    android:textFontWeight="400"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/serving_status_not_serving_TV"
-                    android:layout_below="@+id/serving_status_U_kitchen_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Not Serving"
-                    android:fontFamily="@font/manrope_regular"
-                    android:textFontWeight="700"
-                    android:textSize="12sp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="16dp"
-                    android:textColor="#D00000"/>
-
-                <TextView
-                    android:id="@+id/serving_status_efo_semo_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/serving_status_timer_TV"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="20dp"
-                    android:background="#DFDDDD"
-                    android:fontFamily="@font/manrope_regular"
-                    android:padding="3dp"
-                    android:text="Efo &amp; semo"
-                    android:textColor="#21334F"
-                    android:textFontWeight="400"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/serving_Jollof_rice_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/serving_status_timer_TV"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="20dp"
-                    android:background="#DFDDDD"
-                    android:fontFamily="@font/manrope_regular"
-                    android:layout_centerInParent="true"
-                    android:padding="3dp"
-                    android:text="Jollof rice &amp; egg"
-                    android:textColor="#21334F"
-                    android:textFontWeight="400"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/serving_status_bean_porridge_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/serving_status_timer_TV"
-                    android:text="Beans porridge"
-                    android:textSize="12sp"
-                    android:textFontWeight="400"
-                    android:background="#DFDDDD"
-                    android:padding="3dp"
-                    android:fontFamily="@font/manrope_regular"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#21334F"/>
-
-                <TextView
-                    android:id="@+id/serving_status_ticket_no_TV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/serving_status_efo_semo_TV"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/manrope_regular"
-                    android:text="Ticket No: 9684un56315"
-                    android:textColor="#AAB2C5"
-                    android:textFontWeight="400"
-                    android:textSize="12sp" />
-
-                <Button
-                    android:id="@+id/serving_status_button2"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_below="@+id/serving_status_ticket_no_TV"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:backgroundTint="#F1DADA"
-                    android:fontFamily="@font/manrope_regular"
-                    android:paddingTop="4dp"
-                    android:paddingBottom="4dp"
-                    android:text="Change Status"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/loginbutton"
-                    android:textFontWeight="700"
-                    android:textSize="12sp" />
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
 
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_reddot"/>
+
+
+                        <TextView
+                            android:id="@+id/serving_status_Dinner_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="@font/manrope_regular"
+                            android:padding="2dp"
+                            android:text="DINNER"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400"/>
+
+
+                        <TextView
+                            android:id="@+id/serving_status_U_kitchen_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uno kitchen"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/manrope_regular"
+                            android:textFontWeight="400"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/serving_status_timer_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serving_status_Dinner_TV"
+                            android:layout_marginStart="36dp"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="07:00PM to 07:20PM"
+                            android:textFontWeight="400"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/serving_status_not_serving_TV"
+                            android:layout_below="@+id/serving_status_U_kitchen_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not Serving"
+                            android:fontFamily="@font/manrope_regular"
+                            android:textFontWeight="700"
+                            android:textSize="12sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="#D00000"/>
+
+                        <TextView
+                            android:id="@+id/serving_status_efo_semo_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serving_status_timer_TV"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="20dp"
+                            android:background="#DFDDDD"
+                            android:fontFamily="@font/manrope_regular"
+                            android:padding="3dp"
+                            android:text="Efo &amp; semo"
+                            android:textColor="#21334F"
+                            android:textFontWeight="400"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/serving_Jollof_rice_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serving_status_timer_TV"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="20dp"
+                            android:background="#DFDDDD"
+                            android:fontFamily="@font/manrope_regular"
+                            android:layout_centerInParent="true"
+                            android:padding="3dp"
+                            android:text="Jollof rice &amp; egg"
+                            android:textColor="#21334F"
+                            android:textFontWeight="400"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/serving_status_bean_porridge_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serving_status_timer_TV"
+                            android:text="Beans porridge"
+                            android:textSize="12sp"
+                            android:textFontWeight="400"
+                            android:background="#DFDDDD"
+                            android:padding="3dp"
+                            android:fontFamily="@font/manrope_regular"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#21334F"/>
+
+                        <TextView
+                            android:id="@+id/serving_status_ticket_no_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serving_status_efo_semo_TV"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="Ticket No: 9684un56315"
+                            android:textColor="#AAB2C5"
+                            android:textFontWeight="400"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/serving_status_button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/serving_status_ticket_no_TV"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:backgroundTint="#F1DADA"
+                            android:fontFamily="@font/manrope_regular"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="Change Status"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textColor="@color/loginbutton"
+                            android:textFontWeight="700"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

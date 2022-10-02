@@ -41,7 +41,7 @@
                     android:orientation="horizontal"
                     android:paddingVertical="10dp">
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -56,29 +56,23 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="35dp"
                             android:fontFamily="@font/manrope_extrabold"
                             android:text="@string/APP_NAME"
                             android:textColor="@color/textPrimaryColor"
                             android:textSize="16sp" />
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:layout_marginStart="170dp"
-                            app:cardCornerRadius="60dp">
+                        <ImageView
+                            android:id="@+id/admin_timetable_profilePic_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:cropToPadding="true"
+                           android:layout_alignParentEnd="true"
+                            android:src="@drawable/profile_image" />
 
-                            <ImageView
-                                android:id="@+id/admin_timetable_profilePic_iv"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:cropToPadding="true"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/profile_image" />
-                        </androidx.cardview.widget.CardView>
 
-                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    </RelativeLayout>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -89,7 +83,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.Toolbar>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <RelativeLayout
             android:id="@+id/adminMealTimetableFragment_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,6 +97,7 @@
             app:layout_constraintVertical_bias="0.011">
 
             <TextView
+                android:id="@+id/adminMealTimetableFragment_Hello_Tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
@@ -111,6 +106,8 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/adminMealTimetableFragment_Ugo_Tv"
+                android:layout_below="@+id/adminMealTimetableFragment_Hello_Tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_extrabold"
@@ -119,8 +116,17 @@
                 android:textColor="@color/text_color"
                 android:textSize="18sp"/>
 
+            <ImageView
+                android:id="@+id/mealTimeTableFragment_logout_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_hamburger" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/MealTimetableFragment_layout"
@@ -138,13 +144,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/adminMealTimetableFragment_layout">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="70dp"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/adminMealTimetableFragment_total_Tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
@@ -154,6 +161,8 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/adminMealTimetableFragment_no_Tv"
+                    android:layout_below="@+id/adminMealTimetableFragment_total_Tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -161,20 +170,25 @@
                     android:text="445"
                     android:textColor="@color/text_color"
                     android:textSize="25sp" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="40dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="20dp"
-                android:orientation="vertical">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/ic_view"
                     android:textColor="@color/text_color" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

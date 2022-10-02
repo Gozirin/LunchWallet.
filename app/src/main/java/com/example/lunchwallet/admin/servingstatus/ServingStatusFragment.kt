@@ -10,6 +10,7 @@ import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentServingStatusBinding
 
 class ServingStatusFragment : Fragment() {
+
     private var _binding: FragmentServingStatusBinding? = null
     private val binding get() = _binding!!
 
@@ -17,7 +18,7 @@ class ServingStatusFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentServingStatusBinding.inflate(inflater, container, false)
         return binding.root
@@ -25,12 +26,28 @@ class ServingStatusFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         // Change Status Brunch Button
         binding.servingStatusButton.setOnClickListener {
             findNavController().navigate(R.id.action_servingStatusFragment_to_optionStatusScreenFragment)
         }
         // Change Status Dinner Button
-        binding.servingStatusButton2.setOnClickListener { findNavController().navigate(R.id.action_servingStatusFragment_to_optionStatusScreenFragment)
+        binding.servingStatusButton2.setOnClickListener {
+            findNavController().navigate(R.id.action_servingStatusFragment_to_optionStatusScreenFragment)
+        }
+        // Back Button
+        binding.servingStatusBackarrowIV.setOnClickListener {
+            findNavController().navigate(R.id.action_servingStatusFragment_to_dashboardFragment)
+        }
+        // Floating Action Button To Navigation Drawer
+        binding.navFloatingButton.setOnClickListener {
+            // findNavController().navigate(R.id.action_dashboardFragment_to_navigationStatusFragment)
         }
     }
 }
+
+
+
+
+
+

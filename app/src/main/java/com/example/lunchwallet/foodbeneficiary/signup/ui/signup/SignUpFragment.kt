@@ -67,43 +67,49 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     }
     private fun nameFocusListener() {
         binding.signUpFullNameTextView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.fullNameContainer.helperText = verifyName(binding.signUpFullNameTextView.text.toString())
+            }
         }
     }
 
     private fun emailFocusListener() {
         binding.signUpEmailTextView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.emailContainer.helperText = verifyEmail(binding.signUpEmailTextView.text.toString())
+            }
         }
     }
 
     private fun stackFocusListener() {
         binding.signUpStackAutoView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.stackContainer.helperText = verifyStack(binding.signUpStackAutoView.text.toString())
+            }
         }
     }
 
     private fun locationFocusListener() {
         binding.signUpLocationAutoView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.locationContainer.helperText = verifyLocation(binding.signUpLocationAutoView.text.toString())
+            }
         }
     }
 
     private fun passwordFocusListener() {
         binding.signUpPasswordTextView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.passwordContainer.helperText = verifyPassword(binding.signUpPasswordTextView.text.toString())
+            }
         }
     }
 
     private fun confirmPasswordFocusListener() {
         binding.signUpConfirmPasswordTextView.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.confirmPasswordContainer.helperText = validateConfirmPassword(binding.signUpPasswordTextView.text.toString(), binding.signUpConfirmPasswordTextView.text.toString())
+            }
         }
     }
 
@@ -129,17 +135,23 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 
     private fun invalidForm() {
         var message = ""
-        if (binding.fullNameContainer.helperText != null)
+        if (binding.fullNameContainer.helperText != null) {
             message = "\n\nName: " + binding.emailContainer.helperText
-        if (binding.emailContainer.helperText != null)
+        }
+        if (binding.emailContainer.helperText != null) {
             message += "\n\nEmail: " + binding.emailContainer.helperText
-        if (binding.stackContainer.helperText != null)
+        }
+        if (binding.stackContainer.helperText != null) {
             message += "\n\nStack: " + binding.stackContainer.helperText
-        if (binding.locationContainer.helperText != null)
+        }
+        if (binding.locationContainer.helperText != null) {
             message += "\n\nLocation: " + binding.locationContainer.helperText
-        if (binding.passwordContainer.helperText != null)
+        }
+        if (binding.passwordContainer.helperText != null) {
             message += "\n\nPassword: " + binding.passwordContainer.helperText
-        if (binding.fullNameContainer.helperText != null)
+        }
+        if (binding.fullNameContainer.helperText != null) {
             message += "\n\nName: " + binding.confirmPasswordContainer.helperText
+        }
     }
 }

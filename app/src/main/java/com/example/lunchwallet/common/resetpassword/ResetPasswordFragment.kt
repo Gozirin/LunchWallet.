@@ -37,13 +37,18 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_login) {
         binding.resetPasswordFragmentButtonFoodBeneficiary.setOnClickListener {
             onClickResetButton()
         }
+        // Reset_Password to LoginFragment
+        binding.resetPasswordFragmentBackarrowFoodBeneficiary.setOnClickListener{
+            findNavController().navigate(R.id.action_resetPasswordFragment_to_loginFragment)
+        }
     }
 
     private fun emailFocusListener() {
         binding.resetPasswordFragmentETFoodBeneficiary.setOnFocusChangeListener { _, focused ->
-            if (!focused)
+            if (!focused) {
                 binding.resetPasswordFragmentTiIFoodBeneficiary.helperText =
                     ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString())
+            }
         }
     }
 
@@ -52,12 +57,10 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_login) {
             ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString())
 
         val validEmailInput = ResetPasswordValidation.validateEmail(binding.resetPasswordFragmentETFoodBeneficiary.text.toString()) == null
-        if (validEmailInput){
+        if (validEmailInput) {
             findNavController().navigate(R.id.action_resetPasswordFragment_to_checkMailResetPasswordFragment)
         } else {
             binding.resetPasswordFragmentTiIFoodBeneficiary.helperText.toString()
         }
     }
-
 }
-

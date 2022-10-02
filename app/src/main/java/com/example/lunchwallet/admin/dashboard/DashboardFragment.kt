@@ -33,5 +33,14 @@ class DashboardFragment : Fragment() {
         binding.adminDashboardTimetableBtn.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_mealTimeTableFragment)
         }
+        binding.adminDashboardUserBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_userScreenFragment)
+        }
+        binding.adminDashboardTicketBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_servingStatusFragment)
+        }
+        binding.mealTimeTableFragmentLogoutDrawer.setOnClickListener{
+            findNavController().navigate(R.id.action_dashboardFragment_to_logoutConfirmationFragment)
+        }
     }
 }

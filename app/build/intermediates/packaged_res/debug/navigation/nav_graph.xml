@@ -109,6 +109,9 @@
         <action
             android:id="@+id/action_resetPasswordFragment_to_checkMailResetPasswordFragment"
             app:destination="@id/checkMailResetPasswordFragment" />
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/createNewPasswordFragment"
@@ -176,12 +179,25 @@
         <action
             android:id="@+id/action_dashboardFragment_to_mealTimeTableFragment"
             app:destination="@id/mealTimeTableFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_userScreenFragment"
+            app:destination="@id/userScreenFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_servingStatusFragment"
+            app:destination="@id/servingStatusFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_logoutConfirmationFragment"
+            app:destination="@id/logoutConfirmationFragment" />
     </fragment>
     <fragment
         android:id="@+id/mealTimeTableFragment"
         android:name="com.example.lunchwallet.admin.mealtimetable.MealTimeTableFragment"
         android:label="fragment_meal_time_table"
-        tools:layout="@layout/fragment_meal_time_table" />
+        tools:layout="@layout/fragment_meal_time_table" >
+        <action
+            android:id="@+id/action_mealTimeTableFragment_to_dashboardFragment2"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/kitchenStaffDashBoardFragment"
         android:name="com.example.lunchwallet.kitchenstaff.dashboard.KitchenStaffDashBoardFragment"
@@ -213,10 +229,38 @@
         <action
             android:id="@+id/action_servingStatusFragment_to_optionStatusScreenFragment"
             app:destination="@id/optionStatusScreenFragment" />
+        <action
+            android:id="@+id/action_servingStatusFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <dialog
         android:id="@+id/optionStatusScreenFragment"
         android:name="com.example.lunchwallet.admin.optionstatus.OptionStatusScreenFragment"
         android:label="fragment_option_status_screen"
         tools:layout="@layout/fragment_option_status_screen" />
+    <fragment
+        android:id="@+id/userScreenFragment"
+        android:name="com.example.lunchwallet.admin.user.ui.UserScreenFragment"
+        android:label="fragment_admin_user_screen"
+        tools:layout="@layout/fragment_admin_user_screen" >
+        <action
+            android:id="@+id/action_userScreenFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/logoutConfirmationFragment"
+        android:name="com.example.lunchwallet.common.logout.LogoutConfirmationFragmentDialog"
+        android:label="LogoutConfirmationFragment" >
+        <action
+            android:id="@+id/action_logoutConfirmationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_logoutConfirmationFragment_to_dashboardFragment2"
+            app:destination="@id/dashboardFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/navigationStatusFragment"
+        android:name="com.example.lunchwallet.admin.servingstatus.NavigationStatusFragment"
+        android:label="fragment_navigation_status"
+        tools:layout="@layout/fragment_navigation_status" />
 </navigation>

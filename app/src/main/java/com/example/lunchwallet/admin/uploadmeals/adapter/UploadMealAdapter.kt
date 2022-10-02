@@ -25,7 +25,8 @@ class UploadMealAdapter(private val meal: ArrayList<Meals>) : RecyclerView.Adapt
             parent.context
         ).inflate(
             R.layout.fragment_admin_upload_meal_recycler_view,
-            parent, false
+            parent,
+            false
         )
         return UploadMealViewHolder(view)
     }

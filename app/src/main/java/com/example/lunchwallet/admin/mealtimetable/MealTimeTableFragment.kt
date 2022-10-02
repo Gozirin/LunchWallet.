@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.lunchwallet.R
 import com.example.lunchwallet.databinding.FragmentMealTimeTableBinding
 import com.example.lunchwallet.util.adapter.CalenderAdapter
 import com.example.lunchwallet.util.adapter.OnItemListener
@@ -33,6 +35,9 @@ class MealTimeTableFragment : Fragment(), OnItemListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setWeekView()
+        binding.adminMealTimetableFragmentBackArrowIV.setOnClickListener{
+            findNavController().navigate(R.id.action_mealTimeTableFragment_to_dashboardFragment2)
+        }
     }
 
     private fun setWeekView() {
@@ -58,4 +63,5 @@ class MealTimeTableFragment : Fragment(), OnItemListener {
         selectedDate = date
         setWeekView()
     }
+
 }

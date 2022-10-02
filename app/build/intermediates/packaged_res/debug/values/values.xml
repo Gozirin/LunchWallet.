@@ -31,6 +31,7 @@
     <color name="button_skip">#00FFFFFF</color>
     <color name="grey">#ADBACD</color>
     <color name="helper_text_color">#A30306</color>
+    <color name="ic_launcher_background">#F6CA36</color>
     <color name="landingPageBannerBackDropBackgroundColor">#6B000000</color>
     <color name="login_input_background">#C4C4C4</color>
     <color name="loginbutton">#FD5900</color>
@@ -90,6 +91,7 @@
     <string name="change_status">Change Status</string>
     <string name="check_mail">Check your email</string>
     <string name="closeDrawerContentDesc">close</string>
+    <string name="communication">COMMUNICATION</string>
     <string name="confirm_email_msg">Confirm email</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="create_an_account">Create an account</string>
@@ -149,6 +151,7 @@
     <string name="password">Password</string>
     <string name="password_successfully_reset">Password successfully reset</string>
     <string name="please_confirm_your_email">Please confirm your email</string>
+    <string name="rate_us">Rate_Us</string>
     <string name="remove">Remove</string>
     <string name="resend_instruction">resend instruction</string>
     <string name="reset_password">Reset Password</string>
@@ -162,6 +165,7 @@
     <string name="select_type">Select type</string>
     <string name="serving">Serving</string>
     <string name="serving_time">Serving Time</string>
+    <string name="share">Share</string>
     <string name="sign_up">Sign Up</string>
     <string name="spam_filter_or">spam filter, or</string>
     <string name="stack">Stack</string>

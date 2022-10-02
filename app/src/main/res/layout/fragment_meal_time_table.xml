@@ -64,14 +64,15 @@
                             android:textSize="16sp" />
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:layout_marginStart="180dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
                             app:cardCornerRadius="60dp">
+
                             <ImageView
                                 android:id="@+id/admin_timetable_profilePic_iv"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/profile_image" />
                         </androidx.cardview.widget.CardView>
@@ -101,6 +102,7 @@
             app:layout_constraintTop_toBottomOf="@id/mealTimeTable_toolbar">
 
             <ImageView
+                android:id="@+id/adminMealTimetableFragment_back_arrow_IV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="5dp"
